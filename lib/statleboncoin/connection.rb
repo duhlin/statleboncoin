@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'net/http'
+require_relative 'database'
 
 URL = 'www.leboncoin.fr'
 
@@ -7,14 +8,15 @@ class Search
 	attr_reader :doc
 
 	def initialize( req ) 
-		puts "New Search #{req}"
+		#puts "New Search #{req}"
 		if req.start_with? '/'
 			html = Net::HTTP.get( URL, req ) 
 		else
+			req.gsub!(' ', '%20')
 			uri = URI.parse req
 			html =  Net::HTTP.get( uri )
 		end
-		@doc = Nokogiri::HTML html
+		@doc = Nokogiri::HTML html.force_encoding(Encoding::ISO_8859_15)
 
 	end
 
@@ -23,7 +25,7 @@ class Search
 	end
 
 	def items
-		l = list.map{ |i| Item.new i.attributes['href'] }
+		l = list.map{ |i| i.attributes }
 		n = next_page
 		l.concat( n.items || [] ) if n
 		l
@@ -33,9 +35,7 @@ class Search
 		n = @doc.xpath( '//nav//li[@class="page"]/a' ) || []
 		n = n.select{ |i| i.text=='Page suivante' }
 		if n.any?
-			puts n.inspect
 			link = n.first.attributes['href'].to_s
-			puts link
 			Search.new link if link
 		else
 			nil
@@ -50,16 +50,20 @@ class Item
 	def initialize( href )
 		puts "New Item #{href}"
 		uri = URI.parse href
-		@doc = Nokogiri::HTML Net::HTTP.get( uri )
+		@doc = Nokogiri::HTML Net::HTTP.get( uri ).force_encoding(Encoding::ISO_8859_15)
 		@attr = {}
 		@attr['href'] = href
 		@attr['title'] = title
-		table = @doc.xpath '//div[@class="lbcParams floatLeft"]/table/tr' #/tbody/tr'
-		table.each do |l|
-			#puts l.xpath('th').text
+		add_table('//table')
+		add_table('//table/tr')
+	end
+
+	def add_table( xpath )
+		@doc.xpath(xpath).each do |l|
 			@attr[ l.xpath('th').text.downcase.strip ] = l.xpath('td').text.strip
 		end
 	end
+
 
 	def title
 		t = @doc.xpath('//h2[@id="ad_subject"]')
@@ -73,7 +77,7 @@ class Item
 
 end
 
-def print_items(out, items)
+def print_csv(out, items)
 	if items.any?
 		keys = items.first.attr.keys
 		out.puts keys.join("\t")
@@ -83,21 +87,42 @@ def print_items(out, items)
 	end
 end
 
-#c = Search.new '/motos/?q=hyperstrada' 
-#c = Search.new '/motos/?q=ducati'
-#all_moto = c.items
-
-#open('all_moto.csv', 'w') do |f|
-#	print_items(f, all_moto)
-#end
-
-open('hyperstrada.csv', 'w') do |f|
-	c = Search.new '/motos/?q=hyperstrada' 
-	print_items(f, c.items.select{|moto| moto.attr['title'].to_s.downcase =~ /ducati.*hyperstrada/})
+def to_integer(val)
+	val = val.sub(' ','').to_i unless val.nil?
+	val
 end
 
-open('multistrada.csv', 'w') do |f|
-	c = Search.new '/motos/?q=multistrada' 
-	print_items(f, c.items.select{|moto| moto.attr['title'].to_s.downcase =~ /multi.*strada/})
+def store_db(dataset, items, lookup)
+	items.each do |it|
+		begin
+			dataset.insert( {
+				href: it.attr['href'].to_s,
+				titre: it.attr['title'].to_s,
+				annee: to_integer( it.attr['année-modèle :'] ),
+				prix: to_integer( it.attr['prix:'] ),
+				ville: it.attr['ville :'].to_s,
+				code_postal: to_integer( it.attr['code postal :'] ),
+				kilometrage: to_integer( it.attr['kilométrage :'] ),
+				cylindree: it.attr['cylindrée :'].to_s,
+				stored_at: Time.now
+			}.merge(lookup))
+		rescue Sequel::UniqueConstraintViolation
+		end
+	end
 end
+
+
+def www_lookup( db, model, pattern )
+	puts " retrieve from #{URL} for #{model}"
+	c = Search.new "/motos/?q=#{model}" 
+	motos = db[:motos]
+	store_db(
+		motos,
+		c.items.select do |m|
+			m['title'].to_s.downcase =~ pattern and motos.where(href: m['href'].to_s).empty?
+		end.map{|m| Item.new m['href'].to_s},
+		{model: model, pattern: pattern.to_s}
+	)
+end
+
 

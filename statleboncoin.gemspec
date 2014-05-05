@@ -6,8 +6,8 @@ require 'statleboncoin/version'
 Gem::Specification.new do |spec|
   spec.name          = "statleboncoin"
   spec.version       = Statleboncoin::VERSION
-  spec.authors       = ["lionel"]
-  spec.email         = ["lionel.perrin@gmail.com"]
+  spec.authors       = ["duhlin"]
+  spec.email         = ["ddduhlin@gmail.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
   spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
@@ -19,6 +19,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "nokogiri"
+  spec.add_runtime_dependency "statsample"
+  spec.add_runtime_dependency "sequel"
+  spec.add_runtime_dependency "sqlite3"
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
 end
