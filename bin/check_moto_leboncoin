@@ -2,4 +2,4 @@
 
 require 'statleboncoin'
 
-Statleboncoin.run
+Statleboncoin.run_forever

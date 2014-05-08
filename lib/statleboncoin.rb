@@ -39,5 +39,13 @@ module Statleboncoin
 		do_analysis db, 'tiger 800', db[:motos].where(model: 'triumph', cylindree: '800 cm3').exclude(prix: 0..5000)
 
 	end
+
+	def self.run_forever(timeout=7_200)
+		while true
+			self.run
+			puts "sleeping #{timeout}s"
+			sleep timeout
+		end
+	end
 end
 
