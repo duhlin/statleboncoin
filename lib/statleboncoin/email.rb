@@ -1,6 +1,6 @@
 require 'net/smtp'
 
-def send_email(topic, annonces, to_from='lionel.perrin@gmail.com', pwd=ARGV[0])
+def send_email(topic, annonces, to_from=ARGV[0], pwd=ARGV[1])
 
 	msgstr = <<END_OF_MESSAGE
 From: lionel <#{to_from}>
