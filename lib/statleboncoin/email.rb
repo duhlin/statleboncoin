@@ -18,13 +18,4 @@ END_OF_MESSAGE
 	puts "new email #{topic} sent"
 end
 
-def add_to_sent(db, items)
-	items.each do |i|
-		db[:sent].insert( href: i[:href], sent_at: Time.now )
-	end
-end
-
-def remove_sent(db, items)
-	items.select{|m| db[:sent].where(href: m[:href]).empty?}
-end
 

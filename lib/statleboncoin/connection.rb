@@ -56,6 +56,7 @@ class Item
 		@attr = {}
 		@attr['href'] = href
 		@attr['title'] = title
+		@attr['content'] = content
 		add_table('//table')
 		add_table('//table/tr')
 	end
@@ -94,10 +95,10 @@ def to_integer(val)
 	val
 end
 
-def store_db(dataset, items, lookup)
+def store_db(dataset, items, lookup, update_db)
 	items.each do |it|
 		begin
-			dataset.insert( {
+			attributes = {
 				href: it.attr['href'].to_s,
 				titre: it.attr['title'].to_s,
 				annee: to_integer( it.attr['année-modèle :'] ),
@@ -106,24 +107,28 @@ def store_db(dataset, items, lookup)
 				code_postal: to_integer( it.attr['code postal :'] ),
 				kilometrage: to_integer( it.attr['kilométrage :'] ),
 				cylindree: it.attr['cylindrée :'].to_s,
+				content: it.attr['content'].to_s,
 				stored_at: Time.now
-			}.merge(lookup))
+			}.merge(lookup)
+			dataset.insert( attributes )
 		rescue Sequel::UniqueConstraintViolation
+			dataset.where(href: attributes[:href]).update( attributes ) if update_db
 		end
 	end
 end
 
 
-def www_lookup( db, model, pattern )
+def www_lookup( db, model, pattern, update_db )
 	puts " retrieve from #{URL} for #{model}"
 	c = Search.new "/motos/?q=#{model}" 
 	motos = db[:motos]
 	store_db(
 		motos,
 		c.items.select do |m|
-			m['title'].to_s.downcase =~ pattern and motos.where(href: m['href'].to_s).empty?
+			m['title'].to_s.downcase =~ pattern and (update_db or motos.where(href: m['href'].to_s).empty?)
 		end.map{|m| Item.new m['href'].to_s},
-		{model: model, pattern: pattern.to_s}
+		{model: model, pattern: pattern.to_s},
+		update_db
 	)
 end
 
