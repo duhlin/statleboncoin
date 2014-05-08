@@ -43,10 +43,14 @@ def sort( db, model, motos, reg_eval_proc, home_eval_proc )
 	motos = motos.exclude(kilometrage: nil).exclude(annee: nil).exclude(prix: nil).to_a
 	motos.map(&home_eval_proc)
 	motos.map(&reg_eval_proc)
+	best_home = motos.sort_by(&home_eval_proc).first(10)
 	best_reg = motos.sort_by(&reg_eval_proc).first(10)
-	best_reg_href = best_reg.map{|m| m[:href]}
-	best_home = motos.sort_by(&home_eval_proc).first(10).select{|m| !best_reg_href.include? m[:href]}
 
+	#remove duplicates
+	hrefs = best_home.map{|m| m[:href]}
+	best_reg = best_reg.select{|m| !hrefs.include? m[:href]}
+
+	#remove already sent
 	best_reg = remove_sent( db, best_reg )
 	best_home = remove_sent( db, best_home )
 
