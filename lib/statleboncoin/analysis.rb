@@ -46,13 +46,13 @@ def home_eval(m, prix_neuf)
 	m[:diff_prix_attendu_usure] = m[:prix].to_f - m[:prix_attendu_usure]
 end
 
-def sort( db, model, motos, reg_eval_proc, home_eval_proc )
+def sort( db, model, motos, reg_eval_proc, home_eval_proc, prix_max )
 	puts " sorting ads for #{model}"
 	motos = motos.to_a
 	motos.map(&home_eval_proc)
 	motos.map(&reg_eval_proc)
-	best_home = motos.sort_by(&home_eval_proc).first(10)
-	best_reg = motos.sort_by(&reg_eval_proc).first(10)
+	best_home = motos.sort_by(&home_eval_proc).select{|m| !prix_max || m[:prix] < prix_max}.first(10)
+	best_reg = motos.sort_by(&reg_eval_proc).select{|m| !prix_max || m[:prix] < prix_max}.first(10)
 
 	#remove duplicates
 	hrefs = best_home.map{|m| m[:href]}
@@ -114,7 +114,7 @@ def remove_inactive( list )
 	list.select!{|e| Item.new( e[:href] ).title}
 end
 
-def do_analysis( db, model, motos )
+def do_analysis( db, model, motos, prix_max = nil )
 	motos = motos.exclude(kilometrage: nil).exclude(annee: nil).exclude(prix: nil).exclude(prix: 0..4500)
 	reg = regression(motos)
 
@@ -123,12 +123,12 @@ def do_analysis( db, model, motos )
 		model,
 		motos,
 		eval_prix_proc(reg),
-		Proc.new{ |m| home_eval(m, reg[:prix_neuf]) }
+		Proc.new{ |m| home_eval(m, reg[:prix_neuf]) },
+        prix_max
 	)
 
 	remove_inactive( best[:reg] )
 	remove_inactive( best[:home] )
-
 
 	do_mail( db, model, reg, best) do |model, annonces_report, has_new|
 		puts " send email (has_new: #{has_new}):"

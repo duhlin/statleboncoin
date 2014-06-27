@@ -6,18 +6,24 @@ require_relative 'database'
 
 URL = 'www.leboncoin.fr'
 
+def find_req(uri)
+    uri = uri.to_s
+    uri[ uri.index(URL)+URL.size..-1 ]
+end
+
 class Search
 	attr_reader :doc
 
 	def initialize( req ) 
 		#puts "New Search #{req}"
 		if req.start_with? '/'
-			html = Net::HTTP.get( URL, req ) 
+            puts "start with /: #{URL}, #{req}"
 		else
 			req.gsub!(' ', '%20')
-			uri = URI.parse req
-			html =  Net::HTTP.get( uri )
+			req = find_req( req )
+            puts "do not start with /: #{URL}, #{req}"
 		end
+        html =  Net::HTTP.get( URL, req )
 		@doc = Nokogiri::HTML html.force_encoding(Encoding::ISO_8859_15)
 
 	end
@@ -52,7 +58,10 @@ class Item
 	def initialize( href )
 		puts "New Item #{href}"
 		uri = URI.parse href
-		@doc = Nokogiri::HTML Net::HTTP.get( uri ).force_encoding(Encoding::ISO_8859_15)
+        req = find_req( uri )
+        puts "Item: #{URL}, #{req}"
+		@doc = Nokogiri::HTML Net::HTTP.get( URL, req ).force_encoding(Encoding::ISO_8859_15)
+        sleep 10
 		@attr = {}
 		@attr['href'] = href
 		@attr['title'] = title
