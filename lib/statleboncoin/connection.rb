@@ -61,7 +61,6 @@ class Item
         req = find_req( uri )
         puts "Item: #{URL}, #{req}"
 		@doc = Nokogiri::HTML Net::HTTP.get( URL, req ).force_encoding(Encoding::ISO_8859_15)
-        sleep 10
 		@attr = {}
 		@attr['href'] = href
 		@attr['title'] = title

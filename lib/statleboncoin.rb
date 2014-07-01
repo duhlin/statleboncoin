@@ -4,30 +4,35 @@ require 'statleboncoin/database'
 require 'statleboncoin/analysis'
 require 'statleboncoin/connection'
 
-Prix_max = 10_500
+Prix_max = 9_000 #10_500
 
 module Statleboncoin
 	def self.run( update_db = false )
 		db = db_connect
 
+		#VSTROM 1000
+		puts 'VSTROM'
+		www_lookup  db, 'suzuki%20vstrom', /suzuki.*vstrom/i, update_db 
+		do_analysis db, 'vstrom', db[:motos].where(model: 'suzuki%20vstrom', cylindree: '1 000 cm3', kilometrage: 0..20000), Prix_max
+
 		#HYPERSTRADA
 		puts 'HYPERSTRADA'
-		www_lookup  db, 'hyperstrada', /ducati.*hyper.*strada/, update_db 
+		www_lookup  db, 'hyperstrada', /ducati.*hyper.*strada/i, update_db 
 		do_analysis db, 'hyperstrada', db[:motos].where(model: "hyperstrada"), Prix_max
 
 		#HYPERMOTARD
 		puts "HYPERMOTARD"
-		www_lookup db, 'hypermotard', /ducati.*hyper.*motard/, update_db
+		www_lookup db, 'hypermotard', /ducati.*hyper.*motard/i, update_db
 		do_analysis db, 'hypermotard', db[:motos].where(model: "hypermotard").where(Sequel.like(:titre, '%821%')), Prix_max
 	
 		#MULTISTRADA
 		puts 'MULTISTRADA'
-		www_lookup db, 'multistrada', /ducati.*multi.*strada/, update_db 
+		www_lookup db, 'multistrada', /ducati.*multi.*strada/i, update_db 
 		do_analysis db, 'multistrada', db[:motos] .where(model: 'multistrada', cylindree: '1 200 cm3'), Prix_max
 	
 		#800GS
 		puts "f800gs"
-		www_lookup db, 'bmw%20gs', /bmw.*gs/, update_db
+		www_lookup db, 'bmw%20gs', /bmw.*gs/i, update_db
 		do_analysis db, 'f800gs', db[:motos].where(model: "bmw%20gs", cylindree: "800 cm3").where(Sequel.like(:titre, '%800%')) .exclude(Sequel.like(:titre, '%700%')).exclude(Sequel.like(:titre, '%650%')), Prix_max
 		
 		#R1200GS
@@ -47,7 +52,7 @@ module Statleboncoin
 		#Tiger 800
 		puts 'Tiger'
 		www_lookup  db, 'triumph', /tiger/, update_db 
-		do_analysis db, 'tiger 800', db[:motos].where(model: 'triumph', cylindree: '800 cm3'), Prix_max
+		do_analysis db, 'tiger 800', db[:motos].where(model: 'triumph', cylindree: '800 cm3').where(Sequel.ilike(:titre, '%xc%')), Prix_max
 		do_analysis db, 'tiger 1050', db[:motos].where(model: 'triumph', cylindree: '1 050 cm3'), Prix_max
 		do_analysis db, 'tiger 1050 sport', db[:motos].where(model: 'triumph', cylindree: '1 050 cm3').where(Sequel.ilike(:titre, '%sport%')), Prix_max
 		do_analysis db, 'tiger 1200', db[:motos].where(model: 'triumph', cylindree: '1 200 cm3'), Prix_max
@@ -60,6 +65,10 @@ module Statleboncoin
 		##Yamaha MT 09
 		#www_lookup db, 'mt%2009', /yamaha.*mt.*09/, update_db
 		#do_analysis db, 'yamaha mt09', db[:motos].where(model: 'mt%2009')
+		
+        puts 'Honda cb 1000'
+        www_lookup db, 'honda%20cb%201000', /honda.*cb.*1000/, update_db
+		do_analysis db, 'honda cb 1000', db[:motos].where(model: 'honda%20cb%201000'), Prix_max
 
 	end
 

@@ -5,6 +5,7 @@ require_relative 'database'
 require_relative 'connection'
 
 CURRENT_YEAR = Time.now.year
+NB_MOTOS=20
 
 def print_regression( out, model, result )
 	lr = result[:result]
@@ -51,8 +52,8 @@ def sort( db, model, motos, reg_eval_proc, home_eval_proc, prix_max )
 	motos = motos.to_a
 	motos.map(&home_eval_proc)
 	motos.map(&reg_eval_proc)
-	best_home = motos.sort_by(&home_eval_proc).select{|m| !prix_max || m[:prix] < prix_max}.first(10)
-	best_reg = motos.sort_by(&reg_eval_proc).select{|m| !prix_max || m[:prix] < prix_max}.first(10)
+	best_home = motos.sort_by(&home_eval_proc).select{|m| !prix_max || m[:prix] < prix_max}.first(NB_MOTOS)
+	best_reg = motos.sort_by(&reg_eval_proc).select{|m| !prix_max || m[:prix] < prix_max}.first(NB_MOTOS)
 
 	#remove duplicates
 	hrefs = best_home.map{|m| m[:href]}
