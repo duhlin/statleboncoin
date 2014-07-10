@@ -4,7 +4,7 @@ require 'statleboncoin/database'
 require 'statleboncoin/analysis'
 require 'statleboncoin/connection'
 
-Prix_max = 9_000 #10_500
+Prix_max = 9_001 #10_500
 
 module Statleboncoin
 	def self.run( update_db = false )
@@ -51,20 +51,22 @@ module Statleboncoin
 	
 		#Tiger 800
 		puts 'Tiger'
-		www_lookup  db, 'triumph', /tiger/, update_db 
-		do_analysis db, 'tiger 800', db[:motos].where(model: 'triumph', cylindree: '800 cm3').where(Sequel.ilike(:titre, '%xc%')), Prix_max
-		do_analysis db, 'tiger 1050', db[:motos].where(model: 'triumph', cylindree: '1 050 cm3'), Prix_max
-		do_analysis db, 'tiger 1050 sport', db[:motos].where(model: 'triumph', cylindree: '1 050 cm3').where(Sequel.ilike(:titre, '%sport%')), Prix_max
-		do_analysis db, 'tiger 1200', db[:motos].where(model: 'triumph', cylindree: '1 200 cm3'), Prix_max
+		www_lookup  db, 'triumph', /tiger|speed|street/, update_db 
+		do_analysis db, 'tiger 800', db[:motos].where(model: 'triumph', cylindree: '800 cm3').where(Sequel.ilike(:titre, '%tiger%xc%')), Prix_max
+		do_analysis db, 'tiger 1050', db[:motos].where(model: 'triumph', cylindree: '1 050 cm3').where(Sequel.ilike(:titre, '%tiger%')), Prix_max
+		do_analysis db, 'tiger 1050 sport', db[:motos].where(model: 'triumph', cylindree: '1 050 cm3').where(Sequel.ilike(:titre, '%tiger%sport%')), Prix_max
+		do_analysis db, 'tiger 1200', db[:motos].where(model: 'triumph', cylindree: '1 200 cm3').where(Sequel.ilike(:titre, '%tiger%')), Prix_max
+		do_analysis db, 'speed triple', db[:motos].where(model: 'triumph').where(Sequel.ilike(:titre, '%speed%triple%')), Prix_max
+		do_analysis db, 'street triple', db[:motos].where(model: 'triumph').where(Sequel.ilike(:titre, '%street%triple%')), Prix_max
 
 		#Yamaha MT 07
-		#puts 'Yamaha MT'
-		#www_lookup db, 'mt%2007', /yamaha.*mt.*07/, update_db
-		#do_analysis db, 'yamaha mt07', db[:motos].where(model: 'mt%2007')
+		puts 'Yamaha MT'
+		www_lookup db, 'mt%2007', /yamaha.*mt.*07/, update_db
+		do_analysis db, 'yamaha mt07', db[:motos].where(model: 'mt%2007')
 
 		##Yamaha MT 09
-		#www_lookup db, 'mt%2009', /yamaha.*mt.*09/, update_db
-		#do_analysis db, 'yamaha mt09', db[:motos].where(model: 'mt%2009')
+		www_lookup db, 'mt%2009', /yamaha.*mt.*09/, update_db
+		do_analysis db, 'yamaha mt09', db[:motos].where(model: 'mt%2009')
 		
         puts 'Honda cb 1000'
         www_lookup db, 'honda%20cb%201000', /honda.*cb.*1000/, update_db
