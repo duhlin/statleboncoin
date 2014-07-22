@@ -1,24 +1,26 @@
 # Statleboncoin
 
-TODO: Write a gem description
+Request ads from leboncoin.fr and sort them
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Make sure that ruby is installed.
+Install bundler if needed:
 
-    gem 'statleboncoin'
+    $ gem install bundler
+    
+Get source code from github
 
-And then execute:
+    $ git clone https://github.com/duhlin/statleboncoin.git
 
-    $ bundle
+And use bundler to install required gems:
 
-Or install it yourself as:
+    $ bundle install
 
-    $ gem install statleboncoin
+And then execute analysis:
 
-## Usage
+    $ bundle exec bin/check_moto_leboncoin xxxxx@gmail.com password
 
-TODO: Write usage instructions here
 
 ## Contributing
 
