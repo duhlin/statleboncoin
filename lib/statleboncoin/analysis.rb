@@ -47,11 +47,13 @@ def home_eval(m, prix_neuf)
 	m[:diff_prix_attendu_usure] = m[:prix].to_f - m[:prix_attendu_usure]
 end
 
-def sort( db, model, motos, reg_eval_proc, home_eval_proc, prix_max )
+def sort( db, model, motos, reg_eval_proc, home_eval_proc, prix_neuf, prix_max )
 	puts " sorting ads for #{model}"
 	motos = motos.to_a
 	motos.map(&home_eval_proc)
 	motos.map(&reg_eval_proc)
+	motos.each {|m| register_analysis( db, m[:href], prix_neuf, m[:prix_attendu], m[:prix_attendu_usure]) }
+
 	best_home = motos.sort_by(&home_eval_proc).select{|m| !prix_max || m[:prix] < prix_max}.first(NB_MOTOS)
 	best_reg = motos.sort_by(&reg_eval_proc).select{|m| !prix_max || m[:prix] < prix_max}.first(NB_MOTOS)
 
@@ -125,7 +127,8 @@ def do_analysis( db, model, motos, prix_max = nil )
 		motos,
 		eval_prix_proc(reg),
 		Proc.new{ |m| home_eval(m, reg[:prix_neuf]) },
-        prix_max
+		reg[:prix_neuf],
+		prix_max
 	)
 
 	remove_inactive( best[:reg] )
