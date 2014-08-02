@@ -7,23 +7,21 @@ require_relative 'database'
 URL = 'www.leboncoin.fr'
 
 def find_req(uri)
-    uri = uri.to_s
-    uri[ uri.index(URL)+URL.size..-1 ]
+	uri = uri.to_s
+	uri[ uri.index(URL)+URL.size..-1 ]
 end
 
 class Search
 	attr_reader :doc
 
 	def initialize( req ) 
-		#puts "New Search #{req}"
+		puts "New Search #{req}"
 		if req.start_with? '/'
-            puts "start with /: #{URL}, #{req}"
 		else
 			req.gsub!(' ', '%20')
 			req = find_req( req )
-            puts "do not start with /: #{URL}, #{req}"
 		end
-        html =  Net::HTTP.get( URL, req )
+		html =  Net::HTTP.get( URL, req )
 		@doc = Nokogiri::HTML html.force_encoding(Encoding::ISO_8859_15)
 
 	end
@@ -56,10 +54,9 @@ end
 class Item
 	attr_reader :attr
 	def initialize( href )
-		puts "New Item #{href}"
 		uri = URI.parse href
-        req = find_req( uri )
-        puts "Item: #{URL}, #{req}"
+		req = find_req( uri )
+		puts "Item: #{URL}, #{req}"
 		@doc = Nokogiri::HTML Net::HTTP.get( URL, req ).force_encoding(Encoding::ISO_8859_15)
 		@attr = {}
 		@attr['href'] = href
@@ -126,17 +123,23 @@ def store_db(dataset, items, lookup, update_db)
 end
 
 
-def www_lookup( db, model, pattern, update_db )
+def www_lookup( db, lookup )
+	model = lookup[:model]
+	search = lookup[:search] || model
+	type = lookup[:type]
+	pattern = lookup[:pattern]
 	puts " retrieve from #{URL} for #{model}"
-	c = Search.new "/motos/?q=#{model}" 
+	c = Search.new "/#{type}/?q=#{search}" 
 	motos = db[:motos]
 	store_db(
 		motos,
 		c.items.select do |m|
-			m['title'].to_s.downcase =~ pattern and (update_db or motos.where(href: m['href'].to_s).empty?)
+			pattern.nil? or m['title'].to_s.downcase =~ pattern
+		end.select do |m|
+			Statleboncoin.update_db or motos.where(href: m['href'].to_s).empty?
 		end.map{|m| Item.new m['href'].to_s},
 		{model: model, pattern: pattern.to_s},
-		update_db
+		Statleboncoin.update_db
 	)
 end
 
