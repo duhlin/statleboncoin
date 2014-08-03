@@ -100,29 +100,6 @@ def to_integer(val)
 	val
 end
 
-def store_db(dataset, items, lookup, update_db)
-	items.each do |it|
-		begin
-			attributes = {
-				href: it.attr['href'].to_s,
-				titre: it.attr['title'].to_s,
-				annee: to_integer( it.attr['année-modèle :'] ),
-				prix: to_integer( it.attr['prix:'] ),
-				ville: it.attr['ville :'].to_s,
-				code_postal: to_integer( it.attr['code postal :'] ),
-				kilometrage: to_integer( it.attr['kilométrage :'] ),
-				cylindree: it.attr['cylindrée :'].to_s,
-				content: it.attr['content'].to_s,
-				stored_at: Time.now
-			}.merge(lookup)
-			dataset.insert( attributes )
-		rescue Sequel::UniqueConstraintViolation
-			dataset.where(href: attributes[:href]).update( attributes ) if update_db
-		end
-	end
-end
-
-
 def www_lookup( db, lookup )
 	model = lookup[:model]
 	search = lookup[:search] || model
@@ -132,7 +109,7 @@ def www_lookup( db, lookup )
 	c = Search.new "/#{type}/?q=#{search}" 
 	motos = db[:motos]
 	store_db(
-		motos,
+		db,
 		c.items.select do |m|
 			pattern.nil? or m['title'].to_s.downcase =~ pattern
 		end.select do |m|

@@ -37,8 +37,10 @@ def db_connect()
 end
 
 def add_to_sent(db, items)
-	items.each do |i|
-		db[:sent].insert( href: i[:href], sent_at: Time.now ) rescue Sequel::UniqueConstraintViolation
+	db.transaction do
+		items.each do |i|
+			db[:sent].insert( href: i[:href], sent_at: Time.now ) rescue Sequel::UniqueConstraintViolation
+		end
 	end
 end
 
@@ -56,3 +58,27 @@ def mark_sent(db, items)
 	items.each{ |m| m[:sent?] = db[:sent].where(href: m[:href]).any? }
 end
 
+def store_db(db, items, lookup, update_db)
+	motos = db[:motos]
+	db.transaction do
+		items.each do |it|
+			begin
+				attributes = {
+					href: it.attr['href'].to_s,
+					titre: it.attr['title'].to_s,
+					annee: to_integer( it.attr['année-modèle :'] ),
+					prix: to_integer( it.attr['prix:'] ),
+					ville: it.attr['ville :'].to_s,
+					code_postal: to_integer( it.attr['code postal :'] ),
+					kilometrage: to_integer( it.attr['kilométrage :'] ),
+					cylindree: it.attr['cylindrée :'].to_s,
+					content: it.attr['content'].to_s,
+					stored_at: Time.now
+				}.merge(lookup)
+				motos.insert( attributes )
+			rescue Sequel::UniqueConstraintViolation
+				motos.where(href: attributes[:href]).update( attributes ) if update_db
+			end
+		end
+	end
+end
