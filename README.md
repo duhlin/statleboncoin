@@ -4,7 +4,8 @@ Request ads from leboncoin.fr and sort them
 
 ## Installation
 
-Make sure that ruby is installed.
+Make sure that ruby is installed. Install has been tested on windows using Ruby 2.0.0-p481 (x64) from: http://rubyinstaller.org/downloads/
+
 Install bundler if needed:
 
     $ gem install bundler
@@ -19,7 +20,7 @@ And use bundler to install required gems:
 
 And then execute analysis:
 
-    $ bundle exec bin/check_moto_leboncoin xxxxx@gmail.com password
+    $ bundle exec ruby bin/check_moto_leboncoin xxxxx@gmail.com password
 
 
 ## Contributing
