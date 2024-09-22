@@ -1,84 +1,98 @@
-require 'sequel'
+require "duckdb"
+require "forwardable"
+require "json"
 
-def db_connect()
-	db = Sequel.connect('sqlite://leboncoin.db')
+module Statleboncoin
+  class Database
+    extend Forwardable
+    def_delegator :@conn, :query
 
-	db.create_table? :motos do
-		String :href, :primary_key=>true
-		String :titre
-		String :ville
-		Integer :code_postal
-		Integer :kilometrage
-		Integer :annee
-		Integer :prix
-		String :cylindree
-		DateTime :stored_at, :default=>Sequel::SQL::Function.new(:now)
-		String :content
-		String :model
-		String :pattern
-	end
+    CAR_ITEM_VIEW_SQL = <<~SQL
+      with json_parsed as (
+        select json_transform(raw,
+          '{
+            "url": "VARCHAR",
+            "index_date": "TIMESTAMP",
+            "price_cents": "NUMERIC",
+            "attributes": [
+              {
+                "key": "VARCHAR",
+                "value": "VARCHAR"
+              }
+            ]
+          }') as r#{" "}
+        from raw_items),
+      json_parsed_attributes_pivoted as (
+        select#{" "}
+          r.url as url,
+          r.index_date as index_date,
+          r.price_cents as price_cents,
+          map_from_entries(r.attributes) as attributes
+        from json_parsed
+      )#{" "}
+      select
+        url,
+        index_date,
+        cast(price_cents / 100 as integer) as price,
+        attributes['brand'][1] as brand,
+        attributes['model'][1] as model,
+        cast(attributes['regdate'][1] as integer) as reg_year,
+        if(attributes['issuance_date'][1] is not null, strptime(attributes['issuance_date'][1], '%m/%Y'), strptime(attributes['regdate'][1], '%Y')) as issuance_date,
+        cast(attributes['mileage'][1] as integer) as mileage,
+        attributes['is_import'][1] as is_import,
+        cast(attributes['horse_power'][1] as integer) as horse_power,
+        cast(attributes['horse_power_din'][1] as integer) as horse_power_din,
+        attributes['vehicle_damage'][1] as vehicle_damage,
+        attributes['car_contract'][1] as car_contract
+      from json_parsed_attributes_pivoted;
+    SQL
 
-	db.create_table? :sent do
-		String :href, :primary_key=>true
-		DateTime :sent_at
-	end
+    def initialize(database_file = "statleboncoin.duckdb")
+      @db = DuckDB::Database.open database_file
+      @conn = @db.connect
+      @conn.query("CREATE TABLE IF NOT EXISTS raw_items (id TEXT PRIMARY KEY, search_params TEXT, raw JSON)")
+      @conn.query("CREATE OR REPLACE VIEW car_items AS #{CAR_ITEM_VIEW_SQL}")
+    end
 
-	db.create_table? :analysis do
-		String :href
-		DateTime :stored_at
-		String :formula
-		Integer :prix_neuf
-		Integer :prix_reg
-		Integer :prix_home
-		primary_key [:href, :stored_at]
-	end
+    def load_from_parquet(database_folder)
+      @conn.query("COPY raw_items from '#{database_folder}/raw_items.parquet' (FORMAT 'parquet')")
+    end
 
-	db
-end
+    def save_to_parquet(database_folder)
+      @conn.query("EXPORT DATABASE '#{database_folder}' (FORMAT PARQUET, CODEC 'zstd')")
+    end
 
-def add_to_sent(db, items)
-	db.transaction do
-		items.each do |i|
-			db[:sent].insert( href: i[:href], sent_at: Time.now ) rescue Sequel::UniqueConstraintViolation
-		end
-	end
-end
+    def close
+      @conn.disconnect
+      @db.close
+    end
 
-def register_analysis(db, href, prix_neuf, prix_reg, prix_home)
-	db[:analysis].insert( 
-			     href: href,
-			     stored_at: Time.now,
-			     prix_neuf: prix_neuf.to_i,
-			     prix_reg: prix_reg.to_i,
-			     prix_home: prix_home.to_i
-			    )
-end
+    def add_raw_items(key_attribute, search_params, items)
+      append_raw_items(key_attribute, search_params, items)
+    rescue DuckDB::Error
+      puts "Fail to insert using appender, falling back to INSERT"
+      insert_raw_items(key_attribute, search_params, items)
+    end
 
-def mark_sent(db, items)
-	items.each{ |m| m[:sent?] = db[:sent].where(href: m[:href]).any? }
-end
+    private
 
-def store_db(db, items, lookup, update_db)
-	motos = db[:motos]
-	db.transaction do
-		items.each do |it|
-			begin
-				attributes = {
-					href: it.attr['href'].to_s,
-					titre: it.attr['title'].to_s,
-					annee: to_integer( it.attr['année-modèle :'] ),
-					prix: to_integer( it.attr['prix:'] ),
-					ville: it.attr['ville :'].to_s,
-					code_postal: to_integer( it.attr['code postal :'] ),
-					kilometrage: to_integer( it.attr['kilométrage :'] ),
-					cylindree: it.attr['cylindrée :'].to_s,
-					content: it.attr['content'].to_s,
-					stored_at: Time.now
-				}.merge(lookup)
-				motos.insert( attributes )
-			rescue Sequel::UniqueConstraintViolation
-				motos.where(href: attributes[:href]).update( attributes ) if update_db
-			end
-		end
-	end
+    def append_raw_items(key_attribute, search_params, items)
+      appender = @conn.appender("raw_items")
+      items.each do |item|
+        appender.begin_row
+        appender.append(item.fetch(key_attribute))
+        appender.append(search_params)
+        appender.append(item.to_json)
+        appender.end_row
+      end
+      appender.flush
+    end
+
+    def insert_raw_items(key_attribute, search_params, items)
+      items.each do |item|
+        @conn.query("INSERT OR REPLACE INTO raw_items VALUES (?, ?, ?)", item.fetch(key_attribute), search_params,
+                    item.to_json)
+      end
+    end
+  end
 end

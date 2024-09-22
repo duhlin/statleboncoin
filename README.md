@@ -1,32 +1,39 @@
 # Statleboncoin
 
-Request ads from leboncoin.fr and sort them
+TODO: Delete this and the text below, and describe your gem
+
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/statleboncoin`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 ## Installation
 
-Make sure that ruby is installed. Install has been tested on windows using Ruby 2.0.0-p481 (x64) from: http://rubyinstaller.org/downloads/
+TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
 
-Install bundler if needed:
+Install the gem and add to the application's Gemfile by executing:
 
-    $ gem install bundler
-    
-Get source code from github
+    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 
-    $ git clone https://github.com/duhlin/statleboncoin.git
+If bundler is not being used to manage dependencies, install the gem by executing:
 
-And use bundler to install required gems:
+    $ gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
 
-    $ bundle install
+## Usage
 
-And then execute analysis:
+TODO: Write usage instructions here
 
-    $ bundle exec ruby bin/check_moto_leboncoin xxxxx@gmail.com password
+## Development
 
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/statleboncoin/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/statleboncoin. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/statleboncoin/blob/master/CODE_OF_CONDUCT.md).
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Code of Conduct
+
+Everyone interacting in the Statleboncoin project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/statleboncoin/blob/master/CODE_OF_CONDUCT.md).

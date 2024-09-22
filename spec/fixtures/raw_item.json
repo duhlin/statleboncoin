@@ -1,0 +1,359 @@
+{
+    "list_id": 2395566521,
+    "first_publication_date": "2024-09-16 22:03:14",
+    "expiration_date": "2024-11-15 21:03:14",
+    "index_date": "2024-09-16 22:03:14",
+    "status": "active",
+    "category_id": "2",
+    "category_name": "Voitures",
+    "subject": "Zoé charge normale gps",
+    "body": "",
+    "brand": "leboncoin",
+    "ad_type": "offer",
+    "url": "https://www.leboncoin.fr/ad/voitures/2395566521",
+    "price": [
+        9300
+    ],
+    "price_cents": 930000,
+    "images": {
+        "thumb_url": "https://img.leboncoin.fr/api/v1/lbcpb1/images/8e/ef/1b/8eef1b0c9bb042e836dd82723640bd35dfaa89d4.jpg?rule=ad-thumb",
+        "small_url": "https://img.leboncoin.fr/api/v1/lbcpb1/images/8e/ef/1b/8eef1b0c9bb042e836dd82723640bd35dfaa89d4.jpg?rule=ad-small",
+        "nb_images": 5,
+        "urls": [
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/8e/ef/1b/8eef1b0c9bb042e836dd82723640bd35dfaa89d4.jpg?rule=ad-image",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/24/db/9a/24db9abb15a924009258a115e1931d7f09f520a6.jpg?rule=ad-image",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/91/83/79/9183792b6cc69236ed062f1ceadf2004e79a9a21.jpg?rule=ad-image",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/aa/bc/2c/aabc2c4f74dd44a54d17ff16e325d3a38aef927f.jpg?rule=ad-image",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/58/24/5d/58245d93acb71ade149c881919f79f4a2eff517f.jpg?rule=ad-image"
+        ],
+        "urls_thumb": [
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/8e/ef/1b/8eef1b0c9bb042e836dd82723640bd35dfaa89d4.jpg?rule=ad-thumb",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/24/db/9a/24db9abb15a924009258a115e1931d7f09f520a6.jpg?rule=ad-thumb",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/91/83/79/9183792b6cc69236ed062f1ceadf2004e79a9a21.jpg?rule=ad-thumb",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/aa/bc/2c/aabc2c4f74dd44a54d17ff16e325d3a38aef927f.jpg?rule=ad-thumb",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/58/24/5d/58245d93acb71ade149c881919f79f4a2eff517f.jpg?rule=ad-thumb"
+        ],
+        "urls_large": [
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/8e/ef/1b/8eef1b0c9bb042e836dd82723640bd35dfaa89d4.jpg?rule=ad-large",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/24/db/9a/24db9abb15a924009258a115e1931d7f09f520a6.jpg?rule=ad-large",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/91/83/79/9183792b6cc69236ed062f1ceadf2004e79a9a21.jpg?rule=ad-large",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/aa/bc/2c/aabc2c4f74dd44a54d17ff16e325d3a38aef927f.jpg?rule=ad-large",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/58/24/5d/58245d93acb71ade149c881919f79f4a2eff517f.jpg?rule=ad-large"
+        ]
+    },
+    "attributes": [
+        {
+            "key": "activity_sector",
+            "value": "1",
+            "values": [
+                "1"
+            ],
+            "value_label": "1",
+            "generic": false
+        },
+        {
+            "key": "brand",
+            "value": "Renault",
+            "values": [
+                "Renault"
+            ],
+            "key_label": "Marque",
+            "value_label": "Renault",
+            "generic": false
+        },
+        {
+            "key": "model",
+            "value": "Zoe",
+            "values": [
+                "Zoe",
+                "model_all"
+            ],
+            "key_label": "Modèle",
+            "value_label": "Zoe",
+            "generic": false
+        },
+        {
+            "key": "u_car_brand",
+            "value": "RENAULT",
+            "values": [
+                "RENAULT"
+            ],
+            "key_label": "Marque",
+            "value_label": "RENAULT",
+            "generic": true
+        },
+        {
+            "key": "u_car_model",
+            "value": "RENAULT_Zoe",
+            "values": [
+                "RENAULT_Zoe"
+            ],
+            "key_label": "Modèle",
+            "value_label": "Zoe",
+            "generic": true
+        },
+        {
+            "key": "regdate",
+            "value": "2016",
+            "values": [
+                "2016"
+            ],
+            "key_label": "Année modèle",
+            "value_label": "2016",
+            "generic": true,
+            "display_ad_card": true
+        },
+        {
+            "key": "issuance_date",
+            "value": "06/2016",
+            "values": [
+                "06/2016"
+            ],
+            "key_label": "Date de première mise en circulation",
+            "value_label": "06/2016",
+            "generic": true
+        },
+        {
+            "key": "mileage",
+            "value": "40443",
+            "values": [
+                "40443"
+            ],
+            "key_label": "Kilométrage",
+            "value_label": "40443 km",
+            "generic": true,
+            "display_ad_card": true
+        },
+        {
+            "key": "fuel",
+            "value": "4",
+            "values": [
+                "4"
+            ],
+            "key_label": "Carburant",
+            "value_label": "Electrique",
+            "generic": true,
+            "display_ad_card": true
+        },
+        {
+            "key": "gearbox",
+            "value": "2",
+            "values": [
+                "2"
+            ],
+            "key_label": "Boîte de vitesse",
+            "value_label": "Automatique",
+            "generic": true,
+            "display_ad_card": true
+        },
+        {
+            "key": "vehicle_type",
+            "value": "berline",
+            "values": [
+                "berline"
+            ],
+            "key_label": "Type de véhicule",
+            "value_label": "Berline",
+            "generic": true
+        },
+        {
+            "key": "vehicule_color",
+            "value": "blanc",
+            "values": [
+                "blanc"
+            ],
+            "key_label": "Couleur",
+            "value_label": "Blanc",
+            "generic": true
+        },
+        {
+            "key": "doors",
+            "value": "5",
+            "values": [
+                "5"
+            ],
+            "key_label": "Nombre de portes",
+            "value_label": "5",
+            "generic": true
+        },
+        {
+            "key": "seats",
+            "value": "5",
+            "values": [
+                "5"
+            ],
+            "key_label": "Nombre de place(s)",
+            "value_label": "5",
+            "generic": true
+        },
+        {
+            "key": "horsepower",
+            "value": "1",
+            "values": [
+                "1"
+            ],
+            "key_label": "Puissance fiscale",
+            "value_label": "1 Cv",
+            "generic": true
+        },
+        {
+            "key": "horse_power_din",
+            "value": "88",
+            "values": [
+                "88"
+            ],
+            "key_label": "Puissance DIN",
+            "value_label": "88 Ch",
+            "generic": true
+        },
+        {
+            "key": "vehicle_vsp",
+            "value": "avecpermis",
+            "values": [
+                "avecpermis"
+            ],
+            "key_label": "Permis",
+            "value_label": "Avec permis",
+            "generic": true
+        },
+        {
+            "key": "car_contract",
+            "value": "1",
+            "values": [
+                "1"
+            ],
+            "key_label": "Soumis à LOA/LLD",
+            "value_label": "Non",
+            "generic": true
+        },
+        {
+            "key": "recent_used_vehicle",
+            "value": "false",
+            "values": [
+                "false"
+            ],
+            "value_label": "false",
+            "generic": false
+        },
+        {
+            "key": "is_import",
+            "value": "false",
+            "values": [
+                "false"
+            ],
+            "value_label": "false",
+            "generic": false
+        },
+        {
+            "key": "old_price",
+            "value": "9990",
+            "values": [
+                "9990"
+            ],
+            "value_label": "9990",
+            "generic": false
+        },
+        {
+            "key": "critair",
+            "value": "0",
+            "values": [
+                "0"
+            ],
+            "key_label": "Crit'Air",
+            "value_label": "0",
+            "generic": true
+        },
+        {
+            "key": "car_price_min",
+            "value": "7600",
+            "values": [
+                "7600"
+            ],
+            "value_label": "7600",
+            "generic": false
+        },
+        {
+            "key": "car_price_max",
+            "value": "8400",
+            "values": [
+                "8400"
+            ],
+            "value_label": "8400",
+            "generic": false
+        },
+        {
+            "key": "car_rotation_delay",
+            "value": "0",
+            "values": [
+                "0"
+            ],
+            "value_label": "0",
+            "generic": false
+        },
+        {
+            "key": "argus_object_id",
+            "value": "1500933",
+            "values": [
+                "1500933"
+            ],
+            "value_label": "1500933",
+            "generic": false
+        },
+        {
+            "key": "spare_parts_availability",
+            "value": "non_renseignee",
+            "values": [
+                "non_renseignee"
+            ],
+            "key_label": "Durée de disponibilité des pièces détachées",
+            "value_label": "Non renseignée",
+            "generic": true
+        }
+    ],
+    "location": {
+        "country_id": "FR",
+        "region_id": "17",
+        "region_name": "Nord-Pas-de-Calais",
+        "department_id": "59",
+        "department_name": "Nord",
+        "city_label": "Bourbourg 59630",
+        "city": "Bourbourg",
+        "zipcode": "59630",
+        "lat": 50.95278,
+        "lng": 2.19406,
+        "source": "address",
+        "provider": "here",
+        "is_shape": false,
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.19406,
+                    50.95278
+                ]
+            },
+            "properties": null
+        }
+    },
+    "owner": {
+        "store_id": "38681",
+        "user_id": "e427051e-2bd8-4595-a92f-3230c170f3e3",
+        "type": "pro",
+        "name": "sarl chevalier",
+        "no_salesmen": true,
+        "activity_sector": "1"
+    },
+    "options": {
+        "has_option": false,
+        "booster": false,
+        "photosup": false,
+        "urgent": false,
+        "gallery": false,
+        "sub_toplist": false,
+        "continuous_top_ads": false,
+        "highlight": false
+    },
+    "has_phone": true,
+    "similar": null
+}
