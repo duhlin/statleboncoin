@@ -1,4 +1,4 @@
-require "matrix"
+require 'matrix'
 
 module Statleboncoin
   class Analysis
@@ -12,7 +12,7 @@ module Statleboncoin
     MAX_AGE_DAYS = 3650.0 * 2
 
     def self.normalized_x(item)
-      [1, item.mileage / MAX_MILEAGE, (Date.today - item.issuance_date).to_i / MAX_AGE_DAYS]
+      [1, item.mileage / MAX_MILEAGE, (Date.today - item.issuance_date.to_date).to_i / MAX_AGE_DAYS]
     end
 
     def linear_regression
@@ -39,28 +39,28 @@ module Statleboncoin
       [@beta, @r_squared]
     end
 
-    def explain
-      raise "You must call linear_regression before calling explain" unless @beta
+    def explain(output = $stdout)
+      raise 'You must call linear_regression before calling explain' unless @beta
 
-      puts format("Linear regression: price = %0.2f + %0.2f * mileage_kkms + %0.2f * age_years", base_price,
-                  cost_per_kms * 1_000, cost_per_day * 365.0)
-      puts format("R^2 = %0.2f", @r_squared)
+      output.puts format('Linear regression: price = %0.2f + %0.2f * mileage_kkms + %0.2f * age_years', base_price,
+                         cost_per_kms * 1_000, cost_per_day * 365.0)
+      output.puts format('R^2 = %0.2f', @r_squared)
     end
 
     def base_price
-      raise "You must call linear_regression before calling base_price" unless @beta
+      raise 'You must call linear_regression before calling base_price' unless @beta
 
       @beta[0, 0]
     end
 
     def cost_per_kms
-      raise "You must call linear_regression before calling cost_per_kms" unless @beta
+      raise 'You must call linear_regression before calling cost_per_kms' unless @beta
 
       @beta[1, 0] / MAX_MILEAGE
     end
 
     def cost_per_day
-      raise "You must call linear_regression before calling cost_per_day" unless @beta
+      raise 'You must call linear_regression before calling cost_per_day' unless @beta
 
       @beta[2, 0] / MAX_AGE_DAYS
     end

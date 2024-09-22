@@ -1,6 +1,6 @@
-require "duckdb"
-require "forwardable"
-require "json"
+require 'duckdb'
+require 'forwardable'
+require 'json'
 
 module Statleboncoin
   class Database
@@ -20,16 +20,16 @@ module Statleboncoin
                 "value": "VARCHAR"
               }
             ]
-          }') as r#{" "}
+          }') as r#{' '}
         from raw_items),
       json_parsed_attributes_pivoted as (
-        select#{" "}
+        select#{' '}
           r.url as url,
           r.index_date as index_date,
           r.price_cents as price_cents,
           map_from_entries(r.attributes) as attributes
         from json_parsed
-      )#{" "}
+      )#{' '}
       select
         url,
         index_date,
@@ -47,11 +47,12 @@ module Statleboncoin
       from json_parsed_attributes_pivoted;
     SQL
 
-    def initialize(database_file = "statleboncoin.duckdb")
+    def initialize(database_file = 'statleboncoin.duckdb')
       @db = DuckDB::Database.open database_file
       @conn = @db.connect
-      @conn.query("CREATE TABLE IF NOT EXISTS raw_items (id TEXT PRIMARY KEY, search_params TEXT, raw JSON)")
+      @conn.query('CREATE TABLE IF NOT EXISTS raw_items (id TEXT PRIMARY KEY, search_params TEXT, raw JSON)')
       @conn.query("CREATE OR REPLACE VIEW car_items AS #{CAR_ITEM_VIEW_SQL}")
+      @conn.query('CREATE TABLE IF NOT EXISTS sent_urls (url TEXT PRIMARY KEY, sent_at TIMESTAMP)')
     end
 
     def load_from_parquet(database_folder)
@@ -70,14 +71,26 @@ module Statleboncoin
     def add_raw_items(key_attribute, search_params, items)
       append_raw_items(key_attribute, search_params, items)
     rescue DuckDB::Error
-      puts "Fail to insert using appender, falling back to INSERT"
+      puts 'Fail to insert using appender, falling back to INSERT'
       insert_raw_items(key_attribute, search_params, items)
+    end
+
+    def mark_url_as_sent(urls)
+      appender = @conn.appender('sent_urls')
+      now = Time.now
+      urls.each do |u|
+        appender.begin_row
+        appender.append(u)
+        appender.append(now)
+        appender.end_row
+      end
+      appender.flush
     end
 
     private
 
     def append_raw_items(key_attribute, search_params, items)
-      appender = @conn.appender("raw_items")
+      appender = @conn.appender('raw_items')
       items.each do |item|
         appender.begin_row
         appender.append(item.fetch(key_attribute))
@@ -90,7 +103,7 @@ module Statleboncoin
 
     def insert_raw_items(key_attribute, search_params, items)
       items.each do |item|
-        @conn.query("INSERT OR REPLACE INTO raw_items VALUES (?, ?, ?)", item.fetch(key_attribute), search_params,
+        @conn.query('INSERT OR REPLACE INTO raw_items VALUES (?, ?, ?)', item.fetch(key_attribute), search_params,
                     item.to_json)
       end
     end
