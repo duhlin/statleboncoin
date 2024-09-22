@@ -12,7 +12,6 @@ module Statleboncoin
       puts "recherche #{params} #{options}"
       puts "Initializing database #{database_file}"
       db = Database.new(database_file)
-
       begin
         refresh(db, params, only_newer: options.fetch('only-newer', true))
       ensure
@@ -159,11 +158,13 @@ module Statleboncoin
 
     private
 
+    ANALYZE_MIN_PRICE = 1_000
+
     ANALYZE_SQL = <<~SQL
       select * from (
         select distinct mileage, issuance_date, price -- use distinct because some items are duplicated
         from car_items
-        where coalesce(model, '') = coalesce($model, '') and coalesce(vehicle_damage, '') != 'damaged' and coalesce(car_contract, '') != '1'
+        where coalesce(model, '') = coalesce($model, '') and coalesce(vehicle_damage, '') != 'damaged' and coalesce(car_contract, '') != '1' and price > #{ANALYZE_MIN_PRICE}
       ) s using sample #{SAMPLE_SIZE}
     SQL
 
@@ -200,6 +201,7 @@ module Statleboncoin
       where coalesce(model, '') = coalesce($model, '')
         and coalesce(vehicle_damage, '') != 'damaged'
         and coalesce(car_contract, '') != '1'
+        and price > #{ANALYZE_MIN_PRICE}
         and ($max_price is null or price <= $max_price)
         and ($max_mileage is null or mileage <= $max_mileage)
       order by price - predicted_price

@@ -51,7 +51,7 @@ module Statleboncoin
       @db = DuckDB::Database.open database_file
       @conn = @db.connect
       @conn.query('CREATE TABLE IF NOT EXISTS raw_items (id TEXT PRIMARY KEY, search_params TEXT, raw JSON)')
-      @conn.query("CREATE OR REPLACE VIEW car_items AS #{CAR_ITEM_VIEW_SQL}")
+      @conn.query("CREATE OR REPLACE TABLE car_items AS #{CAR_ITEM_VIEW_SQL}")
       @conn.query('CREATE TABLE IF NOT EXISTS sent_urls (url TEXT PRIMARY KEY, sent_at TIMESTAMP)')
     end
 
