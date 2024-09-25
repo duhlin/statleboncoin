@@ -93,7 +93,7 @@ module Statleboncoin
     end
 
     desc 'archive_raw_items',
-          'Archive the raw_items table'
+         'Archive the raw_items table'
     def archive_raw_items(database_file = 'statleboncoin.duckdb')
       db = Database.new(database_file)
       begin
@@ -275,6 +275,8 @@ module Statleboncoin
         puts "Insert #{items.size} items in database"
         db.add_raw_items('list_id', params, items)
       end
+    rescue HTTPCrawler::Error => e
+      puts "Error while fetching #{params}: #{e}"
     end
   end
 end

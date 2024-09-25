@@ -77,7 +77,6 @@ module Statleboncoin
     def add_raw_items(key_attribute, search_params, items)
       append_raw_items(key_attribute, search_params, items)
     rescue DuckDB::Error
-      puts 'Fail to insert using appender, falling back to INSERT'
       insert_raw_items(key_attribute, search_params, items)
     end
 

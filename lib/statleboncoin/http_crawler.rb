@@ -17,6 +17,8 @@ module Statleboncoin
       'TE' => 'chunked'
     }.freeze
 
+    class Error < StandardError; end
+
     class RecherchePage
       def initialize(content)
         @doc = Nokogiri::HTML content
@@ -25,7 +27,7 @@ module Statleboncoin
       def items
         # items are defined in json format, like this <script id="__NEXT_DATA__" type="application/json">...json...</script>
         next_data = @doc.at_css('script#__NEXT_DATA__')
-        raise "Can't find <script id=\"__NEXT_DATA__\"> in received html document" unless next_data
+        raise Error, "Can't find <script id=\"__NEXT_DATA__\"> in received html document" unless next_data
 
         json = JSON.parse next_data.text
         json.dig('props', 'pageProps', 'searchData', 'ads')
@@ -45,7 +47,7 @@ module Statleboncoin
 
     def get(path)
       res = @conn.get path
-      raise "unexpected status #{res.status}" unless res.status == 200
+      raise Error, "unexpected status #{res.status} for #{path}" unless res.status == 200
 
       res
     end
@@ -53,14 +55,14 @@ module Statleboncoin
     def recherche(params, from_index_date: nil)
       return enum_for(:recherche, params, from_index_date: from_index_date) unless block_given?
 
-      raise 'parms must be a string' unless params.is_a? String
-      raise 'params must not include page=<id>' if params.include? 'page='
+      raise Error, 'parms must be a string' unless params.is_a? String
+      raise Error, 'params must not include page=<id>' if params.include? 'page='
 
       page_id = 1
 
       loop do
         res = get "/recherche?#{params}&page=#{page_id}"
-        raise 'unexpected content-type' unless res.headers['content-type'] == 'text/html; charset=utf-8'
+        raise Error, 'unexpected content-type' unless res.headers['content-type'] == 'text/html; charset=utf-8'
 
         page = RecherchePage.new res.body
         break unless page.items&.any?
