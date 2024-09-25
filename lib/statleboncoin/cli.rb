@@ -43,7 +43,7 @@ module Statleboncoin
       db = Database.new(database_file)
       begin
         crawler = HTTPCrawler.new
-        db.query('select DISTINCT search_params from raw_items').each do |params|
+        db.query('select distinct search_params from raw_items union select distinct search_params from raw_items_archive').each do |params|
           refresh(db, params.first, crawler: crawler, only_newer: true)
         end
       ensure
@@ -87,6 +87,17 @@ module Statleboncoin
       db = Database.new(database_file)
       begin
         analyze_car_model(db, filter, options, $stdout)
+      ensure
+        db.close
+      end
+    end
+
+    desc 'archive_raw_items',
+          'Archive the raw_items table'
+    def archive_raw_items(database_file = 'statleboncoin.duckdb')
+      db = Database.new(database_file)
+      begin
+        db.archive_raw_items
       ensure
         db.close
       end

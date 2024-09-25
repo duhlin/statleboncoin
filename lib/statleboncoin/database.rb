@@ -50,9 +50,15 @@ module Statleboncoin
     def initialize(database_file = 'statleboncoin.duckdb')
       @db = DuckDB::Database.open database_file
       @conn = @db.connect
-      @conn.query('CREATE TABLE IF NOT EXISTS raw_items (id TEXT PRIMARY KEY, search_params TEXT, raw JSON)')
+      @conn.query('CREATE TABLE IF NOT EXISTS raw_items (id TEXT PRIMARY KEY, updated_at timestamp not null, search_params TEXT, raw JSON)')
+      @conn.query('CREATE TABLE IF NOT EXISTS raw_items_archive (id TEXT PRIMARY KEY, updated_at timestamp not null, search_params TEXT, raw JSON)')
       @conn.query("CREATE OR REPLACE TABLE car_items AS #{CAR_ITEM_VIEW_SQL}")
       @conn.query('CREATE TABLE IF NOT EXISTS sent_urls (url TEXT PRIMARY KEY, sent_at TIMESTAMP)')
+    end
+
+    def archive_raw_items
+      @conn.query('INSERT OR REPLACE INTO raw_items_archive(id, updated_at, search_params, raw) SELECT id, now(), search_params, raw FROM raw_items')
+      @conn.query('DROP TABLE raw_items')
     end
 
     def load_from_parquet(database_folder)
@@ -91,9 +97,11 @@ module Statleboncoin
 
     def append_raw_items(key_attribute, search_params, items)
       appender = @conn.appender('raw_items')
+      t = Time.now
       items.each do |item|
         appender.begin_row
         appender.append(item.fetch(key_attribute))
+        appender.append(t)
         appender.append(search_params)
         appender.append(item.to_json)
         appender.end_row
@@ -101,10 +109,14 @@ module Statleboncoin
       appender.flush
     end
 
+    INSERT_RAW_ITEMS_SQL = <<~SQL
+      INSERT OR REPLACE INTO raw_items(id, updated_at, search_params, raw)
+      VALUES (?, ?, ?, ?)
+    SQL
     def insert_raw_items(key_attribute, search_params, items)
+      t = Time.now
       items.each do |item|
-        @conn.query('INSERT OR REPLACE INTO raw_items VALUES (?, ?, ?)', item.fetch(key_attribute), search_params,
-                    item.to_json)
+        @conn.query(INSERT_RAW_ITEMS_SQL, item.fetch(key_attribute), t, search_params, item.to_json)
       end
     end
   end
