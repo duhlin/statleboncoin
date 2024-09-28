@@ -18,6 +18,26 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    
+    - name: duckdb cache
+      id: duckdb-cache
+      uses: actions/cache@v4
+      with:
+        path: duckdb-v1.1.1
+        key: ${{ runner.os }}-duckdb-v1.1.1
+
+    - name: Build duckdb 1.1.1
+      env:
+        DUCKDB_VERSION: '1.1.1'
+      if: steps.duckdb-cache.outputs.cache-hit != 'true'
+      run: |
+        git clone -b v$DUCKDB_VERSION https://github.com/cwida/duckdb.git duckdb-tmp-v$DUCKDB_VERSION
+        cd duckdb-tmp-v$DUCKDB_VERSION && make && cd ..
+        rm -rf duckdb-v$DUCKDB_VERSION
+        mkdir -p duckdb-v$DUCKDB_VERSION/build/release/src duckdb-v$DUCKDB_VERSION/src
+        cp -rip duckdb-tmp-v$DUCKDB_VERSION/build/release/src/*.so duckdb-v$DUCKDB_VERSION/build/release/src
+        cp -rip duckdb-tmp-v$DUCKDB_VERSION/src/include duckdb-v$DUCKDB_VERSION/src/
+        
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
