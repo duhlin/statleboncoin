@@ -187,6 +187,7 @@ module Statleboncoin
       issuance_date: 'issuance_date',
       price: 'price',
       predicted_price: "$base_price + $cost_per_kms * mileage + $cost_per_day * date_diff('day', issuance_date, current_date()) as predicted_price",
+      predicted_price2: "$base_price * (1 -  mileage / #{Analysis::HOME_PREDICT_MAX_MILEAGE} - date_diff('day', issuance_date, current_date())/#{Analysis::HOME_PREDICT_MAX_AGE_DAYS}) as predicted_price2",
       sent_at: 'sent_at'
     }
     BEST_DEALS_ITEMS = Struct.new(*BEST_DEALS_COLUMNS.keys) do
@@ -197,10 +198,11 @@ module Statleboncoin
         end
 
         diff = (price - predicted_price).to_i.to_s.rjust(5)
+        diff2 = (price - predicted_price2).to_i.to_s.rjust(5)
         mileage_s = mileage.to_s.rjust(7)
         price_s = price.to_s.rjust(5)
         new = sent_at.nil? ? ' **NEW**' : ''
-        "#{brand} - #{model}, #{mileage_s} kms, #{issuance_date.strftime('%Y/%m')}: #{price_s} € (#{diff} €) #{url}#{new}"
+        "#{brand} - #{model}, #{mileage_s} kms, #{issuance_date.strftime('%Y/%m')}: #{price_s} € (#{diff} € - #{diff2} €) #{url}#{new}"
       end
     end
 
@@ -215,7 +217,7 @@ module Statleboncoin
         and price > #{ANALYZE_MIN_PRICE}
         and ($max_price is null or price <= $max_price)
         and ($max_mileage is null or mileage <= $max_mileage)
-      order by price - predicted_price
+      order by price - predicted_price2
       limit $best_deal_size
     SQL
 
@@ -237,6 +239,7 @@ module Statleboncoin
       output.puts "Analysis for #{model} based on #{sample_items.size} items"
       analysis.linear_regression
       analysis.explain(output)
+      analysis.explain2(output)
 
       # Find the best deals, i.e. the lowest price compared to the prediction
       output.puts "Best #{options[:best_deal_size]} deals for #{model}"

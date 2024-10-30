@@ -4,6 +4,9 @@ module Statleboncoin
   class Analysis
     attr_reader :r_squared
 
+    HOME_PREDICT_MAX_MILEAGE = 300_000.0
+    HOME_PREDICT_MAX_AGE_DAYS = 365.0 * 15
+
     def initialize(items)
       @items = items
     end
@@ -44,7 +47,20 @@ module Statleboncoin
 
       output.puts format('Linear regression: price = %0.2f + %0.2f * mileage_kkms + %0.2f * age_years', base_price,
                          cost_per_kms * 1_000, cost_per_day * 365.0)
+      output.puts format('max_mileage = %0.2f, max_age = %0.2f', -base_price / cost_per_kms,
+                         -base_price / (cost_per_day * 365))
       output.puts format('R^2 = %0.2f', @r_squared)
+    end
+
+    def explain2(output = $stdout)
+      raise 'You must call linear_regression before calling explain' unless @beta
+
+      output.puts format(
+        "Prediction (#{HOME_PREDICT_MAX_MILEAGE} kms, #{(HOME_PREDICT_MAX_AGE_DAYS / 365).to_i} years): price = %0.2f - %0.2f * mileage_kkms - %0.2f * age_years",
+        base_price,
+        base_price * 1_000 / HOME_PREDICT_MAX_MILEAGE,
+        base_price / (HOME_PREDICT_MAX_AGE_DAYS / 365.0)
+      )
     end
 
     def base_price
@@ -69,6 +85,10 @@ module Statleboncoin
       x = self.class.normalized_x(item)
       x_matrix = Matrix.rows([x])
       (x_matrix * @beta)[0, 0]
+    end
+
+    def predict_price2(item)
+      base_price * (1 - item.mileage / 200_000.0 - (Date.today - item.issuance_date.to_date).to_i / (365 * 14.0))
     end
   end
 end
