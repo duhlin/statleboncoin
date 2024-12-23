@@ -14,22 +14,35 @@ module Statleboncoin
             "url": "VARCHAR",
             "index_date": "TIMESTAMP",
             "price_cents": "NUMERIC",
+            "location": {
+              "country_id": "VARCHAR",
+              "region_id": "INTEGER",
+              "region_name": "VARCHAR",
+              "department_id": "INTEGER",
+              "department_name": "VARCHAR",
+              "city_label": "VARCHAR",
+              "city": "VARCHAR",
+              "zipcode": "VARCHAR",
+              "lat": "NUMERIC",
+              "lng": "NUMERIC"
+            },
             "attributes": [
               {
                 "key": "VARCHAR",
                 "value": "VARCHAR"
               }
             ]
-          }') as r#{' '}
+          }') as r
         from raw_items),
       json_parsed_attributes_pivoted as (
-        select#{' '}
+        select
           r.url as url,
           r.index_date as index_date,
           r.price_cents as price_cents,
+          r.location as location,
           map_from_entries(r.attributes) as attributes
         from json_parsed
-      )#{' '}
+      )
       select
         url,
         index_date,
@@ -43,13 +56,18 @@ module Statleboncoin
         cast(attributes['horse_power'][1] as integer) as horse_power,
         cast(attributes['horse_power_din'][1] as integer) as horse_power_din,
         attributes['vehicle_damage'][1] as vehicle_damage,
-        attributes['car_contract'][1] as car_contract
+        attributes['car_contract'][1] as car_contract,
+        location
       from json_parsed_attributes_pivoted;
     SQL
 
     def initialize(database_file = 'statleboncoin.duckdb')
+      raise ArgumentError, 'Database file must end with .duckdb' unless database_file.end_with?('.duckdb')
+
       @db = DuckDB::Database.open database_file
       @conn = @db.connect
+      @conn.query('INSTALL spatial')
+      @conn.query('LOAD spatial')
       @conn.query('CREATE TABLE IF NOT EXISTS raw_items (id TEXT PRIMARY KEY, updated_at timestamp not null, search_params TEXT, raw JSON)')
       @conn.query('CREATE TABLE IF NOT EXISTS raw_items_archive (id TEXT PRIMARY KEY, updated_at timestamp not null, search_params TEXT, raw JSON)')
       @conn.query("CREATE OR REPLACE TABLE car_items AS #{CAR_ITEM_VIEW_SQL}")
@@ -57,7 +75,12 @@ module Statleboncoin
     end
 
     def archive_raw_items
-      @conn.query('INSERT OR REPLACE INTO raw_items_archive(id, updated_at, search_params, raw) SELECT id, now(), search_params, raw FROM raw_items')
+      # create or replace is very slow, so use insert and update
+      # @conn.query('INSERT OR REPLACE INTO raw_items_archive(id, updated_at, search_params, raw) SELECT id, now(), search_params, raw FROM raw_items')
+      @conn.query('BEGIN TRANSACTION')
+      @conn.query('INSERT INTO raw_items_archive(id, updated_at, search_params, raw) SELECT id, updated_at, search_params, raw FROM raw_items ANTI JOIN raw_items_archive USING (id)')
+      @conn.query('UPDATE raw_items_archive SET updated_at = raw_items.updated_at, search_params = raw_items.search_params, raw = raw_items.raw FROM raw_items WHERE raw_items_archive.id = raw_items.id')
+      @conn.query('COMMIT')
       @conn.query('DROP TABLE raw_items')
     end
 

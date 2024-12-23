@@ -2,6 +2,9 @@ require 'thor'
 
 module Statleboncoin
   class CLI < Thor
+    def self.exit_on_failure?
+      true
+    end
     BEST_DEAL_SIZE = 20
     SAMPLE_SIZE = 200
 
@@ -83,10 +86,14 @@ module Statleboncoin
     option :max_price, type: :numeric
     option :max_mileage, type: :numeric
     option :max_age, type: :numeric
-    def analyze_car(filter, database_file = 'statleboncoin.duckdb')
+    option :max_distance, type: :numeric
+    option :my_lat, type: :numeric
+    option :my_lng, type: :numeric
+    option :horse_power_din, type: :numeric
+    def analyze_car(model, database_file = 'statleboncoin.duckdb')
       db = Database.new(database_file)
       begin
-        analyze_car_model(db, filter, options, $stdout)
+        analyze_car_model(db, model, options, $stdout)
       ensure
         db.close
       end
@@ -109,6 +116,9 @@ module Statleboncoin
     option :max_price, type: :numeric
     option :max_mileage, type: :numeric
     option :max_age, type: :numeric
+    option :max_distance, type: :numeric
+    option :my_lat, type: :numeric
+    option :my_lng, type: :numeric
     def analyze_car_all(database_file = 'statleboncoin.duckdb')
       db = Database.new(database_file)
       begin
@@ -124,6 +134,9 @@ module Statleboncoin
     option :max_price, type: :numeric
     option :max_mileage, type: :numeric
     option :max_age, type: :numeric
+    option :max_distance, type: :numeric
+    option :my_lat, type: :numeric
+    option :my_lng, type: :numeric
     option :smtp_server, type: :string, default: 'smtp.gmail.com'
     option :smtp_port, type: :numeric, default: 587
     option :smtp_domain, type: :string, default: 'gmail.com'
@@ -176,6 +189,7 @@ module Statleboncoin
         select distinct mileage, issuance_date, price -- use distinct because some items are duplicated
         from car_items
         where coalesce(model, '') = coalesce($model, '') and coalesce(vehicle_damage, '') != 'damaged' and coalesce(car_contract, '') != '1' and price > #{ANALYZE_MIN_PRICE}
+        and ($horse_power_din is null or horse_power_din = $horse_power_din)
       ) s using sample #{SAMPLE_SIZE}
     SQL
 
@@ -185,6 +199,7 @@ module Statleboncoin
       model: 'model',
       mileage: 'mileage',
       issuance_date: 'issuance_date',
+      distance: 'st_distance_spheroid(ST_Point(location.lat, location.lng), ST_Point($my_lat, $my_lng))/1000 as distance',
       price: 'price',
       predicted_price: "$base_price + $cost_per_kms * mileage + $cost_per_day * date_diff('day', issuance_date, current_date()) as predicted_price",
       predicted_price2: "$base_price * (1 -  mileage / #{Analysis::HOME_PREDICT_MAX_MILEAGE} - date_diff('day', issuance_date, current_date())/#{Analysis::HOME_PREDICT_MAX_AGE_DAYS}) as predicted_price2",
@@ -201,8 +216,9 @@ module Statleboncoin
         diff2 = (price - predicted_price2).to_i.to_s.rjust(5)
         mileage_s = mileage.to_s.rjust(7)
         price_s = price.to_s.rjust(5)
+        distance_s = distance.to_i.to_s.rjust(3)
         new = sent_at.nil? ? ' **NEW**' : ''
-        "#{brand} - #{model}, #{mileage_s} kms, #{issuance_date.strftime('%Y/%m')}: #{price_s} € (#{diff} € - #{diff2} €) #{url}#{new}"
+        "#{brand} - #{model}, #{mileage_s} kms, #{distance_s} kms away, #{issuance_date.strftime('%Y/%m')}: #{price_s} € (#{diff} € - #{diff2} €) #{url}#{new}"
       end
     end
 
@@ -217,6 +233,9 @@ module Statleboncoin
         and price > #{ANALYZE_MIN_PRICE}
         and ($max_price is null or price <= $max_price)
         and ($max_mileage is null or mileage <= $max_mileage)
+        and ($max_age is null or date_diff('year', issuance_date, current_date()) <= $max_age)
+        and ($max_distance is null or distance <= $max_distance)
+        and ($horse_power_din is null or horse_power_din = $horse_power_din)
       order by price - predicted_price2
       limit $best_deal_size
     SQL
@@ -232,9 +251,14 @@ module Statleboncoin
 
     def analyze_car_model(db, model, options, output = $stdout)
       s = Struct.new(:mileage, :issuance_date, :price)
-      sample_items = db.query(ANALYZE_SQL, model: model).map do |item|
+      sample_items = db.query(ANALYZE_SQL, model: model, horse_power_din: options[:horse_power_din]).map do |item|
         s.new(Integer(item[0]), item[1].to_date, Float(item[2]))
       end
+      if sample_items.empty?
+        output.puts "No items for #{model}"
+        return []
+      end
+
       analysis = Analysis.new(sample_items)
       output.puts "Analysis for #{model} based on #{sample_items.size} items"
       analysis.linear_regression
@@ -243,10 +267,21 @@ module Statleboncoin
 
       # Find the best deals, i.e. the lowest price compared to the prediction
       output.puts "Best #{options[:best_deal_size]} deals for #{model}"
-      records = db.query(BEST_DEALS_SQL, model: model, base_price: analysis.base_price,
-                                         cost_per_kms: analysis.cost_per_kms, cost_per_day: analysis.cost_per_day,
-                                         max_price: options[:max_price], max_mileage: options[:max_mileage],
-                                         best_deal_size: options.fetch(:best_deal_size))
+      records = db.query(
+        BEST_DEALS_SQL,
+        model: model,
+        base_price: analysis.base_price,
+        cost_per_kms: analysis.cost_per_kms,
+        cost_per_day: analysis.cost_per_day,
+        max_price: options[:max_price],
+        max_mileage: options[:max_mileage],
+        max_age: options[:max_age],
+        best_deal_size: options.fetch(:best_deal_size),
+        max_distance: options[:max_distance],
+        my_lat: options[:my_lat],
+        my_lng: options[:my_lng],
+        horse_power_din: options[:horse_power_din]
+      )
       items = records.map do |rec|
         BEST_DEALS_ITEMS.new(*rec)
       end
