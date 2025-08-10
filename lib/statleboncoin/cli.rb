@@ -61,7 +61,7 @@ module Statleboncoin
         count_if(coalesce(vehicle_damage, '') != 'damaged' and coalesce(car_contract, '') != '1')
       from car_items
       group by model
-      order by count(*) desc
+      order by model
     SQL
 
     desc 'list_models',
@@ -69,7 +69,7 @@ module Statleboncoin
     def list_models(database_file = 'statleboncoin.duckdb')
       db = Database.new(database_file)
       begin
-        models = db.query(LIST_MODELS_SQL)
+        models = db.query(LIST_MODELS_SQL).to_a
         model_max_size = models.map(&:first).map { |model| model&.size || 0 }.max
         puts "#{'Model'.ljust(model_max_size)} | Items | Excluding damaged and contract cars"
         models.each do |model, count, effective_count|
@@ -196,37 +196,81 @@ module Statleboncoin
     BEST_DEALS_COLUMNS = {
       url: 'car_items.url',
       brand: 'brand',
-      model: 'model',
+      subject: 'subject',
+      model: 'car_items.model',
       mileage: 'mileage',
       issuance_date: 'issuance_date',
-      distance: 'st_distance_spheroid(ST_Point(location.lat, location.lng), ST_Point($my_lat, $my_lng))/1000 as distance',
+      distance: 'st_distance_spheroid(ST_Point(location.lat, location.lng), ST_Point(my_pos.lat, my_pos.lng))/1000 as distance',
       price: 'price',
-      predicted_price: "$base_price + $cost_per_kms * mileage + $cost_per_day * date_diff('day', issuance_date, current_date()) as predicted_price",
-      predicted_price2: "$base_price * (1 -  mileage / #{Analysis::HOME_PREDICT_MAX_MILEAGE} - date_diff('day', issuance_date, current_date())/#{Analysis::HOME_PREDICT_MAX_AGE_DAYS}) as predicted_price2",
+      age_in_days: 'date_diff(\'day\', issuance_date, current_date()) as age_in_days',
+      regression_predicted_price: "greatest(1, (analysis.base_price + analysis.cost_per_kms * mileage + analysis.cost_per_day * age_in_days)) as regression_predicted_price",
+      regression_discount: "(regression_predicted_price - price)/regression_predicted_price as regression_discount",
+      my_predicted_price: "greatest(1, analysis.base_price * (1 -  mileage / #{Analysis::HOME_PREDICT_MAX_MILEAGE} - age_in_days/#{Analysis::HOME_PREDICT_MAX_AGE_DAYS})) as my_predicted_price",
+      my_discount: "(my_predicted_price - price)/my_predicted_price as my_discount",
       sent_at: 'sent_at'
     }
     BEST_DEALS_ITEMS = Struct.new(*BEST_DEALS_COLUMNS.keys) do
       def print(analysis)
         check_predicted_price = analysis.predict_price(self)
-        if (check_predicted_price - predicted_price).abs > 50
+        if (check_predicted_price - regression_predicted_price).abs > 50
           raise "unexpected diff: check_predicted_price=#{check_predicted_price} predicted_price=#{predicted_price}"
         end
 
-        diff = (price - predicted_price).to_i.to_s.rjust(5)
-        diff2 = (price - predicted_price2).to_i.to_s.rjust(5)
+        regression_discount_s = (regression_discount * 100).to_i.to_s.rjust(4)
+        my_discount_s = (my_discount * 100).to_i.to_s.rjust(4)
         mileage_s = mileage.to_s.rjust(7)
         price_s = price.to_s.rjust(5)
         distance_s = distance.to_i.to_s.rjust(3)
-        new = sent_at.nil? ? ' **NEW**' : ''
-        "#{brand} - #{model}, #{mileage_s} kms, #{distance_s} kms away, #{issuance_date.strftime('%Y/%m')}: #{price_s} € (#{diff} € - #{diff2} €) #{url}#{new}"
+        new = sent_at.nil? ? ' **NEW**' : '       '
+        "#{brand} - #{model.delete_prefix("#{brand}_")}, #{mileage_s} kms, #{distance_s} kms away, #{issuance_date.strftime('%Y/%m')}: #{price_s} € (reg=#{regression_discount_s} %,  my=#{my_discount_s} %) #{url}#{new} #{subject}"
       end
     end
 
-    BEST_DEALS_SQL = <<~SQL
+    CREATE_TABLE_MY_POSITION = <<~SQL
+      create or replace table my_position
+      AS select
+        $my_lat as lat,
+        $my_lng as lng
+    SQL
+
+    CREATE_VIEW_ANALYZED_CARS = <<~SQL
+      create or replace view analyzed_cars
+      as
       select
-        distinct #{BEST_DEALS_COLUMNS.values.join(', ')} -- use distinct because some items are duplicated
+        car_items.id,
+        car_items.vehicle_damage,
+        car_items.car_contract,
+        car_items.horse_power_din,
+        analysis.base_price,
+        analysis.cost_per_kms,
+        analysis.cost_per_day,
+        #{BEST_DEALS_COLUMNS.values.join(', ')}
       from car_items
-      left outer join sent_urls on sent_urls.url = car_items.url
+      join car_analysis_results as analysis using (model)
+      cross join my_position as my_pos
+      left outer join sent_urls using (url)
+    SQL
+
+    CREATE_TABLE_CAR_ANALYSIS_RESULTS = <<~SQL
+      create table if not exists car_analysis_results(
+        model text primary key,
+        base_price numeric not null,
+        cost_per_kms numeric not null,
+        cost_per_day numeric not null
+      )
+    SQL
+
+    INSERT_CAR_ANALYSIS_RESULTS = <<~SQL
+      insert or replace into car_analysis_results(model, base_price, cost_per_kms, cost_per_day)
+      select
+        $model as model,
+        $base_price as base_price,
+        $cost_per_kms as cost_per_kms,
+        $cost_per_day as cost_per_day
+    SQL
+
+    BEST_DEALS_SQL = <<~SQL
+      select #{BEST_DEALS_COLUMNS.keys.join(", ")} from analyzed_cars
       where coalesce(model, '') = coalesce($model, '')
         and coalesce(vehicle_damage, '') != 'damaged'
         and coalesce(car_contract, '') != '1'
@@ -236,7 +280,7 @@ module Statleboncoin
         and ($max_age is null or date_diff('year', issuance_date, current_date()) <= $max_age)
         and ($max_distance is null or distance <= $max_distance)
         and ($horse_power_din is null or horse_power_din = $horse_power_din)
-      order by price - predicted_price2
+      order by my_discount desc
       limit $best_deal_size
     SQL
 
@@ -267,19 +311,25 @@ module Statleboncoin
 
       # Find the best deals, i.e. the lowest price compared to the prediction
       output.puts "Best #{options[:best_deal_size]} deals for #{model}"
+      
+      # create required base tables
+      db.query(CREATE_TABLE_MY_POSITION, my_lat: options[:my_lat], my_lng: options[:my_lng])
+      db.query(CREATE_TABLE_CAR_ANALYSIS_RESULTS)
+      db.query(INSERT_CAR_ANALYSIS_RESULTS,
+               model: model,
+               base_price: analysis.base_price,
+               cost_per_kms: analysis.cost_per_kms,
+               cost_per_day: analysis.cost_per_day)
+      db.query(CREATE_VIEW_ANALYZED_CARS)
+      
       records = db.query(
         BEST_DEALS_SQL,
         model: model,
-        base_price: analysis.base_price,
-        cost_per_kms: analysis.cost_per_kms,
-        cost_per_day: analysis.cost_per_day,
         max_price: options[:max_price],
         max_mileage: options[:max_mileage],
         max_age: options[:max_age],
         best_deal_size: options.fetch(:best_deal_size),
         max_distance: options[:max_distance],
-        my_lat: options[:my_lat],
-        my_lng: options[:my_lng],
         horse_power_din: options[:horse_power_din]
       )
       items = records.map do |rec|

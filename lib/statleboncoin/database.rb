@@ -9,11 +9,15 @@ module Statleboncoin
 
     CAR_ITEM_VIEW_SQL = <<~SQL
       with json_parsed as (
-        select json_transform(raw,
+        select
+          id,
+          search_params,
+          json_transform(raw,
           '{
             "url": "VARCHAR",
             "index_date": "TIMESTAMP",
             "price_cents": "NUMERIC",
+            "subject": "VARCHAR",
             "location": {
               "country_id": "VARCHAR",
               "region_id": "INTEGER",
@@ -36,27 +40,33 @@ module Statleboncoin
         from raw_items),
       json_parsed_attributes_pivoted as (
         select
+          id,
+          search_params,
           r.url as url,
           r.index_date as index_date,
           r.price_cents as price_cents,
           r.location as location,
+          r.subject as subject,
           map_from_entries(r.attributes) as attributes
         from json_parsed
       )
       select
+        id,
+        search_params,
         url,
         index_date,
+        subject,
         cast(price_cents / 100 as integer) as price,
-        attributes['brand'][1] as brand,
-        attributes['model'][1] as model,
-        cast(attributes['regdate'][1] as integer) as reg_year,
-        if(attributes['issuance_date'][1] is not null, strptime(attributes['issuance_date'][1], '%m/%Y'), strptime(attributes['regdate'][1], '%Y')) as issuance_date,
-        cast(attributes['mileage'][1] as integer) as mileage,
-        attributes['is_import'][1] as is_import,
-        cast(attributes['horse_power'][1] as integer) as horse_power,
-        cast(attributes['horse_power_din'][1] as integer) as horse_power_din,
-        attributes['vehicle_damage'][1] as vehicle_damage,
-        attributes['car_contract'][1] as car_contract,
+        attributes['u_car_brand'] as brand,
+        attributes['u_car_model'] as model,
+        cast(attributes['regdate'] as integer) as reg_year,
+        if(attributes['issuance_date'] is not null, strptime(attributes['issuance_date'], '%m/%Y'), strptime(attributes['regdate'], '%Y')) as issuance_date,
+        cast(attributes['mileage'] as integer) as mileage,
+        attributes['is_import'] as is_import,
+        cast(attributes['horse_power'] as integer) as horse_power,
+        cast(attributes['horse_power_din'] as integer) as horse_power_din,
+        attributes['vehicle_damage'] as vehicle_damage,
+        attributes['car_contract'] as car_contract,
         location
       from json_parsed_attributes_pivoted;
     SQL
