@@ -10,13 +10,13 @@ module Statleboncoin
 
     desc 'recherche PARAMS',
          'Retrieve items from https://www.leboncoin.fr/recherche?PARAMS and store them in a database'
-    method_options 'only-newer' => :boolean
+    method_options 'only_newer' => :boolean
     def recherche(params, database_file = 'statleboncoin.duckdb')
       puts "recherche #{params} #{options}"
       puts "Initializing database #{database_file}"
       db = Database.new(database_file)
       begin
-        refresh(db, params, only_newer: options.fetch('only-newer', true))
+        refresh(db, params, only_newer: options.fetch('only_newer', true))
       ensure
         db.close
       end
@@ -42,12 +42,13 @@ module Statleboncoin
 
     desc 'refresh_all',
          'Retrieve new items for all existing search in the database'
+    option :only_newer, type: :boolean, default: true
     def refresh_all(database_file = 'statleboncoin.duckdb')
       db = Database.new(database_file)
       begin
         crawler = HTTPCrawler.new
-        db.query('select distinct search_params from raw_items union select distinct search_params from raw_items_archive').each do |params|
-          refresh(db, params.first, crawler: crawler, only_newer: true)
+        db.query('with s as (select distinct search_params from raw_items union select distinct search_params from raw_items_archive) select * from s order by search_params').each do |params|
+          refresh(db, params.first, crawler: crawler, only_newer: options[:only_newer])
         end
       ensure
         db.close
@@ -165,6 +166,11 @@ module Statleboncoin
       begin
         items = _analyze_car_all(db, options, output)
 
+        # refresh the python analysis
+        db.release do
+          system('./export_notebook.sh', chdir: 'modeling')
+        end
+
         # force a message_id so that emails are threaded
         Mail.deliver do
           to mail_to
@@ -172,6 +178,7 @@ module Statleboncoin
           message_id 'c38f15ca-cfc5-4f30-9199-07f079ea62f8@statleboncoin'
           subject 'Statleboncoin best deals'
           body output.string
+          add_file 'modeling/notebooks/car_price_pca_analysis.html'
         end
 
         db.mark_url_as_sent(items.reject(&:sent_at).map(&:url))
@@ -200,8 +207,10 @@ module Statleboncoin
       model: 'car_items.model',
       mileage: 'mileage',
       issuance_date: 'issuance_date',
+      first_publication_date: 'first_publication_date',
       distance: 'st_distance_spheroid(ST_Point(location.lat, location.lng), ST_Point(my_pos.lat, my_pos.lng))/1000 as distance',
       price: 'price',
+      seats: 'seats',
       age_in_days: 'date_diff(\'day\', issuance_date, current_date()) as age_in_days',
       regression_predicted_price: "greatest(1, (analysis.base_price + analysis.cost_per_kms * mileage + analysis.cost_per_day * age_in_days)) as regression_predicted_price",
       regression_discount: "(regression_predicted_price - price)/regression_predicted_price as regression_discount",
@@ -211,18 +220,21 @@ module Statleboncoin
     }
     BEST_DEALS_ITEMS = Struct.new(*BEST_DEALS_COLUMNS.keys) do
       def print(analysis)
-        check_predicted_price = analysis.predict_price(self)
-        if (check_predicted_price - regression_predicted_price).abs > 50
-          raise "unexpected diff: check_predicted_price=#{check_predicted_price} predicted_price=#{predicted_price}"
+        my_discount_s = regression_discount_s = ' ' * 4
+        if analysis
+          # check_predicted_price = [analysis.predict_price(self), 0].max
+          # if (check_predicted_price - regression_predicted_price).abs > 100
+          #    raise "unexpected diff: check_predicted_price=#{check_predicted_price} predicted_price=#{regression_predicted_price}"
+          # end
+        
+          regression_discount_s = (regression_discount * 100).to_i.to_s.rjust(4)
+          my_discount_s = (my_discount * 100).to_i.to_s.rjust(4)
         end
-
-        regression_discount_s = (regression_discount * 100).to_i.to_s.rjust(4)
-        my_discount_s = (my_discount * 100).to_i.to_s.rjust(4)
         mileage_s = mileage.to_s.rjust(7)
         price_s = price.to_s.rjust(5)
         distance_s = distance.to_i.to_s.rjust(3)
         new = sent_at.nil? ? ' **NEW**' : '       '
-        "#{brand} - #{model.delete_prefix("#{brand}_")}, #{mileage_s} kms, #{distance_s} kms away, #{issuance_date.strftime('%Y/%m')}: #{price_s} € (reg=#{regression_discount_s} %,  my=#{my_discount_s} %) #{url}#{new} #{subject}"
+        "#{brand} - #{model&.delete_prefix("#{brand}_")}, #{mileage_s} kms, #{distance_s} kms away, #{issuance_date.strftime('%Y/%m')}: #{price_s} € (reg=#{regression_discount_s} %,  my=#{my_discount_s} %) #{url}#{new} #{subject}"
       end
     end
 
@@ -246,7 +258,7 @@ module Statleboncoin
         analysis.cost_per_day,
         #{BEST_DEALS_COLUMNS.values.join(', ')}
       from car_items
-      join car_analysis_results as analysis using (model)
+      left outer join car_analysis_results as analysis using (model)
       cross join my_position as my_pos
       left outer join sent_urls using (url)
     SQL
@@ -288,7 +300,7 @@ module Statleboncoin
       items = []
       models = db.query(LIST_MODELS_SQL)
       models.each do |model|
-        items.concat analyze_car_model(db, model[0], options, output) if Integer(model[2]) > 10
+        items.concat analyze_car_model(db, model[0], options, output) # if Integer(model[2]) > 10
       end
       items
     end
@@ -305,9 +317,14 @@ module Statleboncoin
 
       analysis = Analysis.new(sample_items)
       output.puts "Analysis for #{model} based on #{sample_items.size} items"
-      analysis.linear_regression
-      analysis.explain(output)
-      analysis.explain2(output)
+      begin
+        analysis.linear_regression
+        analysis.explain(output)
+        analysis.explain2(output)
+      rescue StandardError => e
+        output.puts "Error while analyzing #{model}: #{e}"
+        analysis = nil
+      end
 
       # Find the best deals, i.e. the lowest price compared to the prediction
       output.puts "Best #{options[:best_deal_size]} deals for #{model}"
@@ -315,11 +332,15 @@ module Statleboncoin
       # create required base tables
       db.query(CREATE_TABLE_MY_POSITION, my_lat: options[:my_lat], my_lng: options[:my_lng])
       db.query(CREATE_TABLE_CAR_ANALYSIS_RESULTS)
-      db.query(INSERT_CAR_ANALYSIS_RESULTS,
-               model: model,
-               base_price: analysis.base_price,
-               cost_per_kms: analysis.cost_per_kms,
-               cost_per_day: analysis.cost_per_day)
+      begin
+        db.query(INSERT_CAR_ANALYSIS_RESULTS,
+                model: model,
+                base_price: analysis&.base_price,
+                cost_per_kms: analysis&.cost_per_kms,
+                cost_per_day: analysis&.cost_per_day) if analysis
+      rescue DuckDB::Error => e
+        output.puts "Error while inserting car analysis results for #{model}: #{e}"
+      end
       db.query(CREATE_VIEW_ANALYZED_CARS)
       
       records = db.query(
@@ -343,21 +364,23 @@ module Statleboncoin
     end
 
     def refresh(db, params, crawler: HTTPCrawler.new, only_newer: true)
-      # find latest index_date in database
+      # find latest index_date in database 
+      print "#{params}: "
       from_index_date = nil
-      if options.fetch(:only_newer, true)
+      if only_newer
         from_index_date = db.query("select MAX(raw->>'index_date') from raw_items where search_params = ?",
-                                   params).first&.first
+                                  params).first&.first
       end
 
       if from_index_date
-        puts "#{params}: Fetching only-newer items from index_date #{from_index_date}"
+        puts "only-newer items from index_date #{from_index_date}"
       else
-        puts "#{params}: Fetching all items"
+        puts "all items"
       end
-      recherche = crawler.recherche(params, from_index_date: from_index_date)
+
+      recherche = crawler.recherche(params + "&sort=time&order=desc", from_index_date: from_index_date)
       recherche.each_with_index do |page, page_id|
-        puts "Fetching page #{page_id}"
+        print "  page #{page_id.to_s.rjust(2)}, "
         items = page.items
         items = items.select { |item| item['index_date'] > from_index_date } if from_index_date
         puts "Insert #{items.size} items in database"

@@ -16,6 +16,7 @@ module Statleboncoin
           '{
             "url": "VARCHAR",
             "index_date": "TIMESTAMP",
+            "first_publication_date": "TIMESTAMP",
             "price_cents": "NUMERIC",
             "subject": "VARCHAR",
             "location": {
@@ -44,6 +45,7 @@ module Statleboncoin
           search_params,
           r.url as url,
           r.index_date as index_date,
+          r.first_publication_date as first_publication_date,
           r.price_cents as price_cents,
           r.location as location,
           r.subject as subject,
@@ -55,10 +57,12 @@ module Statleboncoin
         search_params,
         url,
         index_date,
+        first_publication_date,
         subject,
         cast(price_cents / 100 as integer) as price,
-        attributes['u_car_brand'] as brand,
-        attributes['u_car_model'] as model,
+        coalesce(attributes['u_car_brand'], attributes['u_utility_brand']) as brand,
+        coalesce(attributes['u_car_model'], attributes['u_utility_model']) as model,
+        coalesce(attributes['u_car_finition'], attributes['u_utility_finition']) as finition,
         cast(attributes['regdate'] as integer) as reg_year,
         if(attributes['issuance_date'] is not null, strptime(attributes['issuance_date'], '%m/%Y'), strptime(attributes['regdate'], '%Y')) as issuance_date,
         cast(attributes['mileage'] as integer) as mileage,
@@ -67,6 +71,7 @@ module Statleboncoin
         cast(attributes['horse_power_din'] as integer) as horse_power_din,
         attributes['vehicle_damage'] as vehicle_damage,
         attributes['car_contract'] as car_contract,
+        attributes['seats'] as seats,
         location
       from json_parsed_attributes_pivoted;
     SQL
@@ -74,6 +79,7 @@ module Statleboncoin
     def initialize(database_file = 'statleboncoin.duckdb')
       raise ArgumentError, 'Database file must end with .duckdb' unless database_file.end_with?('.duckdb')
 
+      @database_file = database_file
       @db = DuckDB::Database.open database_file
       @conn = @db.connect
       @conn.query('INSTALL spatial')
@@ -82,6 +88,14 @@ module Statleboncoin
       @conn.query('CREATE TABLE IF NOT EXISTS raw_items_archive (id TEXT PRIMARY KEY, updated_at timestamp not null, search_params TEXT, raw JSON)')
       @conn.query("CREATE OR REPLACE TABLE car_items AS #{CAR_ITEM_VIEW_SQL}")
       @conn.query('CREATE TABLE IF NOT EXISTS sent_urls (url TEXT PRIMARY KEY, sent_at TIMESTAMP)')
+    end
+
+    def release
+      @conn.disconnect
+      @db.close
+      yield
+      @db = DuckDB::Database.open @database_file
+      @conn = @db.connect
     end
 
     def archive_raw_items

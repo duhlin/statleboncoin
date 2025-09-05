@@ -1,0 +1,343 @@
+{
+    "list_id": 3044019866,
+    "first_publication_date": "2025-08-23 12:02:05",
+    "expiration_date": "2025-10-22 12:02:05",
+    "index_date": "2025-08-23 12:02:05",
+    "status": "active",
+    "category_id": "5",
+    "category_name": "Utilitaires",
+    "subject": "Renault kangoo e-tech grand confort 19 achat integral 5 places",
+    "body": "",
+    "brand": "leboncoin",
+    "ad_type": "offer",
+    "url": "https://www.leboncoin.fr/ad/utilitaires/3044019866",
+    "price": [
+        13500
+    ],
+    "price_cents": 1350000,
+    "images": {
+        "thumb_url": "https://img.leboncoin.fr/api/v1/lbcpb1/images/2b/a4/72/2ba472303cede4eb33e64c4dd6d3afccc003e4f5.jpg?rule=ad-thumb",
+        "small_url": "https://img.leboncoin.fr/api/v1/lbcpb1/images/2b/a4/72/2ba472303cede4eb33e64c4dd6d3afccc003e4f5.jpg?rule=ad-small",
+        "nb_images": 3,
+        "urls": [
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/2b/a4/72/2ba472303cede4eb33e64c4dd6d3afccc003e4f5.jpg?rule=ad-image",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/84/1b/a7/841ba7d7b951ce5ea7a987456d3071ebe63fae03.jpg?rule=ad-image",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/c4/e7/2b/c4e72b00d9a8b9660affb677f17a7ae3fd372a3b.jpg?rule=ad-image"
+        ],
+        "urls_thumb": [
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/2b/a4/72/2ba472303cede4eb33e64c4dd6d3afccc003e4f5.jpg?rule=ad-thumb",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/84/1b/a7/841ba7d7b951ce5ea7a987456d3071ebe63fae03.jpg?rule=ad-thumb",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/c4/e7/2b/c4e72b00d9a8b9660affb677f17a7ae3fd372a3b.jpg?rule=ad-thumb"
+        ],
+        "urls_large": [
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/2b/a4/72/2ba472303cede4eb33e64c4dd6d3afccc003e4f5.jpg?rule=ad-large",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/84/1b/a7/841ba7d7b951ce5ea7a987456d3071ebe63fae03.jpg?rule=ad-large",
+            "https://img.leboncoin.fr/api/v1/lbcpb1/images/c4/e7/2b/c4e72b00d9a8b9660affb677f17a7ae3fd372a3b.jpg?rule=ad-large"
+        ]
+    },
+    "attributes": [
+        {
+            "key": "profile_picture_url",
+            "value": "https://img.leboncoin.fr/api/v1/tenants/9a6387a1-6259-4f2c-a887-7e67f23dd4cb/domains/20bda58f-d650-462e-a72a-a5a7ecf2bf88/buckets/21d2b0bc-e54c-4b64-a30b-89127b18b785/images/profile/pictures/default/84d519d4-733b-5c36-856b-53fc5d8d1640?rule=pp-small",
+            "values": [
+                "https://img.leboncoin.fr/api/v1/tenants/9a6387a1-6259-4f2c-a887-7e67f23dd4cb/domains/20bda58f-d650-462e-a72a-a5a7ecf2bf88/buckets/21d2b0bc-e54c-4b64-a30b-89127b18b785/images/profile/pictures/default/84d519d4-733b-5c36-856b-53fc5d8d1640?rule=pp-small"
+            ],
+            "value_label": "https://img.leboncoin.fr/api/v1/tenants/9a6387a1-6259-4f2c-a887-7e67f23dd4cb/domains/20bda58f-d650-462e-a72a-a5a7ecf2bf88/buckets/21d2b0bc-e54c-4b64-a30b-89127b18b785/images/profile/pictures/default/84d519d4-733b-5c36-856b-53fc5d8d1640?rule=pp-small",
+            "generic": false
+        },
+        {
+            "key": "brand",
+            "value": "RENAULT",
+            "values": [
+                "RENAULT"
+            ],
+            "key_label": "Marque",
+            "value_label": "RENAULT",
+            "generic": false
+        },
+        {
+            "key": "model",
+            "value": "Autres",
+            "values": [
+                "Autres",
+                "model_all"
+            ],
+            "key_label": "Modèle",
+            "value_label": "Autres",
+            "generic": false
+        },
+        {
+            "key": "u_utility_brand",
+            "value": "RENAULT",
+            "values": [
+                "RENAULT"
+            ],
+            "key_label": "Marque",
+            "value_label": "RENAULT",
+            "generic": true
+        },
+        {
+            "key": "u_utility_model",
+            "value": "RENAULT_Kangoo",
+            "values": [
+                "RENAULT_Kangoo",
+                "RENAULT_model_all"
+            ],
+            "key_label": "Modèle",
+            "value_label": "Kangoo",
+            "generic": true
+        },
+        {
+            "key": "regdate",
+            "value": "2021",
+            "values": [
+                "2021"
+            ],
+            "key_label": "Année modèle",
+            "value_label": "2021",
+            "generic": true,
+            "display_ad_card": true
+        },
+        {
+            "key": "u_utility_version",
+            "value": "Kangoo Express Electrique Maxi Cabine Approfondie Grand Confort Achat Intégral",
+            "values": [
+                "Kangoo Express Electrique Maxi Cabine Approfondie Grand Confort Achat Intégral"
+            ],
+            "key_label": "Version",
+            "value_label": "Kangoo Express Electrique Maxi Cabine Approfondie Grand Confort Achat Intégral",
+            "generic": true
+        },
+        {
+            "key": "mileage",
+            "value": "24000",
+            "values": [
+                "24000"
+            ],
+            "key_label": "Kilométrage",
+            "value_label": "24000 km",
+            "value_label_reader": "24000 Kilomètres",
+            "generic": true,
+            "display_ad_card": true
+        },
+        {
+            "key": "fuel",
+            "value": "4",
+            "values": [
+                "4"
+            ],
+            "key_label": "Énergie",
+            "value_label": "Electrique",
+            "generic": true,
+            "display_ad_card": true
+        },
+        {
+            "key": "gearbox",
+            "value": "2",
+            "values": [
+                "2"
+            ],
+            "key_label": "Boîte de vitesse",
+            "value_label": "Automatique",
+            "generic": true,
+            "display_ad_card": true
+        },
+        {
+            "key": "doors",
+            "value": "3",
+            "values": [
+                "3"
+            ],
+            "key_label": "Nombre de portes",
+            "value_label": "3",
+            "generic": true
+        },
+        {
+            "key": "seats",
+            "value": "5",
+            "values": [
+                "5"
+            ],
+            "key_label": "Nombre de place(s)",
+            "value_label": "5",
+            "generic": true
+        },
+        {
+            "key": "issuance_date",
+            "value": "05/2021",
+            "values": [
+                "05/2021"
+            ],
+            "key_label": "Date de première mise en circulation",
+            "value_label": "05/2021",
+            "generic": true
+        },
+        {
+            "key": "vehicle_specifications",
+            "value": "",
+            "values": [
+                "available_invoices"
+            ],
+            "key_label": "Historique et entretien",
+            "value_label": "Factures disponibles",
+            "values_label": [
+                "Factures disponibles"
+            ],
+            "generic": true,
+            "display_ad_card": true
+        },
+        {
+            "key": "vehicule_color",
+            "value": "blanc",
+            "values": [
+                "blanc"
+            ],
+            "key_label": "Couleur",
+            "value_label": "Blanc",
+            "generic": true
+        },
+        {
+            "key": "critair",
+            "value": "0",
+            "values": [
+                "0"
+            ],
+            "key_label": "Crit'Air",
+            "value_label": "0",
+            "generic": true
+        },
+        {
+            "key": "horsepower",
+            "value": "7",
+            "values": [
+                "7"
+            ],
+            "key_label": "Puissance fiscale",
+            "value_label": "7 Cv",
+            "value_label_reader": "7 Chevaux",
+            "generic": true
+        },
+        {
+            "key": "horse_power_din",
+            "value": "60",
+            "values": [
+                "60"
+            ],
+            "key_label": "Puissance DIN",
+            "value_label": "60 Ch",
+            "value_label_reader": "60 Chevaux",
+            "generic": true
+        },
+        {
+            "key": "vehicle_vsp",
+            "value": "avecpermis",
+            "values": [
+                "avecpermis"
+            ],
+            "key_label": "Permis",
+            "value_label": "Avec permis",
+            "generic": true
+        },
+        {
+            "key": "vehicle_available_payment_methods",
+            "value": "wire_transfer",
+            "values": [
+                "wire_transfer"
+            ],
+            "value_label": "wire_transfer",
+            "generic": false
+        },
+        {
+            "key": "is_import",
+            "value": "false",
+            "values": [
+                "false"
+            ],
+            "value_label": "false",
+            "generic": false
+        },
+        {
+            "key": "vehicle_is_eligible_p2p",
+            "value": "2",
+            "values": [
+                "2"
+            ],
+            "value_label": "2",
+            "generic": false
+        },
+        {
+            "key": "vehicle_history_report_public_url",
+            "value": "https://autoviza.fr/report/report?uid=f256ca9f-58d8-4f9f-a2d3-42ce2918a8f4",
+            "values": [
+                "https://autoviza.fr/report/report?uid=f256ca9f-58d8-4f9f-a2d3-42ce2918a8f4"
+            ],
+            "value_label": "https://autoviza.fr/report/report?uid=f256ca9f-58d8-4f9f-a2d3-42ce2918a8f4",
+            "generic": false
+        },
+        {
+            "key": "argus_object_id",
+            "value": "2121475",
+            "values": [
+                "2121475"
+            ],
+            "value_label": "2121475",
+            "generic": false
+        },
+        {
+            "key": "licence_plate_available",
+            "value": "true",
+            "values": [
+                "true"
+            ],
+            "value_label": "true",
+            "generic": false
+        }
+    ],
+    "location": {
+        "country_id": "FR",
+        "region_id": "22",
+        "region_name": "Rhône-Alpes",
+        "department_id": "69",
+        "department_name": "Rhône",
+        "city_label": "Messimy 69510",
+        "city": "Messimy",
+        "zipcode": "69510",
+        "lat": 45.6967,
+        "lng": 4.67415,
+        "source": "city",
+        "provider": "here",
+        "is_shape": true,
+        "feature": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.67415,
+                    45.6967
+                ]
+            },
+            "properties": null
+        }
+    },
+    "owner": {
+        "store_id": "51195489",
+        "user_id": "8e34d4b0-c0e2-4ca8-b65c-93fb862fb8ce",
+        "type": "private",
+        "name": "Julien",
+        "no_salesmen": true,
+        "activity_sector": ""
+    },
+    "options": {
+        "has_option": false,
+        "booster": false,
+        "photosup": false,
+        "urgent": false,
+        "gallery": false,
+        "sub_toplist": false,
+        "continuous_top_ads": false,
+        "highlight": false
+    },
+    "has_phone": false,
+    "similar": null,
+    "counters": {}
+}

@@ -1,0 +1,29 @@
+{
+    "result_set_size": 384,
+    "operator_timing": 0.001332295,
+    "operator_rows_scanned": 0,
+    "cumulative_rows_scanned": 0,
+    "operator_cardinality": 0,
+    "cumulative_cardinality": 4,
+    "extra_info": {},
+    "cpu_time": 0.0013681210000000001,
+    "blocked_thread_time": 0.0,
+    "query_name": "show raw_items_archive;",
+    "children": [
+        {
+            "result_set_size": 384,
+            "operator_timing": 0.000035826,
+            "operator_rows_scanned": 0,
+            "cumulative_rows_scanned": 0,
+            "operator_cardinality": 4,
+            "operator_type": "TABLE_SCAN",
+            "cumulative_cardinality": 4,
+            "extra_info": {
+                "Function": "PRAGMA_SHOW",
+                "Estimated Cardinality": "1"
+            },
+            "cpu_time": 0.000035826,
+            "children": []
+        }
+    ]
+}

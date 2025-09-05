@@ -1,0 +1,1354 @@
+Analysis for ABARTH_500 based on 19 items
+Linear regression: price = 30135.02 + -33.08 * mileage_kkms + -501.69 * age_years
+max_mileage = 910946.97, max_age = 60.07
+R^2 = 0.07
+Prediction (300000.0 kms, 15 years): price = 30135.02 - 100.45 * mileage_kkms - 2009.00 * age_years
+Best 20 deals for ABARTH_500
+ABARTH - 500,      10 kms, 248 kms away, 2025/06: 24990 € (reg=  16 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/3016865247        Abarth 500 e 155ch 42kWh 4cv (certinergy 4242 Déduit)
+ABARTH - 500,    5000 kms, 238 kms away, 2023/12: 23999 € (reg=  17 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3032965589        Abarth 500 e 155ch Pack
+ABARTH - 500,     150 kms, 387 kms away, 2024/06: 27980 € (reg=   5 %,  my=  -1 %) https://www.leboncoin.fr/ad/voitures/2791833734 **NEW** Abarth 500 e 155ch Pack 4cv
+ABARTH - 500,    2500 kms, 451 kms away, 2024/03: 27299 € (reg=   6 %,  my=  -1 %) https://www.leboncoin.fr/ad/voitures/2916299282 **NEW** Abarth 500 e 155ch
+ABARTH - 500,   19938 kms, 236 kms away, 2023/09: 24900 € (reg=  12 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3009427241        Abarth 500 e 155 ch Pack
+ABARTH - 500,    4000 kms, 550 kms away, 2024/04: 28490 € (reg=   2 %,  my=  -5 %) https://www.leboncoin.fr/ad/voitures/2861838545 **NEW** Abarth 500 II e 155 ch Scorpionissima 3p
+ABARTH - 500,    3500 kms, 127 kms away, 2024/11: 29890 € (reg=   0 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2901715862 **NEW** Abarth 500 e 155ch Pack 4cv
+ABARTH - 500,    5000 kms, 387 kms away, 2024/06: 28870 € (reg=   1 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2767485124 **NEW** Abarth 500 e 155ch Turismo
+ABARTH - 500,    5100 kms, 204 kms away, 2024/11: 29990 € (reg=  -1 %,  my=  -7 %) https://www.leboncoin.fr/ad/voitures/2968751563 **NEW** Abarth 500 e 155ch Pack Bonus 4000 déduit
+ABARTH - 500,    5000 kms, 668 kms away, 2024/09: 29990 € (reg=  -1 %,  my=  -8 %) https://www.leboncoin.fr/ad/voitures/2878818979 **NEW** Abarth 500 e 155ch Pack
+ABARTH - 500,    5000 kms, 451 kms away, 2024/02: 29899 € (reg=  -2 %,  my= -12 %) https://www.leboncoin.fr/ad/voitures/2984377681 **NEW** Abarth 500 e 155ch Pack
+ABARTH - 500,   49000 kms, 549 kms away, 2022/03: 27990 € (reg=  -4 %,  my= -53 %) https://www.leboncoin.fr/ad/voitures/2992600320 **NEW** ABARTH 500 DESIGNIO By Project Kahn
+Analysis for AUDI_Q4 based on 4 items
+Linear regression: price = 69280.15 + 432.07 * mileage_kkms + -21482.25 * age_years
+max_mileage = -160344.02, max_age = 3.22
+R^2 = 0.86
+Prediction (300000.0 kms, 15 years): price = 69280.15 - 230.93 * mileage_kkms - 4618.68 * age_years
+Best 20 deals for AUDI_Q4
+AUDI - Q4,   24800 kms, 194 kms away, 2023/06: 28990 € (reg=   9 %,  my=  45 %) https://www.leboncoin.fr/ad/voitures/2927024946        AUDI Q4 E-TRON 35 - 55 kwh 170 ch -GARANTIE 12 MOIS
+Analysis for AUDI_Q8 based on 9 items
+Linear regression: price = 90930.02 + -833.32 * mileage_kkms + -4845.73 * age_years
+max_mileage = 109118.20, max_age = 18.76
+R^2 = 0.33
+Prediction (300000.0 kms, 15 years): price = 90930.02 - 303.10 * mileage_kkms - 6062.00 * age_years
+Best 20 deals for AUDI_Q8
+Analysis for AUDI_e-tron based on 34 items
+Linear regression: price = 72347.50 + 83.01 * mileage_kkms + -7209.98 * age_years
+max_mileage = -871530.52, max_age = 10.03
+R^2 = 0.47
+Prediction (300000.0 kms, 15 years): price = 72347.50 - 241.16 * mileage_kkms - 4823.17 * age_years
+Best 20 deals for AUDI_e-tron
+AUDI - e-tron,   18000 kms, 622 kms away, 2021/04: 26590 € (reg=  36 %,  my=  43 %) https://www.leboncoin.fr/ad/voitures/2835241052        Audi e-tron 50 quattro 313 ch Radars AV et AR
+Analysis for AUDI_e-tron GT based on 3 items
+Linear regression: price = 186322.68 + -678.62 * mileage_kkms + -23847.24 * age_years
+max_mileage = 274560.00, max_age = 7.81
+R^2 = 1.00
+Prediction (300000.0 kms, 15 years): price = 186322.68 - 621.08 * mileage_kkms - 12421.51 * age_years
+Best 20 deals for AUDI_e-tron GT
+AUDI - e-tron GT,   41500 kms, 470 kms away, 2020/03: 27490 € (reg=   0 %,  my=  70 %) https://www.leboncoin.fr/ad/voitures/3031855789        Audi E-TRON 50 Quattro AVUS Extended – Full Options – État irréprochable
+Analysis for BMW_Série 3 based on 1 items
+Error while analyzing BMW_Série 3: Not Regular Matrix
+Best 20 deals for BMW_Série 3
+Analysis for BMW_X1 based on 4 items
+Linear regression: price = 52665.53 + -257.79 * mileage_kkms + 145.18 * age_years
+max_mileage = 204297.91, max_age = -362.77
+R^2 = 0.97
+Prediction (300000.0 kms, 15 years): price = 52665.53 - 175.55 * mileage_kkms - 3511.04 * age_years
+Best 20 deals for BMW_X1
+Analysis for BMW_i3 based on 200 items
+Linear regression: price = 25657.00 + -55.14 * mileage_kkms + -1007.20 * age_years
+max_mileage = 465322.43, max_age = 25.47
+R^2 = 0.71
+Prediction (300000.0 kms, 15 years): price = 25657.00 - 85.52 * mileage_kkms - 1710.47 * age_years
+Best 20 deals for BMW_i3
+BMW - i3,   20570 kms, 469 kms away, 2022/03: 16900 € (reg=  19 %,  my=   5 %) https://www.leboncoin.fr/ad/voitures/2972482571        BMW i3 I01 LCI 120 Ah 170 ch BVA Atelier
+BMW - i3,   33000 kms, 331 kms away, 2021/11: 15990 € (reg=  20 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2976870782        BMW i3 ELECTRIC 170 102PPM 120AH 42.2KWH EDITION WINDMILL ATELIER - GARANTIE 6 MOIS
+BMW - i3,   20704 kms, 519 kms away, 2022/07: 18499 € (reg=  13 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/3043096325 **NEW** Bmw I3 170ch 120Ah Atelier
+BMW - i3,   32710 kms, 454 kms away, 2022/07: 17900 € (reg=  13 %,  my=  -2 %) https://www.leboncoin.fr/ad/voitures/3023847956        Bmw i3 170ch 120Ah Atelier
+BMW - i3,   24370 kms, 508 kms away, 2022/09: 18990 € (reg=  10 %,  my=  -2 %) https://www.leboncoin.fr/ad/voitures/2922966357        BMW i3 i3s 120 Ah 184 ch BVA Edition WindMill Atelier
+BMW - i3,    5798 kms, 436 kms away, 2022/03: 19790 € (reg=   9 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3019453757        BMW i3 120 Ah 170 ch BVA Edition WindMill Atelier 5p
+BMW - i3,   18313 kms, 217 kms away, 2021/09: 17900 € (reg=  13 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/2962246183        Bmw i3 170ch 120Ah Edition WindMill Atelier
+BMW - i3,   24570 kms, 517 kms away, 2022/07: 18890 € (reg=  10 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3040268999        BMW i3 I01 LCI ( ) 120 AH EDITION WINDMILL ATELIER
+BMW - i3,   23744 kms, 621 kms away, 2022/03: 18499 € (reg=  11 %,  my=  -4 %) https://www.leboncoin.fr/ad/voitures/2984280074        Bmw I3 170ch 120Ah Edition WindMill Atelier
+BMW - i3,   22694 kms, 519 kms away, 2022/09: 19499 € (reg=   8 %,  my=  -4 %) https://www.leboncoin.fr/ad/voitures/2997715431        Bmw I3 170ch 120Ah Atelier
+BMW - i3,   29600 kms, 192 kms away, 2021/11: 17499 € (reg=  13 %,  my=  -5 %) https://www.leboncoin.fr/ad/voitures/2984280500        Bmw I3 170ch 120Ah Edition WindMill Atelier
+BMW - i3,   33237 kms, 621 kms away, 2022/02: 17799 € (reg=  12 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2984280082        Bmw I3 170ch 120Ah Edition WindMill Atelier
+BMW - i3,   26401 kms, 386 kms away, 2021/04: 16900 € (reg=  14 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2721250474        Bmw i3 170ch 120Ah Atelier
+BMW - i3,   21918 kms, 621 kms away, 2022/03: 18999 € (reg=   9 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2994984092 **NEW** Bmw I3 170ch 120Ah Edition WindMill Atelier
+BMW - i3,   29000 kms, 477 kms away, 2021/09: 17500 € (reg=  12 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2888051440        BMW i3 I (I01) 170ch 120Ah Edition WindMill Atelier
+BMW - i3,   24778 kms, 549 kms away, 2022/03: 18900 € (reg=   9 %,  my=  -7 %) https://www.leboncoin.fr/ad/voitures/2969327234        Bmw i3 170ch 120Ah Edition WindMill Atelier
+BMW - i3,   47878 kms, 427 kms away, 2022/04: 16999 € (reg=  13 %,  my=  -7 %) https://www.leboncoin.fr/ad/voitures/3015962849        Bmw i3 170ch 120Ah Edition WindMill Atelier
+BMW - i3,   32096 kms, 625 kms away, 2022/03: 18299 € (reg=  10 %,  my=  -7 %) https://www.leboncoin.fr/ad/voitures/2984275965        Bmw I3 170ch 120Ah Atelier
+BMW - i3,   30959 kms, 550 kms away, 2022/04: 18590 € (reg=   9 %,  my=  -8 %) https://www.leboncoin.fr/ad/voitures/3031134046        BMW i3 120 Ah 170 ch BVA Edition WindMill Atelier
+BMW - i3,   11315 kms, 469 kms away, 2022/07: 20900 € (reg=   4 %,  my=  -8 %) https://www.leboncoin.fr/ad/voitures/3041578950 **NEW** BMW i3 I01 LCI 120 Ah 170 ch BVA Edition WindMill Atelier
+Analysis for BMW_i4 based on 3 items
+Linear regression: price = -4096.85 + -1150.00 * mileage_kkms + 47138.21 * age_years
+max_mileage = -3562.48, max_age = 0.09
+R^2 = 1.00
+Prediction (300000.0 kms, 15 years): price = -4096.85 - -13.66 * mileage_kkms - -273.12 * age_years
+Best 20 deals for BMW_i4
+Analysis for BMW_iX based on 2 items
+Linear regression: price = 9000.00 + -180.00 * mileage_kkms + -9799.80 * age_years
+max_mileage = 50000.00, max_age = 0.92
+R^2 = -290.21
+Prediction (300000.0 kms, 15 years): price = 9000.00 - 30.00 * mileage_kkms - 600.00 * age_years
+Best 20 deals for BMW_iX
+Analysis for BMW_iX1 based on 1 items
+Error while analyzing BMW_iX1: Not Regular Matrix
+Best 20 deals for BMW_iX1
+Analysis for BMW_iX3 based on 2 items
+Linear regression: price = -15536.88 + 2971.98 * mileage_kkms + -6306.34 * age_years
+max_mileage = 5227.79, max_age = -2.46
+R^2 = -7.88
+Prediction (300000.0 kms, 15 years): price = -15536.88 - -51.79 * mileage_kkms - -1035.79 * age_years
+Best 20 deals for BMW_iX3
+Analysis for BYD_Atto 3 based on 5 items
+Linear regression: price = 40325.73 + -103.35 * mileage_kkms + -6132.67 * age_years
+max_mileage = 390201.09, max_age = 6.58
+R^2 = 0.99
+Prediction (300000.0 kms, 15 years): price = 40325.73 - 134.42 * mileage_kkms - 2688.38 * age_years
+Best 20 deals for BYD_Atto 3
+BYD - Atto 3,    3750 kms, 399 kms away, 2023/08: 26980 € (reg=   1 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/3038756007        BYD Atto 3 60,5 kWh BVA1 204 cv Design 350km d'autonomie
+BYD - Atto 3,   14979 kms, 247 kms away, 2023/07: 25980 € (reg=  -1 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/3035414594        BYD Atto 3 60,5 kWh BVA1 204 cv Design
+Analysis for BYD_Dolphin Surf based on 1 items
+Error while analyzing BYD_Dolphin Surf: Not Regular Matrix
+Best 20 deals for BYD_Dolphin Surf
+BYD - Dolphin Surf,    6000 kms, 661 kms away, 2025/05: 23490 € (reg=     %,  my=     %) https://www.leboncoin.fr/ad/voitures/3022055593        BYD DOLPHIN SURF POLAR NIGHT BLACK COMFORT 43.2kWh - 156ch Garantie 6 ans / 150.000km
+Analysis for BYD_Han based on 1 items
+Error while analyzing BYD_Han: Not Regular Matrix
+Best 20 deals for BYD_Han
+Analysis for BYD_Tang based on 2 items
+Error while analyzing BYD_Tang: Not Regular Matrix
+Best 20 deals for BYD_Tang
+Analysis for CITROEN_Berlingo based on 48 items
+Linear regression: price = 33227.58 + -62.94 * mileage_kkms + -2915.99 * age_years
+max_mileage = 527935.73, max_age = 11.39
+R^2 = 0.80
+Prediction (300000.0 kms, 15 years): price = 33227.58 - 110.76 * mileage_kkms - 2215.17 * age_years
+Best 20 deals for CITROEN_Berlingo
+CITROEN - Berlingo,   10395 kms, 365 kms away, 2020/02: 11900 € (reg=  27 %,  my=  39 %) https://www.leboncoin.fr/ad/voitures/2904553534        Citroen Berlingo E-Berlingo M Feel Nav Blanc
+CITROEN - Berlingo,    6662 kms, 365 kms away, 2019/07: 12900 € (reg=  13 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2908962666        Citroen Berlingo E-Berlingo M Feel Nav Blanc
+CITROEN - Berlingo,   30219 kms, 383 kms away, 2018/10: 10290 € (reg=   8 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2973534112        Citroen Berlingo E-Berlingo M Feel Nav Blanc
+CITROEN - Berlingo,   35890 kms, 380 kms away, 2022/01: 15500 € (reg=  23 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3042637922        Citroën E Berlingo 5 places
+CITROEN - Berlingo,   31263 kms, 455 kms away, 2020/04: 13499 € (reg=  13 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/2982832215        Citroën Berlingo E- MULTISPACE Taille M Shine
+CITROEN - Berlingo,    3369 kms, 366 kms away, 2019/08: 14990 € (reg=   2 %,  my=  22 %) https://www.leboncoin.fr/ad/voitures/3017783399        Citroen Berlingo E-Berlingo M Feel / 12491  HT
+CITROEN - Berlingo,   17625 kms, 669 kms away, 2018/11: 12500 € (reg=  -1 %,  my=  22 %) https://www.leboncoin.fr/ad/voitures/2993291715        Citroen Berlingo E-Berlingo M Feel
+CITROEN - Berlingo,   34087 kms, 192 kms away, 2023/03: 19970 € (reg=  16 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/3037392132        CITROEN e-Berlingo Taille M 136 ch 100 kWh Automatique Shine
+CITROEN - Berlingo,   21642 kms,  61 kms away, 2023/02: 20990 € (reg=  14 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/3041554892        Citroën Berlingo Taille XL 136 ch 100 kWh Automatique Shine
+CITROEN - Berlingo,   15000 kms, 644 kms away, 2022/12: 21500 € (reg=  11 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2944920599        Citroën e-Berlingo (3) Taille M Moteur Electrique 100kW Live
+CITROEN - Berlingo,   18497 kms, 206 kms away, 2023/12: 23490 € (reg=  13 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/3001137993        CITROEN e-Berlingo Taille M 136 ch 100 kWh Automatique Live
+CITROEN - Berlingo,    1500 kms, 545 kms away, 2025/06: 27990 € (reg=  13 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/3021321507        Citroen Berlingo M Moteur Electrique 136ch (100 kW) Live Automatique
+CITROEN - Berlingo,    4920 kms, 521 kms away, 2024/07: 25990 € (reg=  12 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/3013336438        Citroën Berlingo Taille M 136 ch 54 kWh MAX
+CITROEN - Berlingo,   25500 kms, 354 kms away, 2022/04: 20500 € (reg=   5 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/3040976093        Citroën ë-Berlingo Taille M – 136 ch – Automatique – Electrique - Excellent état– Avril 2022 – Faibles km
+CITROEN - Berlingo,    1234 kms, 325 kms away, 2025/04: 28900 € (reg=   9 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/2986986989        Citroen Berlingo M Moteur Electrique 136ch (100 kW) Shine Automatique
+CITROEN - Berlingo,   11500 kms, 538 kms away, 2023/10: 24900 € (reg=   7 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/2985804014        Citroën Berlingo Taille M 136 ch 100 kWh Automatique - Live
+CITROEN - Berlingo,      10 kms, 402 kms away, 2024/11: 28290 € (reg=   8 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/3023848080        Citroen Berlingo M Moteur Electrique 136ch (100 kW) MAX Automatique
+CITROEN - Berlingo,     216 kms, 751 kms away, 2024/01: 26990 € (reg=   5 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3020852587 **NEW** Citroen Berlingo M Moteur Electrique 136ch (100 kW) PLUS Automatique
+CITROEN - Berlingo,   16808 kms,  35 kms away, 2023/01: 23980 € (reg=   1 %,  my=   6 %) https://www.leboncoin.fr/ad/voitures/3012967866        Citroen Berlingo M Moteur Electrique 136ch (100 kW) Shine Automatique
+CITROEN - Berlingo,   42193 kms, 159 kms away, 2022/11: 20990 € (reg=   6 %,  my=   6 %) https://www.leboncoin.fr/ad/voitures/3006273053        Citroën Berlingo e- Taille M 136 ch 100 kWh Automatique Live
+Analysis for CITROEN_C-Zéro based on 1 items
+Error while analyzing CITROEN_C-Zéro: Not Regular Matrix
+Best 20 deals for CITROEN_C-Zéro
+Analysis for CITROEN_C4 based on 200 items
+Linear regression: price = 31836.56 + -29.58 * mileage_kkms + -3572.67 * age_years
+max_mileage = 1076360.48, max_age = 8.91
+R^2 = 0.66
+Prediction (300000.0 kms, 15 years): price = 31836.56 - 106.12 * mileage_kkms - 2122.44 * age_years
+Best 20 deals for CITROEN_C4
+CITROEN - C4,    7500 kms, 407 kms away, 2023/05: 15990 € (reg=  31 %,  my=  38 %) https://www.leboncoin.fr/ad/voitures/2967723879        CITROEN C4 e-C4 136 ch Automatique Feel Pack
+CITROEN - C4,    9500 kms, 481 kms away, 2023/09: 17490 € (reg=  28 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/3036261562 **NEW** Citroën C4 e- 136 ch Automatique Shine Pack
+CITROEN - C4,    8900 kms, 513 kms away, 2023/10: 17890 € (reg=  27 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2965154549        Citroën E-C4 136ch LIVE AUTOMATIQUE 50 KWH
+CITROEN - C4,    8500 kms, 622 kms away, 2022/09: 16490 € (reg=  21 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/3035955576        Citroën C4 e- 136 ch Automatique Feel Pack Business
+CITROEN - C4,   12832 kms, 476 kms away, 2022/09: 16290 € (reg=  21 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/2948390186 **NEW** Citroën C4 e- 136 ch Automatique Shine
+CITROEN - C4,   11035 kms, 554 kms away, 2022/02: 15599 € (reg=  17 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/2926453146        Citroën C4 e- 136 ch Automatique Feel
+CITROEN - C4,   13002 kms, 630 kms away, 2022/06: 15990 € (reg=  19 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3027555817        Citroën C4 e- 136 ch Automatique Shine
+CITROEN - C4,   14858 kms, 483 kms away, 2022/10: 16490 € (reg=  21 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2997101251 **NEW** Citroën C4 e- 136 ch Automatique Shine
+CITROEN - C4,    6200 kms, 530 kms away, 2023/11: 18950 € (reg=  24 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2733515927 **NEW** Citroën C4 e- 136 ch Automatique Shine
+CITROEN - C4,   26290 kms, 491 kms away, 2021/09: 14290 € (reg=  15 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3013276567 **NEW** Citroën C4 e- 136 ch Automatique Feel Pack
+CITROEN - C4,   12500 kms, 554 kms away, 2023/09: 18487 € (reg=  24 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2849152987        Citroën C4 e- 136 ch Automatique Shine Pack
+CITROEN - C4,    2743 kms, 228 kms away, 2022/11: 17999 € (reg=  17 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2984276843        Citroen C4 Moteur électrique 136ch (100 kW) Feel Pack Automatique
+CITROEN - C4,   11800 kms, 552 kms away, 2023/10: 18990 € (reg=  23 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2909965560        Citroen C4 136ch 50kWh C-SERIES
+CITROEN - C4,   25646 kms, 474 kms away, 2022/01: 15290 € (reg=  15 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2967891356 **NEW** Citroën C4 e- 136 ch Automatique Shine
+CITROEN - C4,   21000 kms, 508 kms away, 2022/03: 15900 € (reg=  15 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3035509039        Citroën c4 électrique
+CITROEN - C4,     341 kms, 205 kms away, 2024/06: 20900 € (reg=  23 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3000608550        CITROEN e-C4 136 ch autonomie standard Automatique Plus
+CITROEN - C4,   43000 kms, 182 kms away, 2022/04: 14500 € (reg=  21 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3029298496        E C4 électrique
+CITROEN - C4,   16911 kms, 221 kms away, 2022/09: 17190 € (reg=  16 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2997810119        Citroën C4 e- 136 ch Automatique Feel
+CITROEN - C4,   13592 kms, 586 kms away, 2023/09: 18999 € (reg=  22 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2990435490 **NEW** Citroën C4 e- 136 ch Automatique Shine
+CITROEN - C4,   25127 kms, 212 kms away, 2022/06: 16290 € (reg=  16 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2956904935        Citroën C4 e- 136 ch Automatique Feel
+Analysis for CITROEN_C4 X based on 24 items
+Linear regression: price = 33006.73 + -107.84 * mileage_kkms + -3524.38 * age_years
+max_mileage = 306075.02, max_age = 9.37
+R^2 = 0.30
+Prediction (300000.0 kms, 15 years): price = 33006.73 - 110.02 * mileage_kkms - 2200.45 * age_years
+Best 20 deals for CITROEN_C4 X
+CITROEN - C4 X,   34000 kms, 491 kms away, 2023/05: 16490 € (reg=  22 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3000719336        Citroën E-C4 X SHINE 136 cv Boîte auto CAMERA DE RECUL CARPLAY GARANTIE 3 ANS CITROEN FULL OPTIONS
+CITROEN - C4 X,    8600 kms, 483 kms away, 2023/06: 19990 € (reg=  17 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/2980651527        Citroën c4 x e- 136 ch Automatique Feel Pack
+CITROEN - C4 X,   19000 kms, 554 kms away, 2023/06: 19799 € (reg=  14 %,  my=  23 %) https://www.leboncoin.fr/ad/voitures/2385762490        Citroën c4 x e- 136 ch Automatique Shine
+CITROEN - C4 X,    7523 kms, 627 kms away, 2022/12: 20490 € (reg=   9 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/2948963548        Citroën E-C4 X 136 ch Automatique - Shine
+CITROEN - C4 X,    2700 kms, 631 kms away, 2024/09: 23990 € (reg=  18 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/2891034880        Citroën E-C4 X 136 ch Automatique Feel Pack
+CITROEN - C4 X,    8721 kms, 150 kms away, 2023/01: 20790 € (reg=   8 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/3021766856        Citroën c4 x e- 136 ch Automatique Shine
+CITROEN - C4 X,   11000 kms, 491 kms away, 2023/04: 21290 € (reg=   8 %,  my=  19 %) https://www.leboncoin.fr/ad/voitures/3032438789        Citroën c4 x e- 136 ch Automatique Shine
+CITROEN - C4 X,   21350 kms, 509 kms away, 2023/02: 20499 € (reg=   5 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2972111827        Citroen C4 X Moteur électrique 136ch (100 kW) Shine Automatique
+CITROEN - C4 X,      36 kms, 325 kms away, 2025/05: 26900 € (reg=  15 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2994604314 **NEW** Citroen C4 X Electrique 156ch (autonomie étendue) E-Series +chargeur embarqué triphasé+ pack safety
+CITROEN - C4 X,     250 kms, 193 kms away, 2024/03: 24999 € (reg=   9 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2988815678        Citroen C4 X Electrique 156ch (autonomie étendue) Ë-SERIES Automatique
+CITROEN - C4 X,       5 kms, 467 kms away, 2023/01: 22990 € (reg=   2 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/3001364968 **NEW** Citroën c4 x e- 136 ch Automatique Shine
+CITROEN - C4 X,   13616 kms, 554 kms away, 2023/11: 23577 € (reg=   6 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/2962182371 **NEW** Citroën c4 x e- 136 ch Automatique Feel Pack
+CITROEN - C4 X,     170 kms, 170 kms away, 2025/06: 27990 € (reg=  13 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/3016387750 **NEW** CITROEN e-C4 X 136 ch Automatique Shine
+CITROEN - C4 X,     284 kms, 179 kms away, 2023/10: 24990 € (reg=   4 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/3002519101        CITROEN e-C4 X 136 ch Automatique Shine
+CITROEN - C4 X,    9500 kms, 668 kms away, 2023/06: 23490 € (reg=   2 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/2928839836 **NEW** CITROEN e-C4 X 136 ch Automatique Shine
+CITROEN - C4 X,    9003 kms, 236 kms away, 2023/06: 24190 € (reg=   0 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/2923296994        CITROEN e-C4 X 136 ch Automatique Shine
+CITROEN - C4 X,   15654 kms, 509 kms away, 2023/11: 24990 € (reg=   0 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3032196702 **NEW** Citroen C4 X Moteur électrique 136ch (100 kW) Shine Automatique
+CITROEN - C4 X,   39645 kms, 516 kms away, 2023/07: 22990 € (reg=  -8 %,  my=   3 %) https://www.leboncoin.fr/ad/voitures/2803129731 **NEW** Citroën c4 x e- 136 ch Automatique Shine
+CITROEN - C4 X,   39645 kms, 517 kms away, 2023/07: 22990 € (reg=  -8 %,  my=   3 %) https://www.leboncoin.fr/ad/voitures/2950888378 **NEW** CITROEN e-C4 X 136 ch Automatique Shine
+CITROEN - C4 X,   10000 kms, 630 kms away, 2023/03: 25990 € (reg= -12 %,  my=   1 %) https://www.leboncoin.fr/ad/voitures/3036400201 **NEW** Citroën c4 x e- 136 ch Automatique Shine Pack
+Analysis for CUPRA_Born based on 5 items
+Linear regression: price = 36960.33 + 713.06 * mileage_kkms + -15587.73 * age_years
+max_mileage = -51833.49, max_age = 2.37
+R^2 = 0.99
+Prediction (300000.0 kms, 15 years): price = 36960.33 - 123.20 * mileage_kkms - 2464.02 * age_years
+Best 20 deals for CUPRA_Born
+CUPRA - Born,    7634 kms, 375 kms away, 2024/10: 28990 € (reg=  -1 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/3039758364        CUPRA Born 230 ch - Batterie XL V / Amortissement Piloté DCC
+CUPRA - Born,    8443 kms, 199 kms away, 2024/11: 29990 € (reg=   1 %,  my=  11 %) https://www.leboncoin.fr/ad/voitures/3038859941        CUPRA Born 230 ch - Batterie XL V
+CUPRA - Born,   31437 kms, 459 kms away, 2023/09: 27990 € (reg=   2 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/3016864174        CUPRA Born 230 ch - Batterie XL VZ
+Analysis for DACIA_Duster based on 1 items
+Error while analyzing DACIA_Duster: Not Regular Matrix
+Best 20 deals for DACIA_Duster
+DACIA - Duster,      10 kms, 438 kms away, 2025/06: 28900 € (reg=     %,  my=     %) https://www.leboncoin.fr/ad/voitures/2781933921 **NEW** Dacia Duster TCe 150 4x2 EDC Journey
+Analysis for DACIA_Spring based on 200 items
+Linear regression: price = 16899.76 + -33.29 * mileage_kkms + -1855.02 * age_years
+max_mileage = 507672.78, max_age = 9.11
+R^2 = 0.68
+Prediction (300000.0 kms, 15 years): price = 16899.76 - 56.33 * mileage_kkms - 1126.65 * age_years
+Best 20 deals for DACIA_Spring
+DACIA - Spring,   20839 kms, 486 kms away, 2023/07:  5000 € (reg=  59 %,  my=  62 %) https://www.leboncoin.fr/ad/voitures/2928316283        Dacia spring accidentée
+DACIA - Spring,    8500 kms, 594 kms away, 2023/04:  7990 € (reg=  34 %,  my=  41 %) https://www.leboncoin.fr/ad/voitures/3030232473        DACIA SPRING Essential -23B
+DACIA - Spring,   12000 kms, 195 kms away, 2023/07:  8500 € (reg=  32 %,  my=  38 %) https://www.leboncoin.fr/ad/voitures/3026878789        Dacia Spring
+DACIA - Spring,   29000 kms, 280 kms away, 2023/05:  7800 € (reg=  33 %,  my=  38 %) https://www.leboncoin.fr/ad/voitures/3043128424        Dacia spring
+DACIA - Spring,   15000 kms, 222 kms away, 2022/11:  8000 € (reg=  28 %,  my=  37 %) https://www.leboncoin.fr/ad/voitures/2998300153        Spring dacia
+DACIA - Spring,   45281 kms, 233 kms away, 2022/03:  6700 € (reg=  25 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/3042012304        Dacia Spring
+DACIA - Spring,   30000 kms, 587 kms away, 2022/07:  7500 € (reg=  25 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/3039522030        Dacia Spring
+DACIA - Spring,   22000 kms, 159 kms away, 2023/06:  8490 € (reg=  29 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/3035523722        DACIA SPRING Expression ~ Prise Combo DC30 ~ Climatisation ~ Radars AR ~ Caméra AR
+DACIA - Spring,    1420 kms, 512 kms away, 2023/09:  9500 € (reg=  27 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/2938862738 **NEW** Dacia Spring Essential
+DACIA - Spring,   15000 kms, 424 kms away, 2022/04:  7990 € (reg=  20 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/3017883055        DACIA SPRING 45ch Confort Plus - Achat Intégral / Santé batterie 100% / Caméra de recul / Apple CarPlay
+DACIA - Spring,   11900 kms, 170 kms away, 2023/03:  8900 € (reg=  25 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/3020803760        Dacia Spring Expression
+DACIA - Spring,   13552 kms, 382 kms away, 2022/12:  8690 € (reg=  23 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/3036786051        Dacia spring
+DACIA - Spring,    4454 kms, 103 kms away, 2024/01:  9900 € (reg=  27 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/3007330275        Dacia Spring Essential -23B
+DACIA - Spring,   12400 kms, 588 kms away, 2021/11:  7990 € (reg=  15 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3023717319        Dacia Spring Confort Plus
+DACIA - Spring,   39226 kms, 440 kms away, 2022/12:  7930 € (reg=  24 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2793601751 **NEW** Dacia Spring Confort - Achat Intégral
+DACIA - Spring,   25500 kms, 663 kms away, 2022/11:  8400 € (reg=  22 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2974920961 **NEW** Dacia spring confort plus
+DACIA - Spring,   23784 kms, 455 kms away, 2022/03:  7950 € (reg=  17 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2974613850 **NEW** Dacia Spring 45ch Confort Plus - Achat Intégral
+DACIA - Spring,   22000 kms, 238 kms away, 2022/12:  8600 € (reg=  22 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3032938268        Dacia spring
+DACIA - Spring,   13000 kms, 702 kms away, 2022/12:  9000 € (reg=  21 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3042882560 **NEW** Dacia spring essential
+DACIA - Spring,   20000 kms, 204 kms away, 2021/10:  7980 € (reg=  11 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3035210808        DACIA SPRING 45ch Achat Intégral Confort - 4 Pneus Neufs - Suivi Renault - GARANTIE
+Analysis for DS_DS 3 based on 2 items
+Linear regression: price = -127992.00 + -67.49 * mileage_kkms + 0.00 * age_years
+max_mileage = -1896514.94, max_age = Inf
+R^2 = -19332.68
+Prediction (300000.0 kms, 15 years): price = -127992.00 - -426.64 * mileage_kkms - -8532.80 * age_years
+Best 20 deals for DS_DS 3
+DS - DS 3,   21100 kms, 333 kms away, 2020/12: 15999 € (reg=-1599800 %,  my=-1599800 %) https://www.leboncoin.fr/ad/voitures/2462281597        Ds DS 3 Crossback E-Tense Performance Line 4cv
+Analysis for FIAT_500 based on 200 items
+Linear regression: price = 25953.37 + -19.83 * mileage_kkms + -3273.74 * age_years
+max_mileage = 1308475.49, max_age = 7.93
+R^2 = 0.41
+Prediction (300000.0 kms, 15 years): price = 25953.37 - 86.51 * mileage_kkms - 1730.22 * age_years
+Best 20 deals for FIAT_500
+FIAT - 500,   13500 kms, 607 kms away, 2022/12: 10999 € (reg=  34 %,  my=  45 %) https://www.leboncoin.fr/ad/voitures/3003076167        FIAT 500 23,8 kWh Action 95 CH / BLUETOOTH / LIMITEUR DE VITESSE / Prise CCS Combo 2 (charge rapide)
+FIAT - 500,   12388 kms, 427 kms away, 2023/02: 11487 € (reg=  33 %,  my=  43 %) https://www.leboncoin.fr/ad/voitures/2989827931        Fiat 500 e 95ch Action
+FIAT - 500,   13887 kms, 865 kms away, 2023/07: 11990 € (reg=  35 %,  my=  43 %) https://www.leboncoin.fr/ad/voitures/3032966318        Fiat 500 e 95ch Action
+FIAT - 500,    9373 kms, 223 kms away, 2022/03: 10990 € (reg=  23 %,  my=  42 %) https://www.leboncoin.fr/ad/voitures/3002007702        Fiat 500 e 95ch Action
+FIAT - 500,   23418 kms, 819 kms away, 2023/05: 11490 € (reg=  35 %,  my=  42 %) https://www.leboncoin.fr/ad/voitures/3028196701        Fiat 500 e 95ch Action
+FIAT - 500,   25235 kms, 865 kms away, 2023/06: 11490 € (reg=  36 %,  my=  42 %) https://www.leboncoin.fr/ad/voitures/3033958781        Fiat 500 e 95ch Action (step1)
+FIAT - 500,   12380 kms, 865 kms away, 2023/03: 11980 € (reg=  31 %,  my=  41 %) https://www.leboncoin.fr/ad/voitures/2982851033        Fiat 500 e 95ch Action
+FIAT - 500,   20634 kms, 825 kms away, 2022/07: 10990 € (reg=  27 %,  my=  41 %) https://www.leboncoin.fr/ad/voitures/3036000125        Fiat 500 e 95ch Action
+FIAT - 500,   19949 kms, 602 kms away, 2022/06: 10990 € (reg=  26 %,  my=  41 %) https://www.leboncoin.fr/ad/voitures/3020854203        Fiat 500 e 95ch Action
+FIAT - 500,   10380 kms, 691 kms away, 2022/06: 11490 € (reg=  24 %,  my=  40 %) https://www.leboncoin.fr/ad/voitures/2777298822 **NEW** Fiat 500 e 95ch Action
+FIAT - 500,   25389 kms, 865 kms away, 2022/08: 10970 € (reg=  28 %,  my=  40 %) https://www.leboncoin.fr/ad/voitures/2936761935 **NEW** Fiat 500 e 95ch Action
+FIAT - 500,   23650 kms, 825 kms away, 2022/07: 10990 € (reg=  27 %,  my=  40 %) https://www.leboncoin.fr/ad/voitures/3036000126 **NEW** Fiat 500 e 95ch Action
+FIAT - 500,    6335 kms, 486 kms away, 2023/02: 12490 € (reg=  28 %,  my=  40 %) https://www.leboncoin.fr/ad/voitures/2997101880 **NEW** Fiat 500 e 95 ch Icône
+FIAT - 500,   22128 kms, 602 kms away, 2022/06: 10990 € (reg=  26 %,  my=  40 %) https://www.leboncoin.fr/ad/voitures/3039316850 **NEW** Fiat 500 e 95ch Action
+FIAT - 500,    7257 kms, 462 kms away, 2022/11: 12200 € (reg=  26 %,  my=  40 %) https://www.leboncoin.fr/ad/voitures/3029834388 **NEW** Fiat 500 23.8kWh Action 95ch
+FIAT - 500,   19987 kms, 865 kms away, 2023/03: 11890 € (reg=  31 %,  my=  40 %) https://www.leboncoin.fr/ad/voitures/2962247338 **NEW** Fiat 500 e 95ch Action
+FIAT - 500,   22952 kms, 632 kms away, 2022/06: 10990 € (reg=  26 %,  my=  40 %) https://www.leboncoin.fr/ad/voitures/2919034831 **NEW** Fiat 500 24kWh Action
+FIAT - 500,   11316 kms, 485 kms away, 2022/10: 11990 € (reg=  26 %,  my=  39 %) https://www.leboncoin.fr/ad/voitures/2882662717 **NEW** Fiat 500 e 95 ch Icône
+FIAT - 500,   19987 kms, 807 kms away, 2023/03: 11990 € (reg=  31 %,  my=  39 %) https://www.leboncoin.fr/ad/voitures/3032967304 **NEW** Fiat 500 e 95ch Action
+FIAT - 500,   21730 kms, 532 kms away, 2022/04: 10990 € (reg=  23 %,  my=  39 %) https://www.leboncoin.fr/ad/voitures/2985271129 **NEW** Fiat 500 e 95ch Action
+Analysis for FIAT_500C based on 2 items
+Linear regression: price = 14771.25 + -73.32 * mileage_kkms + -463.33 * age_years
+max_mileage = 201462.77, max_age = 31.88
+R^2 = -87.81
+Prediction (300000.0 kms, 15 years): price = 14771.25 - 49.24 * mileage_kkms - 984.75 * age_years
+Best 20 deals for FIAT_500C
+FIAT - 500C,   18500 kms, 636 kms away, 2023/07: 16900 € (reg= -35 %,  my= -43 %) https://www.leboncoin.fr/ad/voitures/3032684342        Fiat 500
+FIAT - 500C,   17680 kms, 462 kms away, 2022/04: 15990 € (reg= -34 %,  my= -51 %) https://www.leboncoin.fr/ad/voitures/2969325290        Fiat 500C E 118CH ICONE
+Analysis for FIAT_600 based on 2 items
+Linear regression: price = -10122.50 + 1200.00 * mileage_kkms + 5395.75 * age_years
+max_mileage = 8435.42, max_age = 1.88
+R^2 = -76.01
+Prediction (300000.0 kms, 15 years): price = -10122.50 - -33.74 * mileage_kkms - -674.83 * age_years
+Best 20 deals for FIAT_600
+FIAT - 600,    9223 kms, 331 kms away, 2023/09: 20490 € (reg= -76 %,  my=-2048900 %) https://www.leboncoin.fr/ad/voitures/2857211593        FIAT 600 Fiat Electrique 54 kWh Red
+FIAT - 600,   10000 kms, 386 kms away, 2024/02: 22990 € (reg=-123 %,  my=-2298900 %) https://www.leboncoin.fr/ad/voitures/3015900544        Fiat 600 E 156CH 54KWH RED - SUIVI COMPLET FIAT - GARANTIE 12 MOIS
+Analysis for FORD_Autre based on 2 items
+Error while analyzing FORD_Autre: Not Regular Matrix
+Best 20 deals for FORD_Autre
+Analysis for FORD_Explorer based on 3 items
+Linear regression: price = 50270.69 + 140.61 * mileage_kkms + -11701.40 * age_years
+max_mileage = -357528.10, max_age = 4.30
+R^2 = 1.00
+Prediction (300000.0 kms, 15 years): price = 50270.69 - 167.57 * mileage_kkms - 3351.38 * age_years
+Best 20 deals for FORD_Explorer
+Analysis for FORD_Mustang Mach-E based on 4 items
+Linear regression: price = 55473.27 + -155.34 * mileage_kkms + -3661.30 * age_years
+max_mileage = 357109.45, max_age = 15.15
+R^2 = 0.97
+Prediction (300000.0 kms, 15 years): price = 55473.27 - 184.91 * mileage_kkms - 3698.22 * age_years
+Best 20 deals for FORD_Mustang Mach-E
+Analysis for FORD_Puma based on 2 items
+Linear regression: price = 23712.50 + 157.60 * mileage_kkms + 0.00 * age_years
+max_mileage = -150460.03, max_age = -Inf
+R^2 = -48.40
+Prediction (300000.0 kms, 15 years): price = 23712.50 - 79.04 * mileage_kkms - 1580.83 * age_years
+Best 20 deals for FORD_Puma
+Analysis for FORD_Transit based on 1 items
+Error while analyzing FORD_Transit: Not Regular Matrix
+Best 20 deals for FORD_Transit
+Analysis for HONDA_Honda e based on 1 items
+Error while analyzing HONDA_Honda e: Not Regular Matrix
+Best 20 deals for HONDA_Honda e
+Analysis for HONDA_e:Ny1 based on 1 items
+Error while analyzing HONDA_e:Ny1: Not Regular Matrix
+Best 20 deals for HONDA_e:Ny1
+HONDA - e:Ny1,   21015 kms, 402 kms away, 2023/09: 28490 € (reg=     %,  my=     %) https://www.leboncoin.fr/ad/voitures/3013473898        Honda e:Ny1 Electrique 204ch Advance
+Analysis for HYUNDAI_Inster based on 21 items
+Linear regression: price = 27652.10 + -36.11 * mileage_kkms + -646.81 * age_years
+max_mileage = 765859.92, max_age = 42.75
+R^2 = 0.01
+Prediction (300000.0 kms, 15 years): price = 27652.10 - 92.17 * mileage_kkms - 1843.47 * age_years
+Best 20 deals for HYUNDAI_Inster
+HYUNDAI - Inster,      10 kms, 204 kms away, 2025/08: 21990 € (reg=  20 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/3042818078        HYUNDAI Inster 42 kWh 5 pl. Intuitive
+HYUNDAI - Inster,    1000 kms, 102 kms away, 2025/07: 26350 € (reg=   4 %,  my=   3 %) https://www.leboncoin.fr/ad/voitures/3035396385        Hyundai Inster 49 kWh 5 pl. Creative
+HYUNDAI - Inster,     779 kms, 103 kms away, 2025/03: 25850 € (reg=   5 %,  my=   3 %) https://www.leboncoin.fr/ad/voitures/2969646673        Hyundai Inster 49 kWh Creative
+HYUNDAI - Inster,      10 kms, 546 kms away, 2025/07: 26990 € (reg=   2 %,  my=   1 %) https://www.leboncoin.fr/ad/voitures/3042269627 **NEW** HYUNDAI Inster 49 kWh Cross Executive
+HYUNDAI - Inster,    6000 kms,  96 kms away, 2025/03: 25850 € (reg=   4 %,  my=   1 %) https://www.leboncoin.fr/ad/voitures/2969646368        Hyundai Inster 49 kWh Creative
+HYUNDAI - Inster,    6000 kms,  96 kms away, 2025/03: 25850 € (reg=   4 %,  my=   1 %) https://www.leboncoin.fr/ad/voitures/3016935495        Hyundai Inster 49 kWh Creative
+HYUNDAI - Inster,    5000 kms, 185 kms away, 2025/02: 25990 € (reg=   4 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/2932726649        HYUNDAI Inster 49 kWh Creative
+HYUNDAI - Inster,    8000 kms, 197 kms away, 2025/02: 25990 € (reg=   3 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/2955208158        Hyundai Inster 49 kWh Creative
+HYUNDAI - Inster,    6000 kms, 102 kms away, 2025/03: 26337 € (reg=   2 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/2970107023        Hyundai Inster 49 kWh Creative
+HYUNDAI - Inster,    4965 kms, 159 kms away, 2025/08: 27490 € (reg=   0 %,  my=  -1 %) https://www.leboncoin.fr/ad/voitures/3035519427        Hyundai Inster 49 KWH 5 PL. Creative
+HYUNDAI - Inster,      15 kms, 193 kms away, 2025/07: 27850 € (reg=  -1 %,  my=  -1 %) https://www.leboncoin.fr/ad/voitures/3031884937        HYUNDAI Inster 49 kWh 5 pl. Intuitive
+HYUNDAI - Inster,    5000 kms, 591 kms away, 2025/02: 26799 € (reg=   1 %,  my=  -2 %) https://www.leboncoin.fr/ad/voitures/2960598610        HYUNDAI Inster 49 kWh Creative
+HYUNDAI - Inster,      10 kms, 159 kms away, 2025/06: 27990 € (reg=  -1 %,  my=  -2 %) https://www.leboncoin.fr/ad/voitures/3007443995        Hyundai Inster 49 KWH 5 PL. Creative 4pl
+HYUNDAI - Inster,    4965 kms, 159 kms away, 2025/08: 27990 € (reg=  -2 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3041445700 **NEW** Hyundai Inster 49 KWH Cross Creative
+HYUNDAI - Inster,    4900 kms, 545 kms away, 2025/01: 26990 € (reg=   0 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/2955283912        Hyundai Inster 49 kWh 4 pl. Creative
+HYUNDAI - Inster,    1000 kms,  96 kms away, 2025/07: 28350 € (reg=  -3 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3032850760        Hyundai Inster 49 kWh Cross Executive
+HYUNDAI - Inster,    8000 kms, 398 kms away, 2025/02: 26990 € (reg=   0 %,  my=  -4 %) https://www.leboncoin.fr/ad/voitures/2955594055        Hyundai Inster 49 kWh Creative 5p
+HYUNDAI - Inster,    4000 kms, 489 kms away, 2025/01: 27290 € (reg=   0 %,  my=  -4 %) https://www.leboncoin.fr/ad/voitures/2955244015        Hyundai Inster 49 KWH 5 PL. Creative
+HYUNDAI - Inster,     500 kms, 193 kms away, 2025/02: 28990 € (reg=  -6 %,  my=  -9 %) https://www.leboncoin.fr/ad/voitures/2935363509 **NEW** HYUNDAI Inster 49 kWh Creative
+HYUNDAI - Inster,    6000 kms, 398 kms away, 2025/07: 29990 € (reg=  -9 %,  my= -11 %) https://www.leboncoin.fr/ad/voitures/3032814929 **NEW** Hyundai Inster 49 kWh Cross Executive 5p
+Analysis for HYUNDAI_Ioniq based on 67 items
+Linear regression: price = 29344.12 + -31.60 * mileage_kkms + -2010.82 * age_years
+max_mileage = 928472.69, max_age = 14.59
+R^2 = 0.38
+Prediction (300000.0 kms, 15 years): price = 29344.12 - 97.81 * mileage_kkms - 1956.27 * age_years
+Best 20 deals for HYUNDAI_Ioniq
+HYUNDAI - Ioniq,   29396 kms, 155 kms away, 2022/03: 16990 € (reg=  20 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/3009956054        Hyundai Ioniq Electric 136 ch Intuitive
+HYUNDAI - Ioniq,   28490 kms, 391 kms away, 2020/11: 14900 € (reg=  20 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/2681453537        HYUNDAI IONIQ Electric Intuitive 136ch AUTONOMIE 310KM - 38,3 kWh- 1MAIN
+HYUNDAI - Ioniq,   34987 kms, 369 kms away, 2022/04: 16999 € (reg=  20 %,  my=  11 %) https://www.leboncoin.fr/ad/voitures/2862257369        Hyundai Ioniq Electric 136 ch Intuitive 2cv
+HYUNDAI - Ioniq,   37259 kms, 619 kms away, 2021/09: 16499 € (reg=  18 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/2998938486        Hyundai Ioniq Electric 136ch Creative 2cv
+HYUNDAI - Ioniq,   17487 kms, 818 kms away, 2022/05: 19490 € (reg=  11 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/3012970025        Hyundai Ioniq Electric 136ch Creative 2cv
+HYUNDAI - Ioniq,   27674 kms, 514 kms away, 2022/05: 18990 € (reg=  12 %,  my=   5 %) https://www.leboncoin.fr/ad/voitures/3023728440        Hyundai Ioniq ELECTRIC 136 CH Intuitive
+HYUNDAI - Ioniq,   29772 kms, 228 kms away, 2022/06: 18990 € (reg=  13 %,  my=   5 %) https://www.leboncoin.fr/ad/voitures/3032934390        Hyundai Ioniq Electric 136 ch Intuitive
+HYUNDAI - Ioniq,   24000 kms, 429 kms away, 2021/04: 17499 € (reg=  11 %,  my=   4 %) https://www.leboncoin.fr/ad/voitures/2980385794        Hyundai Ioniq Electric 136ch Creative 2cv Sieges chauf GPS Camera Carplay
+HYUNDAI - Ioniq,   23000 kms, 374 kms away, 2022/06: 19900 € (reg=  10 %,  my=   4 %) https://www.leboncoin.fr/ad/voitures/3025752119        Hyundai ioniq 38kw
+HYUNDAI - Ioniq,   46000 kms, 466 kms away, 2020/10: 15200 € (reg=  15 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/3034493541        Hyundai électrique 136 ch
+HYUNDAI - Ioniq,   32135 kms, 377 kms away, 2021/12: 18900 € (reg=   9 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/2897011693        Hyundai Ioniq Electric 136ch Executive 2cv
+HYUNDAI - Ioniq,   37665 kms, 488 kms away, 2021/09: 17990 € (reg=  10 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/3002984875        Hyundai Ioniq Electric 136ch Creative 2cv
+HYUNDAI - Ioniq,   33288 kms, 632 kms away, 2021/05: 17790 € (reg=   9 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/3021780648        Hyundai Ioniq Electric 136ch Creative
+HYUNDAI - Ioniq,   31618 kms, 580 kms away, 2021/11: 18990 € (reg=   8 %,  my=  -1 %) https://www.leboncoin.fr/ad/voitures/3008599086        Hyundai Ioniq Electric 136 ch Executive
+HYUNDAI - Ioniq,   43280 kms, 167 kms away, 2021/05: 16900 € (reg=  12 %,  my=  -1 %) https://www.leboncoin.fr/ad/voitures/2990472943        Hyundai Ioniq ELECTRIC 136 CH Intuitive
+HYUNDAI - Ioniq,   33714 kms, 514 kms away, 2021/09: 18790 € (reg=   7 %,  my=  -2 %) https://www.leboncoin.fr/ad/voitures/2957434544        Hyundai Ioniq ELECTRIC 136 CH Intuitive
+HYUNDAI - Ioniq,   15000 kms, 514 kms away, 2018/09: 14690 € (reg=   0 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3013436096 **NEW** Hyundai Ioniq 136 28 kWh Creative
+HYUNDAI - Ioniq,   30360 kms, 632 kms away, 2022/05: 20690 € (reg=   4 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3024355416 **NEW** Hyundai Ioniq ELECTRIQUE 136CH EXECUTIVE
+HYUNDAI - Ioniq,   31619 kms, 494 kms away, 2021/03: 18990 € (reg=   1 %,  my=  -8 %) https://www.leboncoin.fr/ad/voitures/3004319897 **NEW** Hyundai Ioniq 136 38kWh Executive
+HYUNDAI - Ioniq,   45500 kms, 219 kms away, 2021/04: 18400 € (reg=   3 %,  my= -12 %) https://www.leboncoin.fr/ad/voitures/3042780308        Hyundai Ioniq 38Kwh Executive
+Analysis for HYUNDAI_Ioniq 5 based on 200 items
+Linear regression: price = 49024.68 + -333.22 * mileage_kkms + -1291.32 * age_years
+max_mileage = 147121.94, max_age = 37.96
+R^2 = 0.58
+Prediction (300000.0 kms, 15 years): price = 49024.68 - 163.42 * mileage_kkms - 3268.31 * age_years
+Best 20 deals for HYUNDAI_Ioniq 5
+HYUNDAI - Ioniq 5,   26800 kms, 204 kms away, 2023/11: 23980 € (reg=  36 %,  my=  38 %) https://www.leboncoin.fr/ad/voitures/3035798196        HYUNDAI IONIQ 5 58 kWh - 170 ch Creative - Attelage - Caméra de recul - Sièges élec - GARANTIE CONSTRUCTEUR 2028
+HYUNDAI - Ioniq 5,   32929 kms, 211 kms away, 2021/10: 20990 € (reg=  36 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/2406286453        HYUNDAI Ioniq 5 58 kWh - 170 ch Intuitive
+HYUNDAI - Ioniq 5,   31689 kms, 363 kms away, 2022/02: 21990 € (reg=  35 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2476114073        HYUNDAI Ioniq 5 58 kWh - 170 ch Intuitive
+HYUNDAI - Ioniq 5,   33595 kms, 233 kms away, 2022/03: 21990 € (reg=  34 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2988734406        Hyundai ioniq 5 58 kWh - 170 ch Intuitive
+HYUNDAI - Ioniq 5,   15041 kms, 636 kms away, 2022/02: 23990 € (reg=  39 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2998571109        HYUNDAI IONIQ 5 58 kwh - 170 ch Intuitive
+HYUNDAI - Ioniq 5,   15041 kms, 630 kms away, 2022/02: 23990 € (reg=  39 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2997027465        Hyundai ioniq 5 58 kWh - 170 ch Intuitive
+HYUNDAI - Ioniq 5,   34776 kms, 437 kms away, 2022/01: 21980 € (reg=  32 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3043357179 **NEW** Hyundai Ioniq 5 58 kWh - 170ch Intuitive
+HYUNDAI - Ioniq 5,   12038 kms, 864 kms away, 2023/06: 27990 € (reg=  33 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2916944196        Hyundai Ioniq 5 58 kWh - 170ch Creative
+HYUNDAI - Ioniq 5,   43622 kms, 376 kms away, 2021/12: 20990 € (reg=  29 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3039664765        HYUNDAI IONIQ 5 Electric 58 kWh - 170 Intuitive - SOH 94 %
+HYUNDAI - Ioniq 5,   37000 kms,  89 kms away, 2021/09: 21480 € (reg=  31 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2728218057        Hyundai ioniq 5 58 kWh - 170 ch Intuitive
+HYUNDAI - Ioniq 5,   36900 kms, 397 kms away, 2022/04: 22999 € (reg=  28 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2997331706        Hyundai Ioniq 5 58 kWh - 170ch Intuitive Camera
+HYUNDAI - Ioniq 5,   33405 kms, 648 kms away, 2022/12: 24990 € (reg=  27 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2940310762        Hyundai Ioniq 5 58 kWh - 170ch Intuitive
+HYUNDAI - Ioniq 5,   27622 kms, 204 kms away, 2022/12: 25990 € (reg=  28 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3042827581 **NEW** HYUNDAI Ioniq 5 58 kWh - 170 ch Intuitive
+HYUNDAI - Ioniq 5,   29743 kms, 295 kms away, 2022/03: 23989 € (reg=  30 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3005824677        Hyundai Ioniq 5 58 kWh 170 Creative Caméra GPS Carplay Régul Adaptatif Garantie 03/27
+HYUNDAI - Ioniq 5,   27636 kms, 655 kms away, 2023/04: 26990 € (reg=  26 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/2776160771        Hyundai Ioniq 5 58 kWh - 170ch Intuitive
+HYUNDAI - Ioniq 5,   31140 kms, 398 kms away, 2022/02: 23790 € (reg=  30 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/2982873155        Hyundai ioniq 5 58 kWh - 170 ch Intuitive 5p
+HYUNDAI - Ioniq 5,    7000 kms, 185 kms away, 2023/01: 28990 € (reg=  33 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/2990720626        HYUNDAI Ioniq 5 58 kWh - 170 ch Intuitive
+HYUNDAI - Ioniq 5,   30311 kms, 452 kms away, 2021/12: 23599 € (reg=  30 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3010442528 **NEW** HYUNDAI Ioniq 5 58 kWh - 170 ch Creative
+HYUNDAI - Ioniq 5,   33503 kms,  52 kms away, 2023/01: 25890 € (reg=  24 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/2938828148 **NEW** Hyundai ioniq 5 58 kWh - 170 ch Intuitive
+HYUNDAI - Ioniq 5,   47981 kms, 648 kms away, 2022/12: 23990 € (reg=  18 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/2972362888        Hyundai Ioniq 5 58 kWh - 170ch Creative
+Analysis for HYUNDAI_Ioniq 6 based on 91 items
+Linear regression: price = 54406.74 + -322.70 * mileage_kkms + -3502.75 * age_years
+max_mileage = 168598.79, max_age = 15.53
+R^2 = 0.57
+Prediction (300000.0 kms, 15 years): price = 54406.74 - 181.36 * mileage_kkms - 3627.12 * age_years
+Best 20 deals for HYUNDAI_Ioniq 6
+Analysis for HYUNDAI_Ioniq 9 based on 18 items
+Linear regression: price = 76860.70 + -4.76 * mileage_kkms + -12611.24 * age_years
+max_mileage = 16154176.09, max_age = 6.09
+R^2 = 0.02
+Prediction (300000.0 kms, 15 years): price = 76860.70 - 256.20 * mileage_kkms - 5124.05 * age_years
+Best 20 deals for HYUNDAI_Ioniq 9
+Analysis for HYUNDAI_Kona based on 200 items
+Linear regression: price = 33555.03 + -16.87 * mileage_kkms + -3462.93 * age_years
+max_mileage = 1989242.89, max_age = 9.69
+R^2 = 0.62
+Prediction (300000.0 kms, 15 years): price = 33555.03 - 111.85 * mileage_kkms - 2237.00 * age_years
+Best 20 deals for HYUNDAI_Kona
+HYUNDAI - Kona,   24132 kms, 333 kms away, 2022/07: 15499 € (reg=  30 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/2810473786        Hyundai Kona Electric 39kWh - 136ch Intuitive
+HYUNDAI - Kona,   19031 kms, 333 kms away, 2023/04: 16999 € (reg=  31 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/2992970662        Hyundai Kona Electric 39kWh - 136ch Intuitive
+HYUNDAI - Kona,    1000 kms, 712 kms away, 2025/05: 21490 € (reg=  33 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/3043748838 **NEW** Hyundai Kona electric neuve
+HYUNDAI - Kona,   15504 kms, 219 kms away, 2022/08: 16499 € (reg=  27 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2914871983        Hyundai Kona Electric 39kWh - 136ch Intuitive Camera
+HYUNDAI - Kona,    9800 kms, 397 kms away, 2022/08: 16999 € (reg=  25 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/3001134196        Hyundai Kona Electric 39kWh - 136ch Intuitive Camera Carplay
+HYUNDAI - Kona,   34785 kms, 295 kms away, 2022/09: 15299 € (reg=  32 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2931707988        Hyundai Kona Electric 39kWh - 136 ch Intuitive
+HYUNDAI - Kona,   17990 kms, 397 kms away, 2022/08: 16499 € (reg=  27 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/3032964584        Hyundai Kona Electric 39kWh - 136ch Intuitive Camera
+HYUNDAI - Kona,   28500 kms, 584 kms away, 2022/06: 15490 € (reg=  29 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/3030628652 **NEW** Hyundai Kona 39kwh 136ch Intuitive
+HYUNDAI - Kona,   14300 kms, 211 kms away, 2023/01: 17500 € (reg=  27 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3032353252        Kona 39Kw/h Intuitive
+HYUNDAI - Kona,   23050 kms, 333 kms away, 2022/06: 15999 € (reg=  27 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3035509197        Hyundai Kona Electric 39kWh - 136ch Intuitive Camera
+HYUNDAI - Kona,   21402 kms, 518 kms away, 2022/10: 16900 € (reg=  27 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2988816372        Hyundai Kona Electric 39kWh - 136ch Intuitive
+HYUNDAI - Kona,   19956 kms, 295 kms away, 2021/10: 15499 € (reg=  21 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2454388442        Hyundai Kona Electric 39kWh - 136 ch Intuitive Carplay Camera
+HYUNDAI - Kona,   29843 kms, 211 kms away, 2021/04: 13990 € (reg=  21 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2924368561        HYUNDAI Kona Electrique 39 kWh - 136 ch Intuitive
+HYUNDAI - Kona,     800 kms, 509 kms away, 2024/05: 20990 € (reg=  27 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3016003254        Hyundai KONA Creative Electrique 39KWH
+HYUNDAI - Kona,    4000 kms, 185 kms away, 2023/11: 19990 € (reg=  26 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2895006120        HYUNDAI Kona Electrique 39 kWh - 136 ch Intuitive
+HYUNDAI - Kona,   22084 kms, 333 kms away, 2021/09: 15299 € (reg=  21 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2887902444        Hyundai Kona Electric 39kWh - 136ch Intuitive Camera
+HYUNDAI - Kona,   20700 kms, 449 kms away, 2023/05: 17990 € (reg=  28 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3035388554        HYUNDAI KONA ELECTRIC II EV 135 2WD 39 kWh 136 ch Intuitive 1ere Main *Garantie Constructeur 3 ans
+HYUNDAI - Kona,   30342 kms, 211 kms away, 2021/03: 13990 € (reg=  20 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2883233787        HYUNDAI Kona Electrique 39 kWh - 136 ch Intuitive
+HYUNDAI - Kona,   29100 kms, 295 kms away, 2021/10: 14999 € (reg=  23 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2464295105        Hyundai Kona Electric 39 kWh 136 ch Intuitive Carplay Camera
+HYUNDAI - Kona,   29800 kms, 397 kms away, 2022/06: 15999 € (reg=  26 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3029690628        Hyundai Kona Electric 39kWh - 136ch Intuitive
+Analysis for JEEP_Avenger based on 3 items
+Linear regression: price = 8246.21 + -26.35 * mileage_kkms + 7518.02 * age_years
+max_mileage = 312901.83, max_age = -1.10
+R^2 = 1.00
+Prediction (300000.0 kms, 15 years): price = 8246.21 - 27.49 * mileage_kkms - 549.75 * age_years
+Best 20 deals for JEEP_Avenger
+JEEP - Avenger,   42000 kms, 204 kms away, 2023/09: 21990 € (reg=   0 %,  my=-266 %) https://www.leboncoin.fr/ad/voitures/3013790043        Jeep Avenger 1st EDITION ELECTRIQUE 115KW 156CV 4X2
+JEEP - Avenger,   18700 kms, 298 kms away, 2023/06: 24499 € (reg=   0 %,  my=-276 %) https://www.leboncoin.fr/ad/voitures/3020851289        Jeep Avenger Electrique 156ch 115kW 1st Edition GPS Camera
+JEEP - Avenger,   23956 kms, 397 kms away, 2023/05: 24999 € (reg=   0 %,  my=-295 %) https://www.leboncoin.fr/ad/voitures/2973536934        Jeep Avenger Electrique 156ch 115kW Summit
+Analysis for JEEP_Compass based on 1 items
+Error while analyzing JEEP_Compass: Not Regular Matrix
+Best 20 deals for JEEP_Compass
+Analysis for KIA_EV3 based on 8 items
+Linear regression: price = 31855.62 + 205.31 * mileage_kkms + 8880.08 * age_years
+max_mileage = -155156.73, max_age = -3.59
+R^2 = 0.86
+Prediction (300000.0 kms, 15 years): price = 31855.62 - 106.19 * mileage_kkms - 2123.71 * age_years
+Best 20 deals for KIA_EV3
+Analysis for KIA_EV6 based on 51 items
+Linear regression: price = 49532.52 + -134.54 * mileage_kkms + -3731.55 * age_years
+max_mileage = 368154.72, max_age = 13.27
+R^2 = 0.73
+Prediction (300000.0 kms, 15 years): price = 49532.52 - 165.11 * mileage_kkms - 3302.17 * age_years
+Best 20 deals for KIA_EV6
+KIA - EV6,   42243 kms, 185 kms away, 2023/01: 28499 € (reg=  16 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2920858179        KIA EV6 229 ch Air Active
+KIA - EV6,   33747 kms, 365 kms away, 2022/04: 28490 € (reg=  11 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/3017094804        Kia EV6 229 ch Air Active
+KIA - EV6,   26250 kms, 577 kms away, 2022/05: 29990 € (reg=  10 %,  my=  12 %) https://www.leboncoin.fr/ad/voitures/3012229116        Kia EV6 229 CH Air Active
+KIA - EV6,   48927 kms, 234 kms away, 2022/03: 26990 € (reg=   9 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/3042261957 **NEW** KIA EV6 229 ch Air Active
+KIA - EV6,   48850 kms, 125 kms away, 2022/05: 27900 € (reg=   8 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3012731133        Kia EV6 229 CH Air Active
+KIA - EV6,   47500 kms, 125 kms away, 2022/03: 27900 € (reg=   7 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/2990217080        Kia EV6 229 CH Active
+KIA - EV6,   37500 kms, 753 kms away, 2022/03: 29490 € (reg=   6 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/3002241439 **NEW** Kia EV6 Electrique 229 ch 77,4 kWh AIR ACTIVE 2 WD (ATTELAGE)
+KIA - EV6,   38226 kms, 577 kms away, 2022/05: 29990 € (reg=   6 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/3042167506 **NEW** Kia EV6 229 CH Active
+KIA - EV6,   33875 kms, 630 kms away, 2021/12: 29990 € (reg=   3 %,  my=   5 %) https://www.leboncoin.fr/ad/voitures/2879989927 **NEW** KIA EV6 229 ch Air Active Business
+KIA - EV6,   44736 kms, 577 kms away, 2022/06: 29990 € (reg=   4 %,  my=   4 %) https://www.leboncoin.fr/ad/voitures/3038137125 **NEW** Kia EV6 229 CH Air Active
+Analysis for KIA_EV9 based on 3 items
+Linear regression: price = 93804.34 + 174.10 * mileage_kkms + -16099.32 * age_years
+max_mileage = -538790.69, max_age = 5.83
+R^2 = 1.00
+Prediction (300000.0 kms, 15 years): price = 93804.34 - 312.68 * mileage_kkms - 6253.62 * age_years
+Best 20 deals for KIA_EV9
+Analysis for KIA_Niro based on 200 items
+Linear regression: price = 34286.62 + -52.57 * mileage_kkms + -2027.73 * age_years
+max_mileage = 652234.29, max_age = 16.91
+R^2 = 0.10
+Prediction (300000.0 kms, 15 years): price = 34286.62 - 114.29 * mileage_kkms - 2285.77 * age_years
+Best 20 deals for KIA_Niro
+KIA - Niro,   26582 kms, 655 kms away, 2021/11: 16990 € (reg=  32 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/2924359462        Kia e-Niro Motion 136ch
+KIA - Niro,   20943 kms, 745 kms away, 2021/06: 17380 € (reg=  29 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/2375071726        Kia e-Niro Motion 136ch
+KIA - Niro,   37107 kms, 629 kms away, 2022/04: 17490 € (reg=  31 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/3002639099        Kia e-Niro Motion 136ch
+KIA - Niro,   13058 kms, 655 kms away, 2021/02: 19490 € (reg=  19 %,  my=  12 %) https://www.leboncoin.fr/ad/voitures/2947337650        Kia e-Niro Active 136ch
+KIA - Niro,    5800 kms, 461 kms away, 2024/11: 27900 € (reg=  13 %,  my=  12 %) https://www.leboncoin.fr/ad/voitures/3032446486        Kia Niro EV 204ch Active
+KIA - Niro,   18500 kms, 236 kms away, 2022/09: 22300 € (reg=  18 %,  my=  12 %) https://www.leboncoin.fr/ad/voitures/3037168690        Kia Niro EV Active 100% électrique – 19 000 km – état impeccable - Garantie constructeur jusqu’en septembre 2029 (7 ans ou 150 000 km)
+KIA - Niro,    8285 kms, 451 kms away, 2023/10: 25690 € (reg=  14 %,  my=  11 %) https://www.leboncoin.fr/ad/voitures/2997331319        Kia Niro EV 204ch Active
+KIA - Niro,   31945 kms, 655 kms away, 2020/08: 16990 € (reg=  23 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/2613175103        Kia e-Niro Motion 204ch
+KIA - Niro,   16480 kms, 199 kms away, 2021/07: 20470 € (reg=  18 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/2897015816        Kia e-Niro Design 204ch
+KIA - Niro,   30154 kms, 679 kms away, 2023/06: 22990 € (reg=  18 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/3040692601 **NEW** Kia Niro EV 204ch Active
+KIA - Niro,   13900 kms, 400 kms away, 2024/01: 25990 € (reg=  14 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/3034603049        Kia Niro EV 204 Active 64 KWH 2024 +Sieges Chauffants +Reg Adaptatif
+KIA - Niro,   31056 kms, 205 kms away, 2021/11: 19900 € (reg=  20 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/2920338037        KIA e-Niro Electrique 204 ch Active
+KIA - Niro,   41090 kms, 451 kms away, 2022/04: 19890 € (reg=  21 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/2846545088        Kia e-Niro DESIGN 204ch
+KIA - Niro,   42753 kms, 655 kms away, 2021/06: 17990 € (reg=  23 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3025849044        Kia e-Niro Active 204ch
+KIA - Niro,   19380 kms, 224 kms away, 2024/02: 25990 € (reg=  13 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/2964054738        Kia Niro EV 204ch Active
+KIA - Niro,   29014 kms, 691 kms away, 2022/03: 20990 € (reg=  18 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/2989684619        Kia e-Niro Motion 204ch
+KIA - Niro,   14221 kms, 427 kms away, 2023/05: 24990 € (reg=  13 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3027010171        Kia Niro EV 204ch Active
+KIA - Niro,   27789 kms, 691 kms away, 2022/02: 20990 € (reg=  18 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/2974612410 **NEW** Kia e-Niro Motion 204ch
+KIA - Niro,   14983 kms, 224 kms away, 2023/11: 25990 € (reg=  12 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/2965155756 **NEW** Kia Niro EV 204ch Active
+KIA - Niro,   43954 kms, 691 kms away, 2021/06: 17990 € (reg=  23 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/2857048653        Kia e-Niro Motion 204ch
+Analysis for KIA_Soul based on 184 items
+Linear regression: price = 32124.48 + -53.87 * mileage_kkms + -2206.04 * age_years
+max_mileage = 596302.86, max_age = 14.56
+R^2 = 0.79
+Prediction (300000.0 kms, 15 years): price = 32124.48 - 107.08 * mileage_kkms - 2141.63 * age_years
+Best 20 deals for KIA_Soul
+KIA - Soul,    7998 kms, 497 kms away, 2022/12: 16499 € (reg=  35 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2952165133        Kia E-Soul 136ch Motion
+KIA - Soul,    7998 kms, 474 kms away, 2022/12: 16499 € (reg=  35 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2952165129        Kia E-Soul 136ch Motion
+KIA - Soul,    7998 kms, 466 kms away, 2022/12: 16499 € (reg=  35 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2952165128        Kia E-Soul 136ch Motion
+KIA - Soul,    7998 kms, 546 kms away, 2022/12: 16499 € (reg=  35 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2952165126        Kia E-Soul 136ch Motion
+KIA - Soul,    7998 kms, 461 kms away, 2022/12: 16499 € (reg=  35 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2984287179        Kia E-Soul 136ch Motion
+KIA - Soul,    7998 kms, 365 kms away, 2022/12: 16499 € (reg=  35 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2952165125        Kia E-Soul 136ch Motion
+KIA - Soul,    7998 kms, 482 kms away, 2022/12: 16499 € (reg=  35 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2952165130        Kia E-Soul 136ch Motion
+KIA - Soul,    7998 kms, 494 kms away, 2022/12: 16499 € (reg=  35 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2952165134        Kia E-Soul 136ch Motion
+KIA - Soul,    7998 kms, 454 kms away, 2022/12: 16499 € (reg=  35 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2952165132        Kia E-Soul 136ch Motion
+KIA - Soul,   15500 kms, 417 kms away, 2017/05:  9490 € (reg=  26 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/2969473054        KIA SOUL 81,4kW 110 ch EV Ultimate - 2 eme main - 15 500 KMS SEULEMENT
+KIA - Soul,    9235 kms, 335 kms away, 2022/12: 19490 € (reg=  23 %,  my=  22 %) https://www.leboncoin.fr/ad/voitures/2969877191        Kia e-Soul 39,2 kWh 136 Motion Bluetooth Caméra ACC garantie 12-2029
+KIA - Soul,   33735 kms, 824 kms away, 2021/05: 15490 € (reg=  25 %,  my=  19 %) https://www.leboncoin.fr/ad/voitures/2945228849        KIA e-Soul Electrique 204 ch Active
+KIA - Soul,   31423 kms, 655 kms away, 2022/09: 17990 € (reg=  24 %,  my=  19 %) https://www.leboncoin.fr/ad/voitures/2988246575        Kia e-Soul 136ch Motion
+KIA - Soul,   17696 kms, 355 kms away, 2021/06: 17590 € (reg=  19 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2934734822        Kia e-Soul 136ch Active
+KIA - Soul,   35948 kms, 745 kms away, 2018/08: 11290 € (reg=  22 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/2900582892        Kia Soul EV EV 110ch 30 kWh
+KIA - Soul,   49598 kms, 462 kms away, 2021/12: 16499 € (reg=  22 %,  my=  12 %) https://www.leboncoin.fr/ad/voitures/2969877245        Kia e-Soul Active 204ch
+KIA - Soul,   16089 kms, 123 kms away, 2021/11: 19990 € (reg=  12 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/3019819443        Kia Soul e- Electrique 204 ch Active
+KIA - Soul,   24688 kms, 193 kms away, 2023/05: 22190 € (reg=  13 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/2652233975        Kia e-Soul 204ch Active
+KIA - Soul,   47727 kms, 475 kms away, 2022/03: 17980 € (reg=  17 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/2995111053        Kia e-Soul Active 204ch MY22
+KIA - Soul,   29927 kms, 745 kms away, 2022/07: 20690 € (reg=  12 %,  my=   6 %) https://www.leboncoin.fr/ad/voitures/2853565708 **NEW** Kia e-Soul Active 204ch MY22
+Analysis for LIGIER_Pulse 4 based on 1 items
+Error while analyzing LIGIER_Pulse 4: Not Regular Matrix
+Best 20 deals for LIGIER_Pulse 4
+LIGIER - Pulse 4,   17500 kms, 608 kms away, 2014/08:  4000 € (reg=     %,  my=     %) https://www.leboncoin.fr/ad/voitures/3034893879        Ligier Be Sun
+Analysis for MAZDA_MX-30 based on 12 items
+Linear regression: price = 23422.18 + -26.51 * mileage_kkms + -1601.62 * age_years
+max_mileage = 883428.17, max_age = 14.62
+R^2 = 0.70
+Prediction (300000.0 kms, 15 years): price = 23422.18 - 78.07 * mileage_kkms - 1561.48 * age_years
+Best 20 deals for MAZDA_MX-30
+MAZDA - MX-30,   23781 kms, 381 kms away, 2022/01: 14584 € (reg=  13 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3038371006        Mazda MX-30 e-SKYACTIV 145ch Industrial Vintage
+MAZDA - MX-30,   15427 kms, 211 kms away, 2021/09: 15490 € (reg=   6 %,  my=   3 %) https://www.leboncoin.fr/ad/voitures/3031387652        MAZDA MX-30 e-Skyactiv 145 ch First Edition Industrial Vintage
+MAZDA - MX-30,   14000 kms, 250 kms away, 2022/10: 18489 € (reg=   0 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/2856615338        Mazda MX-30 202 e-SKYACTIV 35.5 KWH 145 ch MAKOTO INDUSTRIAL VINTAGE PACK PREMIUM + TOIT OUVRANT
+MAZDA - MX-30,    5233 kms, 287 kms away, 2023/11: 21000 € (reg=  -3 %,  my=  -4 %) https://www.leboncoin.fr/ad/voitures/3043122509        Vend mazda mx30 elec
+MAZDA - MX-30,   20694 kms, 455 kms away, 2021/05: 15990 € (reg=   0 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2997334669        Mazda MX-30 e-SKYACTIV 145ch Industrial Vintage
+MAZDA - MX-30,   34993 kms, 399 kms away, 2022/04: 16900 € (reg=   0 %,  my=  -9 %) https://www.leboncoin.fr/ad/voitures/3031599077        Mazda MX-30 ELECTRIQUE 2020 E-SKYACTIV 145 CH Industrial Vintage
+MAZDA - MX-30,   17480 kms, 207 kms away, 2020/11: 15999 € (reg=  -4 %,  my=  -9 %) https://www.leboncoin.fr/ad/voitures/2981695154        Mazda MX-30 e-SKYACTIV 145ch Modern Confidence
+MAZDA - MX-30,   20965 kms, 327 kms away, 2021/12: 17900 € (reg=  -5 %,  my= -12 %) https://www.leboncoin.fr/ad/voitures/2760512984        Mazda MX-30 E-SKYACTIV 145 CH Industrial Vintage
+MAZDA - MX-30,   36000 kms, 400 kms away, 2020/09: 14500 € (reg=   0 %,  my= -12 %) https://www.leboncoin.fr/ad/voitures/3022854588        Mazda MX-30
+MAZDA - MX-30,   44277 kms, 547 kms away, 2021/11: 16990 € (reg=  -5 %,  my= -21 %) https://www.leboncoin.fr/ad/voitures/2877212340        MAZDA MX-30 e-Skyactiv 145 ch First Edition Industrial Vintage
+MAZDA - MX-30,   41000 kms, 626 kms away, 2021/06: 16690 € (reg=  -7 %,  my= -22 %) https://www.leboncoin.fr/ad/voitures/3041227870 **NEW** MAXDA MX-30, Garantie, Etat Neuf
+Analysis for MERCEDES-BENZ_EQA based on 4 items
+Linear regression: price = 47047.68 + -128.05 * mileage_kkms + -3224.14 * age_years
+max_mileage = 367404.16, max_age = 14.59
+R^2 = 0.89
+Prediction (300000.0 kms, 15 years): price = 47047.68 - 156.83 * mileage_kkms - 3136.51 * age_years
+Best 20 deals for MERCEDES-BENZ_EQA
+Analysis for MERCEDES-BENZ_EQB based on 1 items
+Error while analyzing MERCEDES-BENZ_EQB: Not Regular Matrix
+Best 20 deals for MERCEDES-BENZ_EQB
+Analysis for MERCEDES-BENZ_EQE based on 2 items
+Linear regression: price = 76584.38 + -2271.84 * mileage_kkms + 22797.00 * age_years
+max_mileage = 33710.29, max_age = -3.36
+R^2 = -13.63
+Prediction (300000.0 kms, 15 years): price = 76584.38 - 255.28 * mileage_kkms - 5105.62 * age_years
+Best 20 deals for MERCEDES-BENZ_EQE
+Analysis for MERCEDES-BENZ_EQT based on 32 items
+Linear regression: price = 45345.80 + -245.63 * mileage_kkms + -5598.68 * age_years
+max_mileage = 184612.00, max_age = 8.10
+R^2 = 0.26
+Prediction (300000.0 kms, 15 years): price = 45345.80 - 151.15 * mileage_kkms - 3023.05 * age_years
+Best 20 deals for MERCEDES-BENZ_EQT
+MERCEDES-BENZ - EQT,   14000 kms, 153 kms away, 2024/02: 22900 € (reg=  31 %,  my=  40 %) https://www.leboncoin.fr/ad/voitures/3039768924        MERCEDES EQT 200 Progressive
+MERCEDES-BENZ - EQT,   10400 kms, 331 kms away, 2024/02: 24000 € (reg=  29 %,  my=  38 %) https://www.leboncoin.fr/ad/voitures/2686550999        Mercedes-benz EQT 200 122ch Progressive
+MERCEDES-BENZ - EQT,     950 kms, 436 kms away, 2024/02: 24990 € (reg=  31 %,  my=  38 %) https://www.leboncoin.fr/ad/voitures/3005827114        Mercedes-benz EQT 200 122ch Progressive
+MERCEDES-BENZ - EQT,    5000 kms, 376 kms away, 2023/08: 24000 € (reg=  26 %,  my=  37 %) https://www.leboncoin.fr/ad/voitures/2434691765        Mercedes-benz EQT 200 122ch Progressive
+MERCEDES-BENZ - EQT,    7489 kms, 415 kms away, 2023/09: 24000 € (reg=  26 %,  my=  37 %) https://www.leboncoin.fr/ad/voitures/2469387246        Mercedes-benz EQT 200 122ch Progressive
+MERCEDES-BENZ - EQT,    4850 kms, 339 kms away, 2023/12: 27900 € (reg=  19 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2943371182        Mercedes-benz EQT 200 122ch Progressive
+MERCEDES-BENZ - EQT,    4850 kms, 367 kms away, 2023/12: 27900 € (reg=  19 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3042825439        Mercedes-benz EQT 200 122ch Progressive
+MERCEDES-BENZ - EQT,     100 kms, 756 kms away, 2024/08: 29990 € (reg=  23 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2946803492        Mercedes-benz EQT 200 122ch Progressive
+MERCEDES-BENZ - EQT,   35000 kms, 517 kms away, 2023/10: 24500 € (reg=   6 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2984288017        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,   35000 kms, 497 kms away, 2023/10: 24500 € (reg=   6 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2952167596        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,   35000 kms, 474 kms away, 2023/10: 24500 € (reg=   6 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2952167592        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,   35000 kms, 466 kms away, 2023/10: 24500 € (reg=   6 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2952167589        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,   35000 kms, 545 kms away, 2023/10: 24500 € (reg=   6 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2952167593        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,   35000 kms, 546 kms away, 2023/10: 24500 € (reg=   6 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2952167587        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,   35000 kms, 494 kms away, 2023/10: 24500 € (reg=   6 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2952167603        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,   35000 kms, 482 kms away, 2023/10: 24500 € (reg=   6 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2952167594        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,   35000 kms, 454 kms away, 2023/10: 24500 € (reg=   6 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2952167598        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,       6 kms, 550 kms away, 2023/12: 30000 € (reg=  15 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/2991240345        Mercedes EQT 200 Standard CLASSE T PROGRESSIVE
+MERCEDES-BENZ - EQT,   15000 kms, 478 kms away, 2023/12: 28390 € (reg=  11 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3031764038        Mercedes Eqt 200 122ch Progressive
+MERCEDES-BENZ - EQT,    2178 kms, 404 kms away, 2023/12: 30000 € (reg=  14 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/2957434571        Mercedes EQT 200 Standard CLASSE T PROGRESSIVE
+Analysis for MG/MG MOTOR_Autre based on 7 items
+Linear regression: price = 26353.65 + -37.01 * mileage_kkms + -1701.94 * age_years
+max_mileage = 712027.19, max_age = 15.48
+R^2 = 0.26
+Prediction (300000.0 kms, 15 years): price = 26353.65 - 87.85 * mileage_kkms - 1756.91 * age_years
+Best 20 deals for MG/MG MOTOR_Autre
+MG/MG MOTOR - Autre,   13900 kms, 367 kms away, 2023/12: 18990 € (reg=  17 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/3003185372        Mg 4 ELECTRIC 170 Standard 73PPM 51KWH BVA
+MG/MG MOTOR - Autre,   15500 kms, 744 kms away, 2023/08: 19990 € (reg=  10 %,  my=   6 %) https://www.leboncoin.fr/ad/voitures/2994210198        Mg 5 EV 156ch - 61kWh Luxury
+MG/MG MOTOR - Autre,      10 kms, 140 kms away, 2024/12: 24790 € (reg=   1 %,  my=   1 %) https://www.leboncoin.fr/ad/voitures/3006490989        Mg 4 ELECTRIC 205 92PPM 64KWH LUXURY BVA
+MG/MG MOTOR - Autre,   39700 kms, 456 kms away, 2023/02: 20490 € (reg=   0 %,  my= -11 %) https://www.leboncoin.fr/ad/voitures/2984816456        Mg 4 ELECTRIC 205 92PPM 64KWH LUXURY BVA
+MG/MG MOTOR - Autre,    6000 kms, 550 kms away, 2024/02: 28490 € (reg= -21 %,  my= -23 %) https://www.leboncoin.fr/ad/voitures/2982508883        Mg 4 ELECTRIC 435 64KWH XPOWER 4WD BVA
+MG/MG MOTOR - Autre,   41500 kms, 527 kms away, 2023/03: 22990 € (reg= -11 %,  my= -25 %) https://www.leboncoin.fr/ad/voitures/3016101534        M.G. 4 Luxury 64Kwh 204ch
+Analysis for MG/MG MOTOR_C based on 1 items
+Error while analyzing MG/MG MOTOR_C: Not Regular Matrix
+Best 20 deals for MG/MG MOTOR_C
+Analysis for MG/MG MOTOR_Cyberster based on 50 items
+Linear regression: price = 67748.56 + -159.71 * mileage_kkms + -5235.91 * age_years
+max_mileage = 424192.37, max_age = 12.94
+R^2 = 0.28
+Prediction (300000.0 kms, 15 years): price = 67748.56 - 225.83 * mileage_kkms - 4516.57 * age_years
+Best 20 deals for MG/MG MOTOR_Cyberster
+Analysis for MG/MG MOTOR_MARVEL R based on 88 items
+Linear regression: price = 35291.78 + -104.49 * mileage_kkms + -1881.12 * age_years
+max_mileage = 337743.69, max_age = 18.76
+R^2 = 0.62
+Prediction (300000.0 kms, 15 years): price = 35291.78 - 117.64 * mileage_kkms - 2352.79 * age_years
+Best 20 deals for MG/MG MOTOR_MARVEL R
+MG/MG MOTOR - MARVEL R,   14111 kms, 456 kms away, 2023/06: 23590 € (reg=  20 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2977211507        MG Motor MARVEL R EV 2WD COMFORT
+MG/MG MOTOR - MARVEL R,   21000 kms, 229 kms away, 2022/12: 22500 € (reg=  19 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/3037815395        Mg Marvel R EV 180ch luxury
+MG/MG MOTOR - MARVEL R,   18971 kms, 418 kms away, 2023/12: 24990 € (reg=  16 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/3013945840 **NEW** MG Marvel R EV 2WD Luxury
+MG/MG MOTOR - MARVEL R,   11583 kms, 230 kms away, 2024/06: 27000 € (reg=  15 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/2998251194        MG MARVEL R EV 180ch Luxury 2WD
+MG/MG MOTOR - MARVEL R,   20133 kms, 549 kms away, 2023/06: 24990 € (reg=  13 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/3036082813        MG Marvel R EV 2WD Comfort
+MG/MG MOTOR - MARVEL R,   33500 kms, 369 kms away, 2022/12: 23000 € (reg=  13 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/3041372760        Mg marvel r luxury
+MG/MG MOTOR - MARVEL R,     100 kms, 206 kms away, 2024/06: 29900 € (reg=   9 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/2968193912        MG Marvel R EV 2WD Comfort
+MG/MG MOTOR - MARVEL R,     125 kms, 206 kms away, 2024/06: 29900 € (reg=   9 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/2908970271        MG Marvel R EV 2WD Comfort
+MG/MG MOTOR - MARVEL R,    7650 kms, 385 kms away, 2024/10: 30000 € (reg=   8 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/3035978475        MG MARVEL R électrique
+MG/MG MOTOR - MARVEL R,   22500 kms,  36 kms away, 2024/02: 26990 € (reg=  10 %,  my=   6 %) https://www.leboncoin.fr/ad/voitures/3042488785 **NEW** MG MARVEL R EV 2WD Luxury Garantie Constructeur
+MG/MG MOTOR - MARVEL R,   16833 kms, 103 kms away, 2023/10: 26889 € (reg=  10 %,  my=   6 %) https://www.leboncoin.fr/ad/voitures/3024140277        MG Marvel R EV 2WD Luxury
+MG/MG MOTOR - MARVEL R,   35905 kms, 513 kms away, 2023/11: 25490 € (reg=   9 %,  my=   4 %) https://www.leboncoin.fr/ad/voitures/3036024536        MG Marvel R EV 2WD Luxury 5p
+MG/MG MOTOR - MARVEL R,   17000 kms, 368 kms away, 2023/06: 26990 € (reg=   7 %,  my=   3 %) https://www.leboncoin.fr/ad/voitures/2917181696        MG Marvel R EV 2WD Comfort
+MG/MG MOTOR - MARVEL R,   30000 kms, 552 kms away, 2023/03: 24990 € (reg=   9 %,  my=   3 %) https://www.leboncoin.fr/ad/voitures/2977881484        MG Marvel R EV 2WD Luxury
+MG/MG MOTOR - MARVEL R,   15752 kms, 414 kms away, 2023/06: 27490 € (reg=   6 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2915918416 **NEW** MG Marvel R EV 4WD Performance
+MG/MG MOTOR - MARVEL R,   12594 kms, 208 kms away, 2023/06: 27900 € (reg=   6 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2964601175 **NEW** MG Marvel R EV 2WD Comfort
+MG/MG MOTOR - MARVEL R,   17500 kms, 632 kms away, 2023/12: 28500 € (reg=   5 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/3029816994 **NEW** MG Marvel R électrique 180ch Luxury
+MG/MG MOTOR - MARVEL R,   12929 kms, 208 kms away, 2023/06: 27900 € (reg=   6 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2964601178 **NEW** MG Marvel R EV 2WD Comfort
+MG/MG MOTOR - MARVEL R,   39500 kms, 537 kms away, 2022/12: 23700 € (reg=   9 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/3038309577 **NEW** MG Marvel R luxury
+MG/MG MOTOR - MARVEL R,   21894 kms, 865 kms away, 2023/06: 26990 € (reg=   6 %,  my=   1 %) https://www.leboncoin.fr/ad/voitures/2989738281 **NEW** MG Motor MARVEL R EV 2WD LUXURY
+Analysis for MG/MG MOTOR_MG4 based on 200 items
+Linear regression: price = 31192.45 + -81.52 * mileage_kkms + -3384.51 * age_years
+max_mileage = 382642.69, max_age = 9.22
+R^2 = 0.51
+Prediction (300000.0 kms, 15 years): price = 31192.45 - 103.97 * mileage_kkms - 2079.50 * age_years
+Best 20 deals for MG/MG MOTOR_MG4
+MG/MG MOTOR - MG4,   35500 kms, 249 kms away, 2024/05: 14500 € (reg=  39 %,  my=  41 %) https://www.leboncoin.fr/ad/voitures/3036919419        Mg mg4 Loa
+MG/MG MOTOR - MG4,   14179 kms, 750 kms away, 2023/12: 17990 € (reg=  25 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3028214084        Mg motor MG4 EV 170ch - 51kWh MY23
+MG/MG MOTOR - MG4,    7297 kms, 116 kms away, 2024/03: 19290 € (reg=  24 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3042260980        Mg motor MG4 EV 170ch - 51kWh MY23
+MG/MG MOTOR - MG4,   20115 kms, 750 kms away, 2023/12: 17990 € (reg=  24 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3035512372        Mg motor MG4 EV 170ch - 51kWh MY23
+MG/MG MOTOR - MG4,   27441 kms, 123 kms away, 2023/12: 17490 € (reg=  24 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3036003623        Mg motor MG4 EV 170ch - 51kWh MY23
+MG/MG MOTOR - MG4,   20600 kms, 499 kms away, 2023/07: 17490 € (reg=  21 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3035943021        Mg motor mg4 2wd standard
+MG/MG MOTOR - MG4,   10950 kms, 414 kms away, 2023/12: 18990 € (reg=  22 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3038856146        MG MG4 Electric 51kWh - 125 kW 2WD Standard
+MG/MG MOTOR - MG4,   14800 kms, 368 kms away, 2023/06: 17990 € (reg=  19 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2962241160        MG MG4 Electric 51kWh - 125 kW 2WD Standard
+MG/MG MOTOR - MG4,    5116 kms, 668 kms away, 2023/12: 19490 € (reg=  21 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3033200704        Mg motor MG4 EV 170ch - 51kWh MY23
+MG/MG MOTOR - MG4,   39000 kms, 262 kms away, 2023/12: 17000 € (reg=  23 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3034762785        MG 4 Standard 51 kwh
+MG/MG MOTOR - MG4,   21001 kms, 556 kms away, 2023/09: 17990 € (reg=  21 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2990822259        MG4 Electric 51kWh - 125 kW 2WD Standard 5P
+MG/MG MOTOR - MG4,    6293 kms, 668 kms away, 2023/12: 19490 € (reg=  21 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3031386444        Mg motor MG4 EV 170ch - 51kWh MY23
+MG/MG MOTOR - MG4,   13682 kms, 348 kms away, 2023/12: 18980 € (reg=  21 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3036008796        MG MG4 Electric 51kWh - 125 kW 2WD Standard
+MG/MG MOTOR - MG4,    7865 kms, 552 kms away, 2023/12: 19490 € (reg=  21 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3038371599        Mg motor MG4 EV 170ch - 51kWh MY23
+MG/MG MOTOR - MG4,   16746 kms, 399 kms away, 2023/12: 18980 € (reg=  20 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3032453117        MG MG4 Electric 51kWh - 125 kW 2WD Standard
+MG/MG MOTOR - MG4,   34000 kms, 479 kms away, 2023/05: 17000 € (reg=  17 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3032724790        MG 4 électrique standard 34000km
+MG/MG MOTOR - MG4,   16889 kms, 162 kms away, 2023/09: 18900 € (reg=  18 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3006060728        Mg4 ev 51kwh - 125 kw 2wd standard 170ch
+MG/MG MOTOR - MG4,   13600 kms, 335 kms away, 2023/07: 18900 € (reg=  17 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3036921831        MG MG4 Electric 51kWh - 125 kW 2WD Standard
+MG/MG MOTOR - MG4,   20933 kms, 645 kms away, 2023/12: 18990 € (reg=  19 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3035512884 **NEW** MG MG4 Electric 51kWh - 125 kW 2WD Standard
+MG/MG MOTOR - MG4,   24350 kms, 669 kms away, 2024/02: 18990 € (reg=  20 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3038495027 **NEW** Mg mg4 ev 51kwh - 125 kw 2wd standard
+Analysis for MG/MG MOTOR_MG5 based on 51 items
+Linear regression: price = 24493.93 + -115.65 * mileage_kkms + -314.16 * age_years
+max_mileage = 211791.64, max_age = 77.97
+R^2 = 0.42
+Prediction (300000.0 kms, 15 years): price = 24493.93 - 81.65 * mileage_kkms - 1632.93 * age_years
+Best 20 deals for MG/MG MOTOR_MG5
+MG/MG MOTOR - MG5,      10 kms, 247 kms away, 2025/06: 21980 € (reg=   9 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3027486895        Mg5 61kWh Autonomie Etendue 115 KW 2WD BVA1 156 cv Comfort
+MG/MG MOTOR - MG5,      10 kms, 211 kms away, 2025/06: 21980 € (reg=   9 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3026927968        Mg5 61kWh Autonomie Etendue 115 KW 2WD BVA1 156 cv Comfort
+MG/MG MOTOR - MG5,     114 kms, 703 kms away, 2023/08: 19990 € (reg=  16 %,  my=   5 %) https://www.leboncoin.fr/ad/voitures/2928325708        Mg motor MG5 EV 156ch - 61kWh Luxury MY23
+MG/MG MOTOR - MG5,   25100 kms, 556 kms away, 2023/06: 17990 € (reg=  13 %,  my=   4 %) https://www.leboncoin.fr/ad/voitures/3012571207        Mg5 Autonomie Standard 50kWh - 130 kW 2WD Luxury 5P
+MG/MG MOTOR - MG5,    1175 kms, 763 kms away, 2024/09: 22000 € (reg=   8 %,  my=   3 %) https://www.leboncoin.fr/ad/voitures/2905558638        Mg motor MG5 EV 177ch - 50kWh Luxury MY23
+MG/MG MOTOR - MG5,    9000 kms, 492 kms away, 2023/09: 19900 € (reg=  12 %,  my=   3 %) https://www.leboncoin.fr/ad/voitures/2972949137        Mg motor MG5 EV 177ch - 50kWh Comfort MY23
+MG/MG MOTOR - MG5,    7454 kms, 705 kms away, 2023/03: 19400 € (reg=  15 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2629353373        Mg motor MG5 EV 177ch - 50kWh Luxury
+MG/MG MOTOR - MG5,    8500 kms, 206 kms away, 2022/09: 18690 € (reg=  17 %,  my=   1 %) https://www.leboncoin.fr/ad/voitures/3019975579        MG MG5 Autonomie Standard 50kWh - 130 kW 2WD Luxury
+MG/MG MOTOR - MG5,    6000 kms, 206 kms away, 2024/04: 21900 € (reg=   6 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/2919812953        MG MG5 Autonomie Etendue 61kWh - 115 kW 2WD Luxury
+MG/MG MOTOR - MG5,    7000 kms, 206 kms away, 2024/04: 21900 € (reg=   5 %,  my=  -1 %) https://www.leboncoin.fr/ad/voitures/2919812954        MG MG5 Autonomie Etendue 61kWh - 115 kW 2WD Luxury
+MG/MG MOTOR - MG5,   19021 kms, 458 kms away, 2022/06: 17990 € (reg=  15 %,  my=  -1 %) https://www.leboncoin.fr/ad/voitures/3035513081        Mg motor MG5 EV 177ch - 50kWh Luxury
+MG/MG MOTOR - MG5,   24780 kms, 600 kms away, 2023/11: 19990 € (reg=   5 %,  my=  -2 %) https://www.leboncoin.fr/ad/voitures/3020854074        Mg motor MG5 EV 156ch - 61kWh Luxury MY23
+MG/MG MOTOR - MG5,   14197 kms, 705 kms away, 2022/09: 18990 € (reg=  13 %,  my=  -2 %) https://www.leboncoin.fr/ad/voitures/3019442629        Mg motor MG5 EV 177ch - 50kWh Luxury
+MG/MG MOTOR - MG5,   18500 kms, 505 kms away, 2023/02: 19500 € (reg=   9 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3042708228 **NEW** MG 5 61 Kw Luxury
+MG/MG MOTOR - MG5,   42000 kms, 248 kms away, 2022/10: 16990 € (reg=   9 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3039317573        Mg motor MG5 EV 177ch - 50kWh Comfort
+MG/MG MOTOR - MG5,    1067 kms, 820 kms away, 2023/08: 21980 € (reg=   7 %,  my=  -4 %) https://www.leboncoin.fr/ad/voitures/2778494996 **NEW** Mg motor MG5 EV 156ch - 61kWh Luxury MY23
+MG/MG MOTOR - MG5,   21996 kms, 600 kms away, 2022/09: 18990 € (reg=   9 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2897209600        Mg motor MG5 EV 177ch - 50kWh Luxury
+MG/MG MOTOR - MG5,   33695 kms, 473 kms away, 2023/07: 19470 € (reg=   2 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/3038848846 **NEW** Mg motor MG5 EV 156ch - 61kWh Luxury MY23
+MG/MG MOTOR - MG5,   17047 kms, 458 kms away, 2022/12: 19990 € (reg=   7 %,  my=  -7 %) https://www.leboncoin.fr/ad/voitures/3035513083        Mg motor MG5 EV 156ch - 61kWh Luxury
+MG/MG MOTOR - MG5,      10 kms, 820 kms away, 2025/03: 25450 € (reg=  -4 %,  my=  -7 %) https://www.leboncoin.fr/ad/voitures/2965729287 **NEW** Mg motor MG5 EV 177ch - 50kWh Luxury MY23
+Analysis for MG/MG MOTOR_MGS5 based on 33 items
+Linear regression: price = 38743.73 + -192.64 * mileage_kkms + -8489.31 * age_years
+max_mileage = 201124.79, max_age = 4.56
+R^2 = 0.13
+Prediction (300000.0 kms, 15 years): price = 38743.73 - 129.15 * mileage_kkms - 2582.92 * age_years
+Best 20 deals for MG/MG MOTOR_MGS5
+Analysis for MG/MG MOTOR_ZS based on 176 items
+Linear regression: price = 29821.73 + -56.06 * mileage_kkms + -2473.76 * age_years
+max_mileage = 531936.77, max_age = 12.06
+R^2 = 0.72
+Prediction (300000.0 kms, 15 years): price = 29821.73 - 99.41 * mileage_kkms - 1988.12 * age_years
+Best 20 deals for MG/MG MOTOR_ZS
+MG/MG MOTOR - ZS,   41000 kms, 400 kms away, 2023/01:  6500 € (reg=  69 %,  my=  68 %) https://www.leboncoin.fr/ad/voitures/3042900609 **NEW** Mg zs ev electrique
+MG/MG MOTOR - ZS,      10 kms, 140 kms away, 2025/05: 21790 € (reg=  25 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3029062329        Mg Zs ELECTRIQUE AUTONOMIE STANDARD 51KWH - 130 KW 2WD LUXURY
+MG/MG MOTOR - ZS,      15 kms,  19 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3041752276        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms, 400 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3039767564        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms,  19 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3042270496        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms,  83 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3040247180        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms,  83 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3040247182        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms, 400 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3042270463 **NEW** Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms,  90 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3041752368        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms,  83 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3039768226        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms,  90 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3039768187        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms,  19 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3039767715        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms, 400 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3040246924        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,      15 kms,  90 kms away, 2025/05: 21998 € (reg=  24 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3041237642        Mg zs electrique autonomie standard 51kwh - 130 k
+MG/MG MOTOR - ZS,   14790 kms, 451 kms away, 2022/11: 17490 € (reg=  20 %,  my=  23 %) https://www.leboncoin.fr/ad/voitures/2916435052        MG ZS EV Autonomie Standard 51kWh - 130 kW 2WD Comfort
+MG/MG MOTOR - ZS,   19728 kms, 122 kms away, 2023/06: 18390 € (reg=  20 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/3010733323        Mg zs ev 51kwh comfort
+MG/MG MOTOR - ZS,   25000 kms, 460 kms away, 2022/06: 16990 € (reg=  16 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/3024982286        MG Motor ZS EV 177ch - 50kWh Comfort
+MG/MG MOTOR - ZS,   36905 kms, 633 kms away, 2021/07: 14900 € (reg=  14 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2988327495        Mg zs 143ch suv luxury
+MG/MG MOTOR - ZS,   26045 kms, 206 kms away, 2021/04: 15490 € (reg=  11 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2905570096        MG ZS EV 44.5 kWh Luxury
+MG/MG MOTOR - ZS,   44401 kms, 556 kms away, 2021/07: 14490 € (reg=  15 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/3038959579        MG ZS EV Luxury 5P
+Analysis for MINI_Mini based on 5 items
+Linear regression: price = 21417.52 + -81.40 * mileage_kkms + -271.10 * age_years
+max_mileage = 263108.25, max_age = 79.00
+R^2 = 0.51
+Prediction (300000.0 kms, 15 years): price = 21417.52 - 71.39 * mileage_kkms - 1427.83 * age_years
+Best 20 deals for MINI_Mini
+MINI - Mini,   16583 kms, 208 kms away, 2023/02: 18500 € (reg=   4 %,  my= -11 %) https://www.leboncoin.fr/ad/voitures/3040771991        MINI COOPER S 184 CH électrique Premium
+MINI - Mini,   10985 kms, 203 kms away, 2023/07: 19990 € (reg=   0 %,  my= -13 %) https://www.leboncoin.fr/ad/voitures/3012746866        Mini Hatch 3 Portes Cooper SE 184 ch Edition Premium
+MINI - Mini,   23021 kms, 327 kms away, 2023/04: 19590 € (reg=  -3 %,  my= -19 %) https://www.leboncoin.fr/ad/voitures/3038112637        Mini Hatch 3 Portes Cooper SE 184 ch Edition Premium Plus
+MINI - Mini,   27582 kms, 223 kms away, 2022/05: 17999 € (reg=   1 %,  my= -22 %) https://www.leboncoin.fr/ad/voitures/3021325109        Mini Mini Cooper SE 184ch Classic BVA 5CV
+MINI - Mini,   13677 kms, 436 kms away, 2022/04: 19790 € (reg=  -2 %,  my= -26 %) https://www.leboncoin.fr/ad/voitures/3021793255        Mini ELECTRIQUE F56 Hatch 3 Portes Cooper SE 184 ch Edition Camden 3p
+Analysis for NISSAN_Ariya based on 14 items
+Linear regression: price = 39066.04 + -410.62 * mileage_kkms + 134.97 * age_years
+max_mileage = 95139.77, max_age = -289.44
+R^2 = 0.34
+Prediction (300000.0 kms, 15 years): price = 39066.04 - 130.22 * mileage_kkms - 2604.40 * age_years
+Best 20 deals for NISSAN_Ariya
+NISSAN - Ariya,    7000 kms, 335 kms away, 2024/07: 27900 € (reg=  23 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/3039061027        NISSAN Ariya Electrique 63kWh 218 ch Engage
+NISSAN - Ariya,    4697 kms, 348 kms away, 2024/02: 29990 € (reg=  19 %,  my=  12 %) https://www.leboncoin.fr/ad/voitures/2940883047        NISSAN Ariya Electrique 63kWh 218 ch Engage
+NISSAN - Ariya,   36000 kms, 380 kms away, 2022/09: 25900 € (reg=  -4 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2951654789        NISSAN Ariya Electrique 63kWh 218 ch Advance
+Analysis for NISSAN_Evalia based on 12 items
+Linear regression: price = 25743.49 + -31.58 * mileage_kkms + -1404.04 * age_years
+max_mileage = 815157.26, max_age = 18.34
+R^2 = 0.46
+Prediction (300000.0 kms, 15 years): price = 25743.49 - 85.81 * mileage_kkms - 1716.23 * age_years
+Best 20 deals for NISSAN_Evalia
+NISSAN - Evalia,   49250 kms, 203 kms away, 2018/02:  6990 € (reg=  48 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2912380470        Nissan Evalia e-NV200 24kWh 109ch Flex N-Connecta 5 places
+NISSAN - Evalia,    7863 kms, 171 kms away, 2020/03: 19790 € (reg= -11 %,  my= -26 %) https://www.leboncoin.fr/ad/voitures/3012469734        Nissan Evalia e-NV200 40kWh 109ch N-Connecta 7 places
+NISSAN - Evalia,   39000 kms, 401 kms away, 2016/12: 12000 € (reg=   1 %,  my= -61 %) https://www.leboncoin.fr/ad/voitures/2996356771        Nissan Evalia ENV 200
+NISSAN - Evalia,   23917 kms, 470 kms away, 2015/03: 10000 € (reg=   2 %,  my= -75 %) https://www.leboncoin.fr/ad/voitures/3040006342        Vend Nissan PMR
+NISSAN - Evalia,   42530 kms, 715 kms away, 2016/07: 12290 € (reg=  -6 %,  my= -92 %) https://www.leboncoin.fr/ad/voitures/2948415308        Nissan Evalia e-NV200 Flex N-Connecta 5 places
+Analysis for NISSAN_Leaf based on 200 items
+Linear regression: price = 21079.50 + -36.55 * mileage_kkms + -1140.63 * age_years
+max_mileage = 576763.02, max_age = 18.48
+R^2 = 0.73
+Prediction (300000.0 kms, 15 years): price = 21079.50 - 70.26 * mileage_kkms - 1405.30 * age_years
+Best 20 deals for NISSAN_Leaf
+NISSAN - Leaf,   20901 kms, 440 kms away, 2019/07:  9420 € (reg=  29 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/2357612421        Nissan Leaf 109ch 30kWh Tekna
+NISSAN - Leaf,   24109 kms, 219 kms away, 2021/12: 12499 € (reg=  21 %,  my=  11 %) https://www.leboncoin.fr/ad/voitures/2917548374        Nissan Leaf 150ch 40kWh Acenta 21.5
+NISSAN - Leaf,    8600 kms, 550 kms away, 2022/05: 13990 € (reg=  17 %,  my=  11 %) https://www.leboncoin.fr/ad/voitures/3042195512 **NEW** Nissan Leaf Electrique 40kWh Acenta
+NISSAN - Leaf,   29351 kms, 449 kms away, 2022/07: 12990 € (reg=  20 %,  my=  11 %) https://www.leboncoin.fr/ad/voitures/3001362054        Nissan Leaf Electrique 40kWh Acenta
+NISSAN - Leaf,   23000 kms, 207 kms away, 2022/02: 12989 € (reg=  19 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/3006101551        Nissan Leaf Electrique 40kWh Acenta
+NISSAN - Leaf,   43955 kms, 475 kms away, 2017/08:  5990 € (reg=  41 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/3032584801        Nissan leaf 2017
+NISSAN - Leaf,   21007 kms, 430 kms away, 2022/10: 13999 € (reg=  17 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/2805406532 **NEW** Nissan Leaf 150ch 40kWh N-Connecta 22
+NISSAN - Leaf,   12300 kms, 453 kms away, 2021/12: 13499 € (reg=  17 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/2962247313 **NEW** Nissan Leaf 150ch 40kWh Acenta 21.5
+NISSAN - Leaf,   29528 kms, 152 kms away, 2022/10: 13480 € (reg=  19 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/2920853000        Nissan Leaf 150ch 40kWh Acenta 21
+NISSAN - Leaf,   29154 kms, 449 kms away, 2022/05: 12990 € (reg=  19 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/3039201737        Nissan Leaf Electrique 40kWh Acenta
+NISSAN - Leaf,    2763 kms, 120 kms away, 2022/08: 14990 € (reg=  14 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/3002466670        Nissan Leaf Electrique 40kWh Acenta
+NISSAN - Leaf,    6694 kms, 545 kms away, 2023/10: 16299 € (reg=  12 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/2989741939        Nissan Leaf 150ch 40kWh N-Connecta 22
+NISSAN - Leaf,    6694 kms, 466 kms away, 2023/10: 16299 € (reg=  12 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/2989741938        Nissan Leaf 150ch 40kWh N-Connecta 22
+NISSAN - Leaf,    6694 kms, 454 kms away, 2023/10: 16299 € (reg=  12 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/2989741943        Nissan Leaf 150ch 40kWh N-Connecta 22
+NISSAN - Leaf,    6694 kms, 467 kms away, 2023/10: 16299 € (reg=  12 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/2984279046        Nissan Leaf 150ch 40kWh N-Connecta 22
+NISSAN - Leaf,   22981 kms, 397 kms away, 2021/12: 12999 € (reg=  18 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3023848602        Nissan Leaf 150ch 40kWh Acenta 21
+NISSAN - Leaf,   30120 kms, 430 kms away, 2022/04: 12999 € (reg=  19 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/2980383549        Nissan Leaf 150ch 40kWh Acenta 21.5
+NISSAN - Leaf,   31858 kms, 274 kms away, 2022/05: 12999 € (reg=  19 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3021322155        Nissan Leaf 150ch 40kWh Acenta 21.5
+NISSAN - Leaf,    6230 kms, 119 kms away, 2023/05: 15989 € (reg=  12 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3042262436        Nissan Leaf 150ch 40kWh Acenta 22
+NISSAN - Leaf,   26341 kms, 630 kms away, 2023/01: 14299 € (reg=  16 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/2979085736 **NEW** Nissan Leaf 150ch 40kWh Acenta 22
+Analysis for NISSAN_Townstar based on 2 items
+Linear regression: price = 51951.56 + -812871.68 * mileage_kkms + 6501.96 * age_years
+max_mileage = 63.91, max_age = -7.99
+R^2 = -119.24
+Prediction (300000.0 kms, 15 years): price = 51951.56 - 173.17 * mileage_kkms - 3463.44 * age_years
+Best 20 deals for NISSAN_Townstar
+NISSAN - Townstar,      10 kms, 101 kms away, 2025/07: 28990 € (reg=  35 %,  my=  43 %) https://www.leboncoin.fr/ad/voitures/3035997424        NISSAN Townstar EV Combi Electrique 45kWh Chargeur 22kW N-Connecta
+NISSAN - Townstar,      15 kms, 473 kms away, 2023/02: 24391 € (reg=  56 %,  my=  43 %) https://www.leboncoin.fr/ad/voitures/2960034086        Nissan Townstar Combi 45kWh 122ch N-Connecta chargeur 22kW
+Analysis for OPEL_Combo based on 6 items
+Linear regression: price = 24203.48 + -1964.77 * mileage_kkms + 5821.21 * age_years
+max_mileage = 12318.76, max_age = -4.16
+R^2 = 0.70
+Prediction (300000.0 kms, 15 years): price = 24203.48 - 80.68 * mileage_kkms - 1613.57 * age_years
+Best 20 deals for OPEL_Combo
+OPEL - Combo,   11290 kms, 486 kms away, 2022/09: 19290 € (reg=   0 %,  my=  -4 %) https://www.leboncoin.fr/ad/voitures/2973807892        Opel Combo e-Life L1 136 ch & Batterie 50 kw/h Elegance
+OPEL - Combo,     100 kms, 621 kms away, 2025/05: 24750 € (reg=   4 %,  my=  -4 %) https://www.leboncoin.fr/ad/voitures/3002029760        Opel Combo ELECTRIQUE D e-Life Taille M 136 ch & Batterie 50 kw/h Edition 5p
+OPEL - Combo,     100 kms, 483 kms away, 2025/05: 24990 € (reg=   3 %,  my=  -5 %) https://www.leboncoin.fr/ad/voitures/3013733987        Opel Combo e-Life Taille XL 136 ch & Batterie 50 kw/h Elegance Pack
+OPEL - Combo,      10 kms, 159 kms away, 2025/02: 24980 € (reg=   8 %,  my=  -7 %) https://www.leboncoin.fr/ad/voitures/2960582960        Opel Combo e-Life Taille M 136 ch & Batterie 50 kw/h Edition
+OPEL - Combo,     100 kms, 459 kms away, 2025/04: 29900 € (reg= -13 %,  my= -26 %) https://www.leboncoin.fr/ad/voitures/2994080872        OPEL Combo e-Life Taille M 136 ch & Batterie 50 kw/h Elegance Pack
+OPEL - Combo,     580 kms,  36 kms away, 2024/10: 28990 € (reg=  -2 %,  my= -27 %) https://www.leboncoin.fr/ad/voitures/2879904497        Opel Combo E- Life Taille M 136 ch 100 kW Elegance
+Analysis for OPEL_Combo Life based on 5 items
+Linear regression: price = 27030.25 + -126.99 * mileage_kkms + -1270.37 * age_years
+max_mileage = 212855.84, max_age = 21.28
+R^2 = 0.57
+Prediction (300000.0 kms, 15 years): price = 27030.25 - 90.10 * mileage_kkms - 1802.02 * age_years
+Best 20 deals for OPEL_Combo Life
+OPEL - Combo Life,    1404 kms, 507 kms away, 2023/07: 21999 € (reg=   8 %,  my=   4 %) https://www.leboncoin.fr/ad/voitures/2449334721        Opel Combo Life Taille M - Moteur Electrique 136ch (100 kW) Automatique Edition
+OPEL - Combo Life,   33985 kms, 333 kms away, 2023/09: 19990 € (reg=   1 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2980888389        Opel Combo Life Taille M - Electric 136 Elegance + Toit pano
+OPEL - Combo Life,    1000 kms, 222 kms away, 2023/06: 22900 € (reg=   4 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/3019949901        Opel Combo Life Taille M - Moteur Electrique 136ch (100 kW) Automatique Elégance Pack
+OPEL - Combo Life,   11651 kms, 589 kms away, 2022/02: 21990 € (reg=  -4 %,  my= -12 %) https://www.leboncoin.fr/ad/voitures/2462128468        Opel Combo -E LIFE 136 ELEGANCE BUSINESS 50KW/H
+OPEL - Combo Life,     126 kms, 443 kms away, 2024/01: 27489 € (reg= -10 %,  my= -14 %) https://www.leboncoin.fr/ad/voitures/2968184334        Opel Combo Life Taille XL - Electric 136ch - 54 kWh Elegance
+Analysis for OPEL_Mokka based on 200 items
+Linear regression: price = 34086.26 + -33.57 * mileage_kkms + -4096.84 * age_years
+max_mileage = 1015486.15, max_age = 8.32
+R^2 = 0.71
+Prediction (300000.0 kms, 15 years): price = 34086.26 - 113.62 * mileage_kkms - 2272.42 * age_years
+Best 20 deals for OPEL_Mokka
+OPEL - Mokka,    8911 kms, 545 kms away, 2023/09: 17990 € (reg=  29 %,  my=  37 %) https://www.leboncoin.fr/ad/voitures/2994401789        Opel Mokka ELECTRIQUE 136 ch & Batterie 50 kWh Elegance
+OPEL - Mokka,   14000 kms, 400 kms away, 2022/10: 16900 € (reg=  22 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/3036077067        Opel Mokka Elegance ELECTRIQUE 136 ch Batterie 50 kWh / TVA RECUPERABLE
+OPEL - Mokka,   12013 kms, 238 kms away, 2022/12: 17499 € (reg=  22 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/2450947358        Opel Mokka Mokka-e 136ch Elegance Business
+OPEL - Mokka,   16622 kms, 418 kms away, 2023/10: 18490 € (reg=  28 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2988434105        OPEL Mokka Electrique 136 ch & Batterie 50 kWh GS
+OPEL - Mokka,    2633 kms, 559 kms away, 2023/09: 19499 € (reg=  24 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2952179189        Opel Mokka Electric 136ch GS
+OPEL - Mokka,    2633 kms, 456 kms away, 2023/09: 19499 € (reg=  24 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2952179190        Opel Mokka Electric 136ch GS
+OPEL - Mokka,    2633 kms, 509 kms away, 2023/09: 19499 € (reg=  24 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2984288075        Opel Mokka Electric 136ch GS
+OPEL - Mokka,      10 kms, 399 kms away, 2023/11: 19970 € (reg=  25 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/3040309712        Opel Mokka II Electrique BATTERIE 50 KWH BVA1 136 GS 400km d'autonomie
+OPEL - Mokka,     400 kms, 399 kms away, 2023/11: 19990 € (reg=  25 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2993500484        Opel Mokka II Electrique 50 KWH BVA1 136 cv GS 2023 400km Garantie 12 mois - Batterie 2031 ou 160...
+OPEL - Mokka,     271 kms, 455 kms away, 2023/10: 19889 € (reg=  24 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/3023849440        Opel Mokka Electric 136ch
+OPEL - Mokka,    7774 kms,  62 kms away, 2023/11: 19480 € (reg=  26 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2924836805        Opel Mokka (2) BEV 50KWH GS AUTO
+OPEL - Mokka,    5000 kms, 381 kms away, 2022/08: 17799 € (reg=  16 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/2214381587        Opel Mokka Mokka-e 136ch Edition
+OPEL - Mokka,   24800 kms, 700 kms away, 2023/01: 16990 € (reg=  24 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3020335014        Opel mokka-E 136ch ultimate
+OPEL - Mokka,      14 kms, 589 kms away, 2023/09: 19990 € (reg=  23 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3037009222        Opel Mokka ELECTRIQUE -E 50KW 136CH ELEGANCE
+OPEL - Mokka,   29900 kms, 298 kms away, 2022/07: 15990 € (reg=  20 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3018234972        Opel Mokka 135ch 50kWH BVA ELEGANCE + CARPLAY
+OPEL - Mokka,   18100 kms, 298 kms away, 2022/07: 16999 € (reg=  17 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2895998190        Opel Mokka Mokka-e 136ch Elegance Business
+OPEL - Mokka,    3980 kms, 753 kms away, 2022/09: 18480 € (reg=  15 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2877736223        Opel Mokka Mokka-e 136ch Elegance Business
+OPEL - Mokka,   25376 kms, 589 kms away, 2022/09: 16990 € (reg=  19 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3024599373        Opel Mokka ELECTRIQUE -E 136 ELEGANCE BUSINESS 50KW
+OPEL - Mokka,   15550 kms, 432 kms away, 2023/06: 18999 € (reg=  22 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2990728482        Opel Mokka Mokka-e 136ch Elegance
+OPEL - Mokka,   11770 kms, 244 kms away, 2021/11: 16799 € (reg=   7 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2901140096        Opel Mokka ELECTRIQUE 136 ch & Batterie 50 kWh Edition
+Analysis for PEUGEOT_2008 based on 200 items
+Linear regression: price = 34338.20 + -32.42 * mileage_kkms + -3725.22 * age_years
+max_mileage = 1059329.42, max_age = 9.22
+R^2 = 0.71
+Prediction (300000.0 kms, 15 years): price = 34338.20 - 114.46 * mileage_kkms - 2289.21 * age_years
+Best 20 deals for PEUGEOT_2008
+PEUGEOT - 2008,   11000 kms, 711 kms away, 2022/08: 15990 € (reg=  29 %,  my=  38 %) https://www.leboncoin.fr/ad/voitures/3025597331        PEUGEOT 2008 Electrique 136 ch Active TRES BON ETAT/ SOH 93%/ EQUIPE CHARGE RAPIDE
+PEUGEOT - 2008,   18150 kms, 469 kms away, 2023/07: 16990 € (reg=  34 %,  my=  37 %) https://www.leboncoin.fr/ad/voitures/2965446922        Peugeot e-2008 136ch Active Pack
+PEUGEOT - 2008,   13560 kms, 486 kms away, 2022/11: 16900 € (reg=  27 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/3002514053        PEUGEOT 2008 Electrique 136 ch Style
+PEUGEOT - 2008,   14388 kms, 431 kms away, 2021/10: 15249 € (reg=  21 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2912672470        Peugeot 2008 e-2008 136ch Active
+PEUGEOT - 2008,   14492 kms, 668 kms away, 2022/03: 16490 € (reg=  21 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2991232147        Peugeot 2008 e-2008 136ch Style
+PEUGEOT - 2008,   26091 kms, 400 kms away, 2022/11: 16690 € (reg=  27 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2990727934        Peugeot 2008 e-2008 136ch Style
+PEUGEOT - 2008,   20499 kms, 228 kms away, 2022/12: 17299 € (reg=  26 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/2984283259        Peugeot 2008 e-2008 136ch Style
+PEUGEOT - 2008,   10081 kms, 745 kms away, 2022/10: 18290 € (reg=  21 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2927825886 **NEW** PEUGEOT 2008 Electrique 136 ch Style
+PEUGEOT - 2008,    9000 kms, 435 kms away, 2023/10: 19990 € (reg=  25 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3008379124 **NEW** Peugeot 2008 e-2008 136ch Active
+PEUGEOT - 2008,   18274 kms,  69 kms away, 2022/11: 17978 € (reg=  22 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2964054524        Peugeot 2008 e-2008 136ch Allure Pack
+PEUGEOT - 2008,   16599 kms, 610 kms away, 2023/05: 18977 € (reg=  24 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3038411685 **NEW** Peugeot 2008 ELECTRIQUE 136 ch Allure Pack
+PEUGEOT - 2008,   26622 kms, 431 kms away, 2022/04: 16449 € (reg=  21 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2946803505 **NEW** Peugeot 2008 e-2008 136ch Active
+PEUGEOT - 2008,   14272 kms, 212 kms away, 2022/11: 18389 € (reg=  21 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3035517154        PEUGEOT 2008 Electrique 136 ch Style
+PEUGEOT - 2008,   11949 kms, 559 kms away, 2022/10: 18490 € (reg=  20 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2485600194 **NEW** Peugeot 2008 Electrique 136 ch - Style
+PEUGEOT - 2008,   22000 kms, 431 kms away, 2022/01: 16490 € (reg=  17 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2990727569 **NEW** Peugeot 2008 e-2008 136ch Style
+PEUGEOT - 2008,   14476 kms, 644 kms away, 2022/11: 18490 € (reg=  21 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3027506617 **NEW** Peugeot 2008 Electrique 136 ch Style
+PEUGEOT - 2008,   28664 kms, 381 kms away, 2023/02: 17890 € (reg=  25 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3024845037        Peugeot 2008 e-2008 136ch Style
+PEUGEOT - 2008,   25301 kms,  20 kms away, 2021/12: 16280 € (reg=  17 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2901049588        Peugeot 2008 Electrique 136 ch Style
+PEUGEOT - 2008,   15452 kms, 559 kms away, 2022/10: 18490 € (reg=  19 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2910558711 **NEW** Peugeot 2008 Electrique 136 ch - Active Pack
+PEUGEOT - 2008,   14500 kms, 497 kms away, 2022/02: 17499 € (reg=  15 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2968749676 **NEW** Peugeot 2008 e-2008 136ch Style
+Analysis for PEUGEOT_208 based on 200 items
+Linear regression: price = 24785.53 + -34.82 * mileage_kkms + -1893.63 * age_years
+max_mileage = 711914.58, max_age = 13.09
+R^2 = 0.68
+Prediction (300000.0 kms, 15 years): price = 24785.53 - 82.62 * mileage_kkms - 1652.37 * age_years
+Best 20 deals for PEUGEOT_208
+PEUGEOT - 208,   27854 kms, 381 kms away, 2022/12: 14590 € (reg=  21 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2962858405        Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,   23945 kms, 170 kms away, 2022/12: 14999 € (reg=  20 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2952170516        Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,   23945 kms, 212 kms away, 2022/12: 14999 € (reg=  20 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2984277242        Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,   23945 kms, 212 kms away, 2022/12: 14999 € (reg=  20 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2952170517        Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,    9202 kms, 381 kms away, 2023/05: 16590 € (reg=  17 %,  my=  17 %) https://www.leboncoin.fr/ad/voitures/3038848839        Peugeot 208 e-208 136ch Active Pack
+PEUGEOT - 208,   29013 kms, 397 kms away, 2022/02: 13690 € (reg=  19 %,  my=  17 %) https://www.leboncoin.fr/ad/voitures/3042824418        Peugeot 208 e-208 136ch Active
+PEUGEOT - 208,   28654 kms, 554 kms away, 2022/02: 13779 € (reg=  19 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/3006920342 **NEW** Peugeot 208 Electrique 50 kWh 136ch Allure
+PEUGEOT - 208,   14977 kms, 763 kms away, 2023/09: 16900 € (reg=  17 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/3033456835        Peugeot 208 e-208 136ch GT + OPTIONS / DESTOCKAGE
+PEUGEOT - 208,   15071 kms, 204 kms away, 2023/01: 15990 € (reg=  16 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2970446800        PEUGEOT 208 Electrique 50 kWh 136ch Style
+PEUGEOT - 208,   15718 kms, 197 kms away, 2022/09: 15499 € (reg=  16 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2984289202        Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,   15718 kms, 170 kms away, 2022/09: 15499 € (reg=  16 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/3004122791        Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,   30619 kms, 462 kms away, 2021/12: 13499 € (reg=  18 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/3004886415        Peugeot 208 e-208 136ch Active
+PEUGEOT - 208,   20704 kms, 331 kms away, 2023/03: 15990 € (reg=  17 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/3033456894        Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,   10253 kms, 466 kms away, 2023/01: 16499 € (reg=  15 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2952167026 **NEW** Peugeot 208 e-208 136ch Active Pack
+PEUGEOT - 208,   19353 kms, 436 kms away, 2020/12: 12990 € (reg=  14 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2893427939 **NEW** Peugeot 208 e-208 136ch Active
+PEUGEOT - 208,    9000 kms, 368 kms away, 2023/04: 16999 € (reg=  14 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2952180565        Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,    9000 kms, 456 kms away, 2023/04: 16999 € (reg=  14 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2952180563 **NEW** Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,    9000 kms, 509 kms away, 2023/04: 16999 € (reg=  14 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2952180561 **NEW** Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,    9000 kms, 453 kms away, 2023/04: 16999 € (reg=  14 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2984282116 **NEW** Peugeot 208 e-208 136ch Style
+PEUGEOT - 208,   33919 kms, 507 kms away, 2022/05: 13999 € (reg=  19 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/3016379089 **NEW** Peugeot 208 e-208 136ch Active
+Analysis for PEUGEOT_3008 based on 200 items
+Linear regression: price = 46206.99 + -146.08 * mileage_kkms + -4846.87 * age_years
+max_mileage = 316319.66, max_age = 9.53
+R^2 = 0.47
+Prediction (300000.0 kms, 15 years): price = 46206.99 - 154.02 * mileage_kkms - 3080.47 * age_years
+Best 20 deals for PEUGEOT_3008
+PEUGEOT - 3008,   15588 kms, 472 kms away, 2024/03: 26497 € (reg=  27 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3037838582        Peugeot 3008 Hybrid 136 e-DCS6 Allure Pack
+PEUGEOT - 3008,   22026 kms, 472 kms away, 2023/06: 27517 € (reg=  14 %,  my=  23 %) https://www.leboncoin.fr/ad/voitures/3036889494        Peugeot 3008 Hybrid4 300 e-EAT8 GT
+PEUGEOT - 3008,   22698 kms, 472 kms away, 2023/05: 27517 € (reg=  13 %,  my=  22 %) https://www.leboncoin.fr/ad/voitures/3039707748 **NEW** Peugeot 3008 Hybrid4 300 e-EAT8 GT
+PEUGEOT - 3008,   30438 kms, 472 kms away, 2023/05: 28129 € (reg=   7 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/3043312478 **NEW** Peugeot 3008 Hybrid4 300 e-EAT8 GT
+PEUGEOT - 3008,   45000 kms, 630 kms away, 2024/03: 29490 € (reg=   9 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/3027716503        PEUGEOT E-3008 73 kWh 210 ch GT (Pompe à chaleur) GARANTIE 12 MOIS
+PEUGEOT - 3008,   40782 kms, 472 kms away, 2023/04: 28027 € (reg=   2 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/3043312441 **NEW** Peugeot 3008 Hybrid4 300 e-EAT8 GT
+Analysis for PEUGEOT_308 based on 132 items
+Linear regression: price = 42840.73 + -163.18 * mileage_kkms + -5333.85 * age_years
+max_mileage = 262534.30, max_age = 8.03
+R^2 = 0.53
+Prediction (300000.0 kms, 15 years): price = 42840.73 - 142.80 * mileage_kkms - 2856.05 * age_years
+Best 20 deals for PEUGEOT_308
+PEUGEOT - 308,   18000 kms, 423 kms away, 2024/01: 24990 € (reg=  19 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3040544947 **NEW** Peugeot 308 électrique 54 kWh 156 cv FIRST EDITION 18000 kms Parfait état Première main
+PEUGEOT - 308,       5 kms, 829 kms away, 2024/03: 27990 € (reg=  19 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2864105002        Peugeot 308 e-308 156ch batterie 54 kWh Allure
+PEUGEOT - 308,      10 kms, 633 kms away, 2024/09: 29490 € (reg=  21 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3009810831        PEUGEOT 308 ELECTRIQUE 54 kWh 156ch Allure
+PEUGEOT - 308,      10 kms, 864 kms away, 2024/06: 28988 € (reg=  20 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3029693117        Peugeot 308 e-308 156ch batterie 54 kWh E-Style
+PEUGEOT - 308,   23851 kms, 589 kms away, 2023/08: 24990 € (reg=  10 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3005451517        Peugeot e-308 (3) ELECTRIQUE 156 CH ALLURE
+PEUGEOT - 308,    1648 kms, 365 kms away, 2023/12: 28990 € (reg=  13 %,  my=  23 %) https://www.leboncoin.fr/ad/voitures/2963581427        Peugeot 308 E-308 156CH FIRST EDITION
+PEUGEOT - 308,    6700 kms, 610 kms away, 2024/03: 29277 € (reg=  13 %,  my=  22 %) https://www.leboncoin.fr/ad/voitures/2686435457        Peugeot 308 ELECTRIQUE 54 kWh 156ch First Edition
+PEUGEOT - 308,   17000 kms, 570 kms away, 2024/02: 28000 € (reg=  11 %,  my=  22 %) https://www.leboncoin.fr/ad/voitures/3042353049        Peugeot 308
+PEUGEOT - 308,   10005 kms, 779 kms away, 2024/06: 29990 € (reg=  13 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/3038369374        Peugeot 308 e-308 156ch batterie 54 kWh Allure
+PEUGEOT - 308,    7000 kms, 470 kms away, 2024/01: 29490 € (reg=  10 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/2938644176        PEUGEOT E- 308 Allure
+PEUGEOT - 308,   19507 kms, 140 kms away, 2023/12: 27890 € (reg=   8 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/2915335954        Peugeot 308 Electrique 54 kWh 156ch Allure
+PEUGEOT - 308,   11000 kms, 421 kms away, 2023/09: 28500 € (reg=   6 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/3034006505        308 électrique
+PEUGEOT - 308,   28178 kms, 605 kms away, 2023/11: 26990 € (reg=   5 %,  my=  19 %) https://www.leboncoin.fr/ad/voitures/2977522344        Peugeot 308 ELECTRIQUE 54 kWh 156ch First Edition
+PEUGEOT - 308,    9624 kms, 719 kms away, 2023/08: 28690 € (reg=   5 %,  my=  19 %) https://www.leboncoin.fr/ad/voitures/2839814475        PEUGEOT 308 Electrique 54 kWh 156ch Allure
+PEUGEOT - 308,   15656 kms, 554 kms away, 2023/12: 28990 € (reg=   6 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2983427547        Peugeot 308 e-308 156ch batterie 54 kWh GT
+PEUGEOT - 308,    7608 kms, 606 kms away, 2023/12: 29990 € (reg=   7 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/3015551202        Peugeot e-308 (3) ELECTRIQUE 156 CH GT
+PEUGEOT - 308,    5000 kms, 481 kms away, 2023/07: 29990 € (reg=   1 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/3032435106        Peugeot 308 Electrique 54 kWh 156ch GT
+PEUGEOT - 308,    8571 kms, 489 kms away, 2023/08: 29990 € (reg=   1 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2897603962 **NEW** Peugeot 308 Electrique 54 kWh 156ch - First Edition
+PEUGEOT - 308,   14650 kms, 554 kms away, 2023/06: 28990 € (reg=  -1 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2931709822        Peugeot 308 e-308 156ch batterie 54 kWh GT
+PEUGEOT - 308,   20773 kms, 376 kms away, 2023/08: 28690 € (reg=   0 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2955564565 **NEW** Peugeot 308 ELECTRIQUE 54 kWh 156ch GT
+Analysis for PEUGEOT_5008 based on 80 items
+Linear regression: price = 48436.93 + -135.32 * mileage_kkms + -3813.28 * age_years
+max_mileage = 357939.71, max_age = 12.70
+R^2 = 0.13
+Prediction (300000.0 kms, 15 years): price = 48436.93 - 161.46 * mileage_kkms - 3229.13 * age_years
+Best 20 deals for PEUGEOT_5008
+Analysis for PEUGEOT_Partner based on 4 items
+Linear regression: price = -7906.62 + 90.50 * mileage_kkms + 1800.65 * age_years
+max_mileage = 87370.51, max_age = 4.39
+R^2 = 0.91
+Prediction (300000.0 kms, 15 years): price = -7906.62 - -26.36 * mileage_kkms - -527.11 * age_years
+Best 20 deals for PEUGEOT_Partner
+PEUGEOT - Partner,   42000 kms, 612 kms away, 2018/02:  9500 € (reg=   0 %,  my=-949900 %) https://www.leboncoin.fr/ad/voitures/3037819846        Peugeot partner tepee (5 places) 100% électrique
+Analysis for PEUGEOT_Partner Tepee based on 11 items
+Linear regression: price = 19847.73 + -7.60 * mileage_kkms + -1224.21 * age_years
+max_mileage = 2612008.13, max_age = 16.21
+R^2 = 0.60
+Prediction (300000.0 kms, 15 years): price = 19847.73 - 66.16 * mileage_kkms - 1323.18 * age_years
+Best 20 deals for PEUGEOT_Partner Tepee
+PEUGEOT - Partner Tepee,    3735 kms, 632 kms away, 2020/04: 13590 € (reg=  -2 %,  my=  -9 %) https://www.leboncoin.fr/ad/voitures/3005816271        Peugeot Partner Tepee E- 67 CH ACTIVE
+PEUGEOT - Partner Tepee,   36000 kms, 466 kms away, 2018/08:  9500 € (reg=  12 %,  my= -16 %) https://www.leboncoin.fr/ad/voitures/2944863729        Peugeot Partner teepee électrique
+PEUGEOT - Partner Tepee,   11133 kms, 860 kms away, 2019/07: 12990 € (reg=  -6 %,  my= -18 %) https://www.leboncoin.fr/ad/voitures/3013161119        Peugeot Partner Tepee E- 67 CH ACTIVE
+PEUGEOT - Partner Tepee,   28344 kms, 554 kms away, 2017/07:  8990 € (reg=   6 %,  my= -25 %) https://www.leboncoin.fr/ad/voitures/3010911687        Peugeot Partner Tepee Electrique Allure
+PEUGEOT - Partner Tepee,   50000 kms, 507 kms away, 2018/03: 12000 € (reg= -16 %,  my= -80 %) https://www.leboncoin.fr/ad/voitures/2921359545        Peugeot partner tepee electrique
+Analysis for PEUGEOT_Rifter based on 25 items
+Linear regression: price = 30123.39 + -51.10 * mileage_kkms + -1998.35 * age_years
+max_mileage = 589506.78, max_age = 15.07
+R^2 = 0.45
+Prediction (300000.0 kms, 15 years): price = 30123.39 - 100.41 * mileage_kkms - 2008.23 * age_years
+Best 20 deals for PEUGEOT_Rifter
+PEUGEOT - Rifter,      10 kms, 455 kms away, 2025/05: 24990 € (reg=  15 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/3029690269        Peugeot RIFTER TAILLE M - MOTEUR ELECTRIQUE 136CH (100 KW) ALLURE AUTOMATIQUE
+PEUGEOT - Rifter,       6 kms, 516 kms away, 2023/06: 21990 € (reg=  14 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/2844250908        Peugeot Rifter Taille M - Moteur Electrique 136 ACTIVE PACK
+PEUGEOT - Rifter,      26 kms, 516 kms away, 2023/06: 21990 € (reg=  14 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/2844250916        Peugeot Rifter Taille M - Moteur Electrique 136 ACTIVE PACK
+PEUGEOT - Rifter,    5000 kms, 519 kms away, 2024/01: 22590 € (reg=  15 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/3021752842 **NEW** Peugeot Rifter M e136ch 5pl Active Pack
+PEUGEOT - Rifter,   20876 kms,  35 kms away, 2023/12: 21478 € (reg=  16 %,  my=  12 %) https://www.leboncoin.fr/ad/voitures/3014412167        Peugeot Rifter Taille M - Moteur Electrique 136 ch (100 kW) Automatique ACTIVE PACK
+PEUGEOT - Rifter,   50000 kms, 196 kms away, 2023/05: 17990 € (reg=  21 %,  my=  12 %) https://www.leboncoin.fr/ad/voitures/2996716715        Peugeot Rifter M e136ch Active Pack+GRIP CONTROL+2023+58000kms
+PEUGEOT - Rifter,    6764 kms, 121 kms away, 2024/03: 24990 € (reg=   6 %,  my=   5 %) https://www.leboncoin.fr/ad/voitures/2980390763        PEUGEOT Rifter M e136ch 5pl GT
+PEUGEOT - Rifter,    7500 kms, 779 kms away, 2021/07: 20490 € (reg=   4 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2944988802        Peugeot Rifter Moteur électrique 136ch (100 kW) et batterie 50 kWh Standard Allure Pack
+PEUGEOT - Rifter,   14568 kms, 719 kms away, 2023/02: 22980 € (reg=   5 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2973544975        PEUGEOT Rifter M e136ch 5pl Active Pack
+PEUGEOT - Rifter,    4500 kms, 368 kms away, 2023/09: 25290 € (reg=   2 %,  my=   1 %) https://www.leboncoin.fr/ad/voitures/2886740562        Peugeot Rifter Taille M - Moteur Electrique 136 ch (100 kW) Automatique GT
+PEUGEOT - Rifter,   30607 kms, 538 kms away, 2023/05: 22490 € (reg=   6 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/3026485567        Peugeot Rifter Standard e136ch 5pl - Active Pack
+PEUGEOT - Rifter,   42000 kms, 402 kms away, 2023/03: 21500 € (reg=   6 %,  my=  -2 %) https://www.leboncoin.fr/ad/voitures/3026341458        Vds e-rifter 42000 km
+PEUGEOT - Rifter,   23519 kms, 708 kms away, 2022/12: 22990 € (reg=   2 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/2981695855        Peugeot Rifter Taille M - Moteur Electrique 136 ch (100 kW) Automatique ACTIVE PACK
+PEUGEOT - Rifter,    6342 kms, 204 kms away, 2021/10: 22990 € (reg=  -4 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/3036472995        PEUGEOT Rifter Standard e136ch 5pl GT
+PEUGEOT - Rifter,    5348 kms, 656 kms away, 2023/04: 26990 € (reg=  -7 %,  my=  -8 %) https://www.leboncoin.fr/ad/voitures/2939763191        PEUGEOT Rifter M e136ch 5pl GT
+PEUGEOT - Rifter,   35803 kms, 750 kms away, 2021/11: 21490 € (reg=  -3 %,  my= -13 %) https://www.leboncoin.fr/ad/voitures/2991236547 **NEW** PEUGEOT Rifter Standard e136ch 5pl GT
+PEUGEOT - Rifter,   34250 kms, 468 kms away, 2021/12: 21900 € (reg=  -4 %,  my= -14 %) https://www.leboncoin.fr/ad/voitures/2947344218 **NEW** PEUGEOT Rifter Standard e136ch 5pl GT
+PEUGEOT - Rifter,   40000 kms,  88 kms away, 2021/07: 20800 € (reg=  -5 %,  my= -16 %) https://www.leboncoin.fr/ad/voitures/3040951944        Peugeot E rifter
+PEUGEOT - Rifter,   27252 kms, 559 kms away, 2023/02: 27990 € (reg= -18 %,  my= -25 %) https://www.leboncoin.fr/ad/voitures/3014418823 **NEW** Peugeot Rifter M e136ch 5pl - GT
+Analysis for PEUGEOT_Traveller based on 1 items
+Error while analyzing PEUGEOT_Traveller: Not Regular Matrix
+Best 20 deals for PEUGEOT_Traveller
+Analysis for PORSCHE_911 based on 1 items
+Error while analyzing PORSCHE_911: Not Regular Matrix
+Best 20 deals for PORSCHE_911
+Analysis for PORSCHE_Taycan based on 1 items
+Error while analyzing PORSCHE_Taycan: Not Regular Matrix
+Best 20 deals for PORSCHE_Taycan
+Analysis for RENAULT_5 based on 2 items
+Linear regression: price = 31990.00 + 18752.51 * mileage_kkms + 0.00 * age_years
+max_mileage = -1705.90, max_age = -Inf
+R^2 = -246.99
+Prediction (300000.0 kms, 15 years): price = 31990.00 - 106.63 * mileage_kkms - 2132.67 * age_years
+Best 20 deals for RENAULT_5
+Analysis for RENAULT_Kangoo based on 13 items
+Linear regression: price = 33093.15 + -25.45 * mileage_kkms + -3305.63 * age_years
+max_mileage = 1300456.67, max_age = 10.01
+R^2 = 0.81
+Prediction (300000.0 kms, 15 years): price = 33093.15 - 110.31 * mileage_kkms - 2206.21 * age_years
+Best 20 deals for RENAULT_Kangoo
+RENAULT - Kangoo,   11955 kms, 666 kms away, 2024/07: 23999 € (reg=  17 %,  my=  17 %) https://www.leboncoin.fr/ad/voitures/3036006073        Renault Kangoo E-Tech Electric EV45 120ch 11kW Equilibre
+RENAULT - Kangoo,    6501 kms, 744 kms away, 2025/06: 26900 € (reg=  16 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/3039011718        Renault Kangoo E-Tech electrique EV45 11kW Equilibre
+RENAULT - Kangoo,    4283 kms, 228 kms away, 2023/12: 24990 € (reg=   8 %,  my=  13 %) https://www.leboncoin.fr/ad/voitures/3043326277        Renault Kangoo E-TECH ELECTRIQUE EV45 DC 80kW Techno
+RENAULT - Kangoo,      12 kms, 522 kms away, 2024/08: 26980 € (reg=   8 %,  my=  12 %) https://www.leboncoin.fr/ad/voitures/3000607390        RENAULT Kangoo E-Tech electrique EV45 DC 80kW Techno
+RENAULT - Kangoo,     100 kms, 644 kms away, 2025/06: 29900 € (reg=   7 %,  my=   8 %) https://www.leboncoin.fr/ad/voitures/3023835275 **NEW** Renault Kangoo E-Tech electrique EV45 11kW Equilibre
+RENAULT - Kangoo,    9900 kms, 303 kms away, 2024/07: 27990 € (reg=   3 %,  my=   5 %) https://www.leboncoin.fr/ad/voitures/3029809893        Renault Kangoo E-Tech Electric EV45 DC 80 TECHNO 07/2024 GARANTIE 5 ANS
+RENAULT - Kangoo,    4838 kms, 219 kms away, 2023/12: 27980 € (reg=  -2 %,  my=   2 %) https://www.leboncoin.fr/ad/voitures/2990217131        Renault Kangoo E-Tech Electric EV45 120ch DC80kW Techno
+RENAULT - Kangoo,     511 kms, 256 kms away, 2024/06: 29999 € (reg=  -3 %,  my=   1 %) https://www.leboncoin.fr/ad/voitures/2799774086        Renault Kangoo E-Tech Electric EV45 120ch DC80kW Techno
+RENAULT - Kangoo,    4500 kms, 310 kms away, 2023/08: 29890 € (reg= -14 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2811609630        Renault Kangoo E-Tech Electric EV45 120ch DC80kW Techno
+Analysis for RENAULT_Megane based on 200 items
+Linear regression: price = 35586.92 + -52.29 * mileage_kkms + -3308.43 * age_years
+max_mileage = 680527.40, max_age = 10.76
+R^2 = 0.51
+Prediction (300000.0 kms, 15 years): price = 35586.92 - 118.62 * mileage_kkms - 2372.46 * age_years
+Best 20 deals for RENAULT_Megane
+RENAULT - Megane,   11000 kms, 486 kms away, 2023/09:  8200 € (reg=  71 %,  my=  72 %) https://www.leboncoin.fr/ad/voitures/2928695337        Mégane 5 09/2023 accidentée
+RENAULT - Megane,   18700 kms, 482 kms away, 2024/06: 17500 € (reg=  42 %,  my=  42 %) https://www.leboncoin.fr/ad/voitures/3042535741        Renault Mégane E-Tech EV40
+RENAULT - Megane,   12807 kms, 632 kms away, 2024/06: 19490 € (reg=  36 %,  my=  37 %) https://www.leboncoin.fr/ad/voitures/3040087245        Renault megane e-tech ev40 130 boost charge
+RENAULT - Megane,    5500 kms, 404 kms away, 2024/03: 19990 € (reg=  34 %,  my=  36 %) https://www.leboncoin.fr/ad/voitures/2919276576        RENAULT Megane E-Tech EV40 130ch standard charge Equilibre
+RENAULT - Megane,   29000 kms, 250 kms away, 2023/11: 17980 € (reg=  36 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/2936350984        RENAULT MEGANE E-TECH EV40 130ch standard charge
+RENAULT - Megane,   19800 kms, 513 kms away, 2022/09: 16900 € (reg=  31 %,  my=  35 %) https://www.leboncoin.fr/ad/voitures/3031591290        Renault Mégane V E-TECH 130
+RENAULT - Megane,   12800 kms, 632 kms away, 2024/06: 20990 € (reg=  32 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3036426113        Renault megane e-tech autonomie urbaine 130 equilibre
+RENAULT - Megane,   30000 kms, 250 kms away, 2023/11: 19000 € (reg=  32 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3012256318        RENAULT Megane EV40 E-TECH 130 STANDARD CHARGE EQUILIBRE BVA / ETAT NEUF / LIVRAISON POSSIBLE
+RENAULT - Megane,   17000 kms,  98 kms away, 2024/05: 20900 € (reg=  31 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3026996990        Renault megane E-TECH
+RENAULT - Megane,   11445 kms, 270 kms away, 2022/09: 18690 € (reg=  25 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2891076614        RENAULT Megane E-Tech EV40 130ch standard charge Equilibre
+RENAULT - Megane,   14000 kms, 393 kms away, 2024/03: 20990 € (reg=  29 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3027419222        Renault Mégane E-TECH 130 ch Autonomie-urbaine AC7 équilibre
+RENAULT - Megane,   12379 kms, 331 kms away, 2022/09: 18990 € (reg=  24 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3016871120        RENAULT Megane E-Tech EV40 130ch standard charge Equilibre
+RENAULT - Megane,    2116 kms, 331 kms away, 2022/10: 19990 € (reg=  22 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2965167324        RENAULT Megane E-Tech EV40 130ch standard charge Techno
+RENAULT - Megane,   38878 kms, 326 kms away, 2023/09: 18499 € (reg=  31 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2984730308        Renault Mégane E-TECH EV40 130ch standard charge Equilibre
+RENAULT - Megane,   37891 kms, 457 kms away, 2022/12: 17370 € (reg=  29 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2944453749        RENAULT Megane E-Tech EV40 130ch standard charge Equilibre
+RENAULT - Megane,   16367 kms, 123 kms away, 2022/09: 18990 € (reg=  23 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3009766654        Renault Mégane E-Tech EV40 130ch standard charge Equilibre
+RENAULT - Megane,    5829 kms, 700 kms away, 2024/06: 22999 € (reg=  26 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2972659023 **NEW** Renault Mégane E-Tech Electric EV40 130ch Equilibre standard charge
+RENAULT - Megane,    5829 kms, 618 kms away, 2024/06: 22999 € (reg=  26 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2984280818 **NEW** Renault Mégane E-Tech Electric EV40 130ch Equilibre standard charge
+RENAULT - Megane,    5829 kms, 546 kms away, 2024/06: 22999 € (reg=  26 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2972659017 **NEW** Renault Mégane E-Tech Electric EV40 130ch Equilibre standard charge
+RENAULT - Megane,    5829 kms, 630 kms away, 2024/06: 22999 € (reg=  26 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2972659020 **NEW** Renault Mégane E-Tech Electric EV40 130ch Equilibre standard charge
+Analysis for RENAULT_Scenic based on 177 items
+Linear regression: price = 47995.55 + -173.93 * mileage_kkms + -3535.42 * age_years
+max_mileage = 275952.04, max_age = 13.58
+R^2 = 0.21
+Prediction (300000.0 kms, 15 years): price = 47995.55 - 159.99 * mileage_kkms - 3199.70 * age_years
+Best 20 deals for RENAULT_Scenic
+Analysis for RENAULT_Twingo based on 98 items
+Linear regression: price = 13453.37 + -5.46 * mileage_kkms + -587.09 * age_years
+max_mileage = 2461843.67, max_age = 22.92
+R^2 = 0.07
+Prediction (300000.0 kms, 15 years): price = 13453.37 - 44.84 * mileage_kkms - 896.89 * age_years
+Best 20 deals for RENAULT_Twingo
+RENAULT - Twingo,   19200 kms, 574 kms away, 2021/10:  7500 € (reg=  32 %,  my=  17 %) https://www.leboncoin.fr/ad/voitures/3040427696        Renault Twingo ELECTRIC III Achat Intégral Life
+RENAULT - Twingo,   24393 kms, 453 kms away, 2021/03:  7990 € (reg=  25 %,  my=   4 %) https://www.leboncoin.fr/ad/voitures/2967737527        Renault Twingo III Achat Intégral Life
+RENAULT - Twingo,   26333 kms, 495 kms away, 2021/06:  8489 € (reg=  21 %,  my=   0 %) https://www.leboncoin.fr/ad/voitures/2980928378 **NEW** Renault Twingo III Achat Intégral Life
+RENAULT - Twingo,   10306 kms, 591 kms away, 2021/07:  9490 € (reg=  13 %,  my=  -2 %) https://www.leboncoin.fr/ad/voitures/2846570569        RENAULT Twingo III Achat Intégral Life
+RENAULT - Twingo,   19700 kms, 550 kms away, 2022/04:  9990 € (reg=  12 %,  my=  -4 %) https://www.leboncoin.fr/ad/voitures/3027281550        Renault twingo e-tech electric 80 42ppm 32kwh achat-integral zen
+RENAULT - Twingo,   24830 kms, 630 kms away, 2021/06:  8999 € (reg=  17 %,  my=  -5 %) https://www.leboncoin.fr/ad/voitures/2952337368        Renault Twingo E-TECH ELECTRIQUE III Achat Intégral - 21 Life
+RENAULT - Twingo,   26858 kms, 533 kms away, 2021/10:  9290 € (reg=  15 %,  my=  -6 %) https://www.leboncoin.fr/ad/voitures/2908969621        RENAULT Twingo III Achat Intégral Life
+RENAULT - Twingo,    4000 kms, 591 kms away, 2021/03:  9990 € (reg=   7 %,  my=  -7 %) https://www.leboncoin.fr/ad/voitures/2952826243        Renault twingo e-tech electrique iii achat integral - life
+RENAULT - Twingo,   12948 kms, 630 kms away, 2021/05:  9999 € (reg=   7 %,  my= -11 %) https://www.leboncoin.fr/ad/voitures/2846492655 **NEW** Renault Twingo ELECTRIC III Achat Intégral Life
+RENAULT - Twingo,   41917 kms, 486 kms away, 2021/09:  8900 € (reg=  18 %,  my= -11 %) https://www.leboncoin.fr/ad/voitures/2887915089        RENAULT Twingo III Achat Intégral Life
+RENAULT - Twingo,   13209 kms, 612 kms away, 2021/10: 10499 € (reg=   5 %,  my= -12 %) https://www.leboncoin.fr/ad/voitures/2952539596        Renault Twingo ELECTRIC III Achat Intégral Life
+RENAULT - Twingo,   13795 kms, 602 kms away, 2021/08: 10499 € (reg=   4 %,  my= -14 %) https://www.leboncoin.fr/ad/voitures/2893870763        Renault Twingo ELECTRIC III Achat Intégral Life
+RENAULT - Twingo,   20756 kms, 636 kms away, 2021/05:  9899 € (reg=   8 %,  my= -14 %) https://www.leboncoin.fr/ad/voitures/2778377555        Renault Twingo ELECTRIC III Achat Intégral Life
+RENAULT - Twingo,   45900 kms, 592 kms away, 2022/03:  9490 € (reg=  15 %,  my= -14 %) https://www.leboncoin.fr/ad/voitures/2974264998        RENAULT TWINGO E-Tech Electrique - Life - Garantie 12 mois
+RENAULT - Twingo,   37764 kms, 467 kms away, 2021/04:  9099 € (reg=  14 %,  my= -16 %) https://www.leboncoin.fr/ad/voitures/2964064339        RENAULT Twingo III Achat Intégral Life
+RENAULT - Twingo,   14219 kms, 591 kms away, 2021/09: 10790 € (reg=   2 %,  my= -16 %) https://www.leboncoin.fr/ad/voitures/2864680786        RENAULT Twingo III Achat Intégral Life
+RENAULT - Twingo,   19836 kms, 640 kms away, 2021/08: 10490 € (reg=   4 %,  my= -17 %) https://www.leboncoin.fr/ad/voitures/2882689058        RENAULT Twingo III Achat Intégral Life
+RENAULT - Twingo,   31251 kms, 640 kms away, 2021/09:  9990 € (reg=   8 %,  my= -17 %) https://www.leboncoin.fr/ad/voitures/2495098753        RENAULT Twingo III Achat Intégral Life
+RENAULT - Twingo,   16500 kms, 109 kms away, 2021/11: 10990 € (reg=   1 %,  my= -18 %) https://www.leboncoin.fr/ad/voitures/2990360253        RENAULT TWINGO E-TECH ELECTRIQUE III Achat Integral - 21 Intens
+RENAULT - Twingo,   14728 kms, 484 kms away, 2022/02: 11390 € (reg=   0 %,  my= -18 %) https://www.leboncoin.fr/ad/voitures/3013939223 **NEW** Renault Twingo III ACHAT INTEGRAL 21 ZEN
+Analysis for RENAULT_Twizy based on 1 items
+Error while analyzing RENAULT_Twizy: Not Regular Matrix
+Best 20 deals for RENAULT_Twizy
+RENAULT - Twizy,   33307 kms, 331 kms away, 2019/10:  4990 € (reg=     %,  my=     %) https://www.leboncoin.fr/ad/voitures/2502081445        RENAULT TWIZY 80 Achat Intégral
+Analysis for RENAULT_Zoe based on 200 items
+Linear regression: price = 18600.74 + -22.75 * mileage_kkms + -1191.89 * age_years
+max_mileage = 817788.79, max_age = 15.61
+R^2 = 0.66
+Prediction (300000.0 kms, 15 years): price = 18600.74 - 62.00 * mileage_kkms - 1240.05 * age_years
+Best 20 deals for RENAULT_Zoe
+RENAULT - Zoe,   11376 kms, 515 kms away, 2019/01:  6490 € (reg=  37 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/2990157941        RENAULT ZOE R90 Life
+RENAULT - Zoe,   19055 kms, 281 kms away, 2020/12:  8490 € (reg=  32 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/2889681019        RENAULT Zoe R110 Business Location de Batterie
+RENAULT - Zoe,   31606 kms, 260 kms away, 2020/07:  7991 € (reg=  31 %,  my=  22 %) https://www.leboncoin.fr/ad/voitures/2897982345        RENAULT Zoe R110 Life
+RENAULT - Zoe,   23795 kms, 116 kms away, 2018/07:  6480 € (reg=  32 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/2964056470        Renault Zoe Life charge normale R75
+RENAULT - Zoe,   31579 kms, 371 kms away, 2019/05:  6990 € (reg=  32 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/2929437849        Renault Zoe Business charge normale R90 MY19
+RENAULT - Zoe,   18333 kms, 454 kms away, 2019/03:  7499 € (reg=  28 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/2952169040        Renault Zoé Business charge normale R90 MY19
+RENAULT - Zoe,   18333 kms, 470 kms away, 2019/03:  7499 € (reg=  28 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/2952169041        Renault Zoé Business charge normale R90 MY19
+RENAULT - Zoe,   18333 kms, 478 kms away, 2019/03:  7499 € (reg=  28 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/2984288364 **NEW** Renault Zoé Business charge normale R90 MY19
+RENAULT - Zoe,   39245 kms, 610 kms away, 2019/09:  6990 € (reg=  33 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/2957426691 **NEW** Renault Zoe Life charge normale R90 MY19
+RENAULT - Zoe,   35875 kms, 381 kms away, 2019/06:  6999 € (reg=  32 %,  my=  19 %) https://www.leboncoin.fr/ad/voitures/2972108210        Renault Zoé Life charge normale R75
+RENAULT - Zoe,   17791 kms, 333 kms away, 2020/06:  8999 € (reg=  24 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2349365543        Renault Zoe Life charge normale R110 4cv
+RENAULT - Zoe,   22457 kms, 454 kms away, 2019/03:  7499 € (reg=  27 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2970309723 **NEW** Renault Zoé Business charge normale R90 MY19
+RENAULT - Zoe,   24500 kms, 377 kms away, 2019/08:  7900 € (reg=  26 %,  my=  17 %) https://www.leboncoin.fr/ad/voitures/3039323938        RENAULT Zoe R90 Business
+RENAULT - Zoe,   47092 kms, 462 kms away, 2019/06:  6590 € (reg=  34 %,  my=  17 %) https://www.leboncoin.fr/ad/voitures/2886746889 **NEW** RENAULT Zoe R90 Life
+RENAULT - Zoe,   32050 kms, 700 kms away, 2019/12:  7899 € (reg=  28 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2989744053 **NEW** Renault Zoé Business charge normale R90 MY19
+RENAULT - Zoe,   32050 kms, 621 kms away, 2019/12:  7899 € (reg=  28 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2984283101 **NEW** Renault Zoé Business charge normale R90 MY19
+RENAULT - Zoe,   38227 kms, 457 kms away, 2019/08:  7270 € (reg=  30 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/3024368398 **NEW** RENAULT Zoe R90 Business
+RENAULT - Zoe,   34289 kms, 256 kms away, 2018/12:  6799 € (reg=  30 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2968752225        Renault Zoe Zen charge normale R90 MY19
+RENAULT - Zoe,   42775 kms, 484 kms away, 2018/11:  6290 € (reg=  33 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2966256267 **NEW** Renault Zoe R90 CITY
+RENAULT - Zoe,   46831 kms, 282 kms away, 2020/10:  8189 € (reg=  29 %,  my=  14 %) https://www.leboncoin.fr/ad/voitures/2974617683        RENAULT Zoe R110 Life
+Analysis for SERES_3 based on 4 items
+Linear regression: price = 20613.56 + -398.67 * mileage_kkms + 3278.03 * age_years
+max_mileage = 51705.96, max_age = -6.29
+R^2 = 0.24
+Prediction (300000.0 kms, 15 years): price = 20613.56 - 68.71 * mileage_kkms - 1374.24 * age_years
+Best 20 deals for SERES_3
+SERES - 3,    7800 kms, 646 kms away, 2023/11: 16490 € (reg=  29 %,  my=   6 %) https://www.leboncoin.fr/ad/voitures/3038588424        SUV SERES 3 Confort 163cv garantie constructeur batterie 55KW
+SERES - 3,   23664 kms, 169 kms away, 2022/07: 17990 € (reg=  16 %,  my= -22 %) https://www.leboncoin.fr/ad/voitures/2955475981        SERES SERES 3 - 163 Luxe - CAMERA 360° - GPS - TOIT OUVRANT - CLIM AUTO
+SERES - 3,   30900 kms, 409 kms away, 2022/09: 22480 € (reg= -24 %,  my= -56 %) https://www.leboncoin.fr/ad/voitures/3032445644        Seres 3 LUXURY - 165/MOIS - GARANTIE ET REVISEE
+No items for SKODA_Citigo
+Analysis for SKODA_Elroq based on 1 items
+Error while analyzing SKODA_Elroq: Not Regular Matrix
+Best 20 deals for SKODA_Elroq
+Analysis for SKODA_Enyaq based on 200 items
+Linear regression: price = 46516.84 + -65.22 * mileage_kkms + -4348.47 * age_years
+max_mileage = 713176.93, max_age = 10.70
+R^2 = 0.60
+Prediction (300000.0 kms, 15 years): price = 46516.84 - 155.06 * mileage_kkms - 3101.12 * age_years
+Best 20 deals for SKODA_Enyaq
+SKODA - Enyaq,   18800 kms, 340 kms away, 2024/08: 25490 € (reg=  37 %,  my=  36 %) https://www.leboncoin.fr/ad/voitures/3021728070        Skoda Enyaq 60 État neuf
+SKODA - Enyaq,    1105 kms, 201 kms away, 2024/07: 27900 € (reg=  32 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/3018942843        Skoda Enyaq 180ch 60
+SKODA - Enyaq,   23000 kms, 397 kms away, 2023/10: 24690 € (reg=  32 %,  my=  33 %) https://www.leboncoin.fr/ad/voitures/2437018761        Skoda Enyaq iV 150ch Version 50
+SKODA - Enyaq,    1415 kms, 329 kms away, 2024/06: 28490 € (reg=  30 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/2950823998        SKODA Enyaq iV 60
+SKODA - Enyaq,    5095 kms, 203 kms away, 2024/05: 28480 € (reg=  29 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2974073944        Skoda Enyaq 180ch 60
+SKODA - Enyaq,   13595 kms, 418 kms away, 2023/08: 25990 € (reg=  29 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2759875167        SKODA Enyaq iV 60
+SKODA - Enyaq,    3900 kms, 443 kms away, 2024/05: 28890 € (reg=  28 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2782532292        SKODA Enyaq iV 60
+SKODA - Enyaq,    5216 kms, 199 kms away, 2024/11: 29990 € (reg=  29 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3043369546 **NEW** SKODA Enyaq iV 60
+SKODA - Enyaq,    1105 kms, 204 kms away, 2024/07: 29900 € (reg=  27 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2969325269        Skoda Enyaq 180ch 60
+SKODA - Enyaq,    6500 kms, 421 kms away, 2024/05: 28990 € (reg=  28 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/2739594238        SKODA Enyaq iV 60
+SKODA - Enyaq,    6500 kms, 504 kms away, 2024/05: 28990 € (reg=  28 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3023526237        Skoda enyaq iV 60
+SKODA - Enyaq,    2548 kms, 204 kms away, 2024/06: 29790 € (reg=  27 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2969325271        Skoda Enyaq 180ch 60
+SKODA - Enyaq,    1081 kms, 489 kms away, 2024/05: 29900 € (reg=  26 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2746623375        Skoda enyaq iV 60
+SKODA - Enyaq,    7633 kms, 453 kms away, 2024/05: 29689 € (reg=  26 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3002005013        Skoda Enyaq 180ch 60
+SKODA - Enyaq,   39145 kms, 386 kms away, 2023/04: 23790 € (reg=  29 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2997774355        Skoda enyaq iV 50 #Navi #Keyless #LED #Comfort-Paket
+SKODA - Enyaq,    6000 kms, 489 kms away, 2024/04: 29790 € (reg=  25 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2800861089        Skoda Enyaq iV 180ch Version 60
+SKODA - Enyaq,   13012 kms, 633 kms away, 2024/01: 28499 € (reg=  26 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3017787559        Skoda Enyaq iV 150ch Version 50
+SKODA - Enyaq,   38000 kms, 660 kms away, 2023/06: 24388 € (reg=  29 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3035394398        Skoda ENYAQ iV 60 (Garantie intégrale constructeur 24 Mois et batteries jusqu'en 2031)
+SKODA - Enyaq,    9300 kms, 683 kms away, 2024/05: 29900 € (reg=  25 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2768715906 **NEW** SKODA Enyaq iV 60
+SKODA - Enyaq,     837 kms, 222 kms away, 2023/12: 29990 € (reg=  23 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3009429577        SKODA Enyaq iV 60
+Analysis for SKODA_Kodiaq based on 2 items
+Linear regression: price = -1694884761251186688.00 + 195904700027432566784.00 * mileage_kkms + 0.00 * age_years
+max_mileage = 8.65, max_age = Inf
+R^2 = -65775934136766823373117325312.00
+Prediction (300000.0 kms, 15 years): price = -1694884761251186688.00 - -5649615870837289.00 * mileage_kkms - -112992317416745776.00 * age_years
+Best 20 deals for SKODA_Kodiaq
+Error while inserting car analysis results for SKODA_Kodiaq: Conversion Error: Could not cast value -1694884761251186688.000000 to DECIMAL(18,3) when casting from source column base_price
+Analysis for SMART_Fortwo based on 1 items
+Error while analyzing SMART_Fortwo: Not Regular Matrix
+Best 20 deals for SMART_Fortwo
+SMART - Fortwo,   19200 kms,  45 kms away, 2020/12: 12989 € (reg=     %,  my=     %) https://www.leboncoin.fr/ad/voitures/2967574541        Smart ForTwo COUPE EQ 82 CV BRABUS TVA RECUPERABLE
+Analysis for TESLA_Model 3 based on 25 items
+Linear regression: price = 36025.77 + -81.21 * mileage_kkms + -434.11 * age_years
+max_mileage = 443606.93, max_age = 82.99
+R^2 = 0.61
+Prediction (300000.0 kms, 15 years): price = 36025.77 - 120.09 * mileage_kkms - 2401.72 * age_years
+Best 20 deals for TESLA_Model 3
+TESLA - Model 3,   43700 kms, 502 kms away, 2023/01: 28999 € (reg=   7 %,  my= -18 %) https://www.leboncoin.fr/ad/voitures/2930789961        Tesla Model 3 propulsion 2023 attelage et + de 5000 d’options équipements
+TESLA - Model 3,   32042 kms, 397 kms away, 2022/01: 28990 € (reg=   8 %,  my= -23 %) https://www.leboncoin.fr/ad/voitures/2979794464        TESLA MODEL 3 1ère Main TVA récupérable éligible LOA Toit pano Autopilot Garantie 2030
+TESLA - Model 3,   49000 kms, 399 kms away, 2022/10: 28990 € (reg=   5 %,  my= -24 %) https://www.leboncoin.fr/ad/voitures/2892848116        Tesla Model 3 275 AUTONOMIE STANDARD PLUS RWD 60KWH
+Analysis for TESLA_Model S based on 21 items
+Linear regression: price = 54311.97 + -17.46 * mileage_kkms + -2586.00 * age_years
+max_mileage = 3110860.20, max_age = 21.00
+R^2 = 0.62
+Prediction (300000.0 kms, 15 years): price = 54311.97 - 181.04 * mileage_kkms - 3620.80 * age_years
+Best 20 deals for TESLA_Model S
+Analysis for TESLA_Model X based on 4 items
+Linear regression: price = 111988.93 + 9.38 * mileage_kkms + -9762.00 * age_years
+max_mileage = -11937408.07, max_age = 11.47
+R^2 = 0.41
+Prediction (300000.0 kms, 15 years): price = 111988.93 - 373.30 * mileage_kkms - 7465.93 * age_years
+Best 20 deals for TESLA_Model X
+Analysis for TESLA_Model Y based on 20 items
+Linear regression: price = 41936.56 + -117.53 * mileage_kkms + -1012.58 * age_years
+max_mileage = 356826.96, max_age = 41.42
+R^2 = 0.42
+Prediction (300000.0 kms, 15 years): price = 41936.56 - 139.79 * mileage_kkms - 2795.77 * age_years
+Best 20 deals for TESLA_Model Y
+TESLA - Model Y,   45720 kms, 331 kms away, 2023/04: 29990 € (reg=  12 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/3029416112        TESLA MODEL Y RWD AUTONOMIE Standard
+Analysis for TOYOTA_PROACE CITY Verso based on 4 items
+Linear regression: price = 29311.39 + -165.04 * mileage_kkms + -36.64 * age_years
+max_mileage = 177597.11, max_age = 800.08
+R^2 = 0.62
+Prediction (300000.0 kms, 15 years): price = 29311.39 - 97.70 * mileage_kkms - 1954.09 * age_years
+Best 20 deals for TOYOTA_PROACE CITY Verso
+TOYOTA - PROACE CITY Verso,   14000 kms, 295 kms away, 2023/03: 23999 € (reg=  10 %,  my=  -3 %) https://www.leboncoin.fr/ad/voitures/2980383503        Toyota PROACE CITY Verso ProAce Verso Long Electric 50 kWh Executive Camera Carplay
+TOYOTA - PROACE CITY Verso,     221 kms, 237 kms away, 2024/10: 30000 € (reg=  -2 %,  my=  -8 %) https://www.leboncoin.fr/ad/voitures/3032447792        Toyota PROACE CITY Verso Long Electric 50kWh Dynamic MC24
+TOYOTA - PROACE CITY Verso,   32800 kms, 477 kms away, 2023/02: 25000 € (reg=  -5 %,  my= -18 %) https://www.leboncoin.fr/ad/voitures/3040796537        Toyota proace city
+TOYOTA - PROACE CITY Verso,    1427 kms, 629 kms away, 2022/01: 29900 € (reg=  -3 %,  my= -35 %) https://www.leboncoin.fr/ad/voitures/3002639469        Toyota PROACE CITY Verso Medium Electric 50kWh Executive
+Analysis for TOYOTA_PROACE Combi based on 30 items
+Linear regression: price = 34622.62 + -165.15 * mileage_kkms + -1165.79 * age_years
+max_mileage = 209648.30, max_age = 29.70
+R^2 = 0.54
+Prediction (300000.0 kms, 15 years): price = 34622.62 - 115.41 * mileage_kkms - 2308.17 * age_years
+Best 20 deals for TOYOTA_PROACE Combi
+TOYOTA - PROACE Combi,   21067 kms,  52 kms away, 2022/11: 27980 € (reg=   0 %,  my=  -8 %) https://www.leboncoin.fr/ad/voitures/2932133610        Toyota PROACE COMBI Electric Long 75kWh Dynamic Confort
+Analysis for TOYOTA_PROACE Verso based on 40 items
+Linear regression: price = 38032.58 + -295.33 * mileage_kkms + -1108.88 * age_years
+max_mileage = 128778.22, max_age = 34.30
+R^2 = 0.05
+Prediction (300000.0 kms, 15 years): price = 38032.58 - 126.78 * mileage_kkms - 2535.51 * age_years
+Best 20 deals for TOYOTA_PROACE Verso
+TOYOTA - PROACE Verso,   17244 kms, 634 kms away, 2021/03: 27990 € (reg=   0 %,  my= -14 %) https://www.leboncoin.fr/ad/voitures/3042269262 **NEW** Toyota Proace Verso ELECTRIC 75KWH EXECUTIVE
+Analysis for VOLKSWAGEN_Autre based on 1 items
+Error while analyzing VOLKSWAGEN_Autre: Not Regular Matrix
+Best 20 deals for VOLKSWAGEN_Autre
+Analysis for VOLKSWAGEN_Golf based on 86 items
+Linear regression: price = 18098.60 + -50.02 * mileage_kkms + -105.21 * age_years
+max_mileage = 361791.53, max_age = 172.03
+R^2 = 0.38
+Prediction (300000.0 kms, 15 years): price = 18098.60 - 60.33 * mileage_kkms - 1206.57 * age_years
+Best 20 deals for VOLKSWAGEN_Golf
+VOLKSWAGEN - Golf,   13585 kms, 463 kms away, 2020/11: 15980 € (reg=   5 %,  my= -39 %) https://www.leboncoin.fr/ad/voitures/3017736715        Volkswagen Golf 136 Electrique
+VOLKSWAGEN - Golf,   45000 kms, 244 kms away, 2021/02: 13900 € (reg=   9 %,  my= -40 %) https://www.leboncoin.fr/ad/voitures/3035307755        E-golf
+VOLKSWAGEN - Golf,   38500 kms, 388 kms away, 2020/01: 13190 € (reg=  15 %,  my= -47 %) https://www.leboncoin.fr/ad/voitures/3032713942        Volkswagen Golf 136 Electrique
+VOLKSWAGEN - Golf,   41000 kms, 250 kms away, 2021/02: 14985 € (reg=   3 %,  my= -47 %) https://www.leboncoin.fr/ad/voitures/2994929238        Volkswagen Golf ELECTRIC 135ch 35kWh CONFORT LINE BVA
+VOLKSWAGEN - Golf,   38746 kms,  70 kms away, 2020/09: 14974 € (reg=   4 %,  my= -53 %) https://www.leboncoin.fr/ad/voitures/2971959497        Volkswagen Golf E- 136 Electrique
+VOLKSWAGEN - Golf,   47950 kms, 203 kms away, 2021/03: 15990 € (reg=  -4 %,  my= -63 %) https://www.leboncoin.fr/ad/voitures/2533107787        Volkswagen Golf 136 Electrique
+VOLKSWAGEN - Golf,   43500 kms, 504 kms away, 2020/06: 15200 € (reg=   1 %,  my= -65 %) https://www.leboncoin.fr/ad/voitures/3042176998 **NEW** Volkswagen egolf 136ch
+VOLKSWAGEN - Golf,   33023 kms, 533 kms away, 2019/10: 14990 € (reg=   5 %,  my= -66 %) https://www.leboncoin.fr/ad/voitures/3019889648        Volkswagen Golf E- 136 Electrique
+VOLKSWAGEN - Golf,   39137 kms, 247 kms away, 2019/02: 13490 € (reg=  12 %,  my= -72 %) https://www.leboncoin.fr/ad/voitures/3036299594        Volkswagen Golf 7 FULL electric business Année 2019 VO:2174-m
+VOLKSWAGEN - Golf,   10500 kms, 491 kms away, 2020/07: 19500 € (reg= -14 %,  my= -73 %) https://www.leboncoin.fr/ad/voitures/3004983125        VW E-Golf Électrique 136 cv
+VOLKSWAGEN - Golf,    3036 kms, 367 kms away, 2019/03: 17900 € (reg=  -3 %,  my= -77 %) https://www.leboncoin.fr/ad/voitures/3042823035        Volkswagen Golf 136 Electrique +Caméra
+VOLKSWAGEN - Golf,   16442 kms, 633 kms away, 2019/03: 16480 € (reg=   0 %,  my= -77 %) https://www.leboncoin.fr/ad/voitures/2988327523 **NEW** VOLKSWAGEN E-GOLF 136 Electrique
+VOLKSWAGEN - Golf,    3518 kms, 523 kms away, 2019/03: 17900 € (reg=  -3 %,  my= -77 %) https://www.leboncoin.fr/ad/voitures/3042823493 **NEW** Volkswagen Golf 136 Electrique +Caméra
+VOLKSWAGEN - Golf,    8686 kms, 312 kms away, 2020/03: 19800 € (reg= -15 %,  my= -80 %) https://www.leboncoin.fr/ad/voitures/2674314978        Volkswagen E-GOLF 7 136 ELECTRIQUE SPORT GRAND GPS 3D CLIM FULL LEDS RADARS USB BLUETOOTH REGULATEUR
+VOLKSWAGEN - Golf,   39980 kms, 824 kms away, 2019/03: 14790 € (reg=   4 %,  my= -88 %) https://www.leboncoin.fr/ad/voitures/3038437648 **NEW** Volkswagen Golf ELECTRIC 136 CH 35.8KWH CONFORT LINE DSG / RADAR AV & AR CARPLAY
+VOLKSWAGEN - Golf,   31170 kms, 762 kms away, 2019/01: 15990 € (reg=   0 %,  my= -94 %) https://www.leboncoin.fr/ad/voitures/2507809403 **NEW** Volkswagen Golf VII E- 136 ch Electrique 31170 kms
+VOLKSWAGEN - Golf,   47000 kms, 209 kms away, 2020/06: 18900 € (reg= -24 %,  my=-111 %) https://www.leboncoin.fr/ad/voitures/2989848013        Volkswagen E golf 7 phase 2
+VOLKSWAGEN - Golf,   32000 kms, 491 kms away, 2023/01: 27990 € (reg= -72 %,  my=-115 %) https://www.leboncoin.fr/ad/voitures/3039882289 **NEW** Volkswagen Golf VIII GTE 1.4 TSi 245 Plug in Hybrid DSG6 150 CH
+VOLKSWAGEN - Golf,   47300 kms, 436 kms away, 2018/11: 15995 € (reg=  -6 %,  my=-127 %) https://www.leboncoin.fr/ad/voitures/3016376642 **NEW** VOLKSWAGEN E-Golf 136 Electrique
+VOLKSWAGEN - Golf,   47000 kms, 865 kms away, 2016/12: 10990 € (reg=  25 %,  my=-132 %) https://www.leboncoin.fr/ad/voitures/3042201078 **NEW** Volkswagen Golf (7) E-Golf
+Analysis for VOLKSWAGEN_ID. Buzz based on 86 items
+Linear regression: price = 66175.08 + -264.92 * mileage_kkms + -9386.27 * age_years
+max_mileage = 249797.31, max_age = 7.05
+R^2 = 0.62
+Prediction (300000.0 kms, 15 years): price = 66175.08 - 220.58 * mileage_kkms - 4411.67 * age_years
+Best 20 deals for VOLKSWAGEN_ID. Buzz
+Analysis for VOLKSWAGEN_ID.3 based on 63 items
+Linear regression: price = 38764.87 + -52.73 * mileage_kkms + -3907.14 * age_years
+max_mileage = 735163.45, max_age = 9.92
+R^2 = 0.68
+Prediction (300000.0 kms, 15 years): price = 38764.87 - 129.22 * mileage_kkms - 2584.32 * age_years
+Best 20 deals for VOLKSWAGEN_ID.3
+VOLKSWAGEN - ID.3,    3721 kms, 509 kms away, 2024/06: 27390 € (reg=  18 %,  my=  22 %) https://www.leboncoin.fr/ad/voitures/2997333622        Volkswagen ID.3 204ch Pro Performance 58 kWh Style
+VOLKSWAGEN - ID.3,    7000 kms, 491 kms away, 2024/11: 27990 € (reg=  20 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/3025313775        VOLKSWAGEN ID.3 204 ch Pro Life Max
+VOLKSWAGEN - ID.3,    7000 kms, 491 kms away, 2024/11: 27990 € (reg=  20 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/3002985683        VOLKSWAGEN ID.3 204 ch Pro Life Max
+VOLKSWAGEN - ID.3,    8000 kms, 491 kms away, 2024/11: 27990 € (reg=  20 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/3005299315        VOLKSWAGEN ID.3 204 ch Pro Life Max
+VOLKSWAGEN - ID.3,    1700 kms, 426 kms away, 2024/07: 27992 € (reg=  18 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/2964244169        VOLKSWAGEN ID.3 204 ch Pro
+VOLKSWAGEN - ID.3,    8974 kms, 199 kms away, 2024/11: 27990 € (reg=  20 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/3036012485        VOLKSWAGEN ID.3 204 ch Pro
+VOLKSWAGEN - ID.3,    1691 kms, 376 kms away, 2024/11: 28990 € (reg=  18 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/3029692027        VOLKSWAGEN ID.3 204 ch Pro Life Max / Pack Aide à la conduite IQ.Drive
+VOLKSWAGEN - ID.3,   12743 kms, 502 kms away, 2024/03: 26490 € (reg=  18 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/2994597394        Volkswagen ID.3 204ch Pro 58 kWh
+VOLKSWAGEN - ID.3,    2366 kms, 504 kms away, 2024/07: 28990 € (reg=  15 %,  my=  18 %) https://www.leboncoin.fr/ad/voitures/2990422294        Volkswagen ID.3 204 ch Pro Performance Style
+VOLKSWAGEN - ID.3,    3886 kms, 504 kms away, 2024/11: 29990 € (reg=  15 %,  my=  17 %) https://www.leboncoin.fr/ad/voitures/3039251107        Volkswagen ID.3 204 ch Pro Life Max
+VOLKSWAGEN - ID.3,    8174 kms, 193 kms away, 2024/07: 28990 € (reg=  14 %,  my=  16 %) https://www.leboncoin.fr/ad/voitures/2964600910        VOLKSWAGEN ID.3 204 ch Pro Performance Style Exclusive
+VOLKSWAGEN - ID.3,    4975 kms, 212 kms away, 2024/03: 28990 € (reg=  11 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/3019960197 **NEW** VOLKSWAGEN ID.3 204 ch Pro Life Max
+VOLKSWAGEN - ID.3,   16650 kms, 185 kms away, 2024/04: 27970 € (reg=  13 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2946449669        Volkswagen ID.3 204 ch Pro Performance Style
+VOLKSWAGEN - ID.3,    4814 kms, 522 kms away, 2024/05: 29490 € (reg=  11 %,  my=  15 %) https://www.leboncoin.fr/ad/voitures/2970108666        Volkswagen ID.3 204 ch Pro Performance Style Exclusive
+VOLKSWAGEN - ID.3,   49966 kms, 376 kms away, 2020/12: 17990 € (reg=  -1 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/2953111326        VOLKSWAGEN ID.3 204 ch Pro Performance Life
+VOLKSWAGEN - ID.3,   48772 kms, 459 kms away, 2021/06: 19490 € (reg=   0 %,  my=   9 %) https://www.leboncoin.fr/ad/voitures/3005497990        VOLKSWAGEN ID.3 204 ch Pro Performance Business
+VOLKSWAGEN - ID.3,   16060 kms, 158 kms away, 2022/09: 26900 € (reg=  -2 %,  my=   7 %) https://www.leboncoin.fr/ad/voitures/2497659077        VOLKSWAGEN ID.3 204 ch Pro Performance Active
+VOLKSWAGEN - ID.3,   40000 kms, 256 kms away, 2021/04: 20990 € (reg=  -7 %,  my=   5 %) https://www.leboncoin.fr/ad/voitures/3028006611        Volkswagen ID.3 204 ch PRO PERFORMANCE TECH (58 kWh) BVA - TOIT PANORAMIQUE
+VOLKSWAGEN - ID.3,   35226 kms, 238 kms away, 2020/12: 25490 € (reg= -38 %,  my= -15 %) https://www.leboncoin.fr/ad/voitures/3013156993 **NEW** VOLKSWAGEN ID.3 204 ch 1st Plus
+Analysis for VOLKSWAGEN_ID.4 based on 27 items
+Linear regression: price = 45542.16 + -58.78 * mileage_kkms + -4928.92 * age_years
+max_mileage = 774756.26, max_age = 9.24
+R^2 = 0.74
+Prediction (300000.0 kms, 15 years): price = 45542.16 - 151.81 * mileage_kkms - 3036.14 * age_years
+Best 20 deals for VOLKSWAGEN_ID.4
+VOLKSWAGEN - ID.4,   12000 kms, 122 kms away, 2024/03: 28000 € (reg=  25 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2874637239        VOLKSWAGEN ID.4 149 ch Pure Life Plus
+VOLKSWAGEN - ID.4,   22300 kms, 222 kms away, 2022/08: 23490 € (reg=  19 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3035509265        Volkswagen ID.4 170CH Pure Performance [ 08/2022 - 22 300 Km ]
+VOLKSWAGEN - ID.4,   13818 kms, 212 kms away, 2023/08: 29790 € (reg=  13 %,  my=  19 %) https://www.leboncoin.fr/ad/voitures/2681665572        VOLKSWAGEN ID.4 174 ch Pro
+VOLKSWAGEN - ID.4,   15000 kms, 309 kms away, 2021/10: 27990 € (reg=  -9 %,  my=  10 %) https://www.leboncoin.fr/ad/voitures/2346196852        VOLKSWAGEN ID.4 204 ch 1st Max
+Analysis for VOLKSWAGEN_ID.5 based on 19 items
+Linear regression: price = 50476.14 + -344.68 * mileage_kkms + -134.47 * age_years
+max_mileage = 146443.72, max_age = 375.36
+R^2 = 0.52
+Prediction (300000.0 kms, 15 years): price = 50476.14 - 168.25 * mileage_kkms - 3365.08 * age_years
+Best 20 deals for VOLKSWAGEN_ID.5
+Analysis for VOLKSWAGEN_ID.7 based on 42 items
+Linear regression: price = 50959.64 + -33.09 * mileage_kkms + 238.09 * age_years
+max_mileage = 1540231.55, max_age = -214.03
+R^2 = 0.00
+Prediction (300000.0 kms, 15 years): price = 50959.64 - 169.87 * mileage_kkms - 3397.31 * age_years
+Best 20 deals for VOLKSWAGEN_ID.7
+Analysis for VOLKSWAGEN_Sharan based on 1 items
+Error while analyzing VOLKSWAGEN_Sharan: Not Regular Matrix
+Best 20 deals for VOLKSWAGEN_Sharan
+Analysis for VOLKSWAGEN_Up based on 1 items
+Error while analyzing VOLKSWAGEN_Up: Not Regular Matrix
+Best 20 deals for VOLKSWAGEN_Up
+VOLKSWAGEN - Up,   24040 kms, 279 kms away, 2020/12: 13900 € (reg=     %,  my=     %) https://www.leboncoin.fr/ad/voitures/3014232562        Volkswagen VW E-UP 2.0 Electrique 5P
+Analysis for VOLVO_Autre based on 15 items
+Linear regression: price = 51499.58 + -40.43 * mileage_kkms + 5914.81 * age_years
+max_mileage = 1273831.19, max_age = -8.71
+R^2 = 0.03
+Prediction (300000.0 kms, 15 years): price = 51499.58 - 171.67 * mileage_kkms - 3433.31 * age_years
+Best 20 deals for VOLVO_Autre
+Analysis for VOLVO_C40 based on 127 items
+Linear regression: price = 54069.27 + -182.21 * mileage_kkms + -5184.97 * age_years
+max_mileage = 296743.40, max_age = 10.43
+R^2 = 0.71
+Prediction (300000.0 kms, 15 years): price = 54069.27 - 180.23 * mileage_kkms - 3604.62 * age_years
+Best 20 deals for VOLVO_C40
+VOLVO - C40,   16537 kms, 662 kms away, 2023/03: 27490 € (reg=  28 %,  my=  34 %) https://www.leboncoin.fr/ad/voitures/2870437272        Volvo C40 Recharge 231ch Start
+VOLVO - C40,    9428 kms, 229 kms away, 2023/05: 29990 € (reg=  25 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/2972351921        Volvo C40 RECHARGE 231 CH 1EDT START
+VOLVO - C40,   45000 kms, 637 kms away, 2023/05: 26300 € (reg=  22 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3026387767        Volvo C40
+VOLVO - C40,   24593 kms, 693 kms away, 2022/08: 27999 € (reg=  16 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3027575154        Volvo C40 Recharge 231ch Start
+VOLVO - C40,   24593 kms, 634 kms away, 2022/08: 27999 € (reg=  16 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/2998942158        Volvo C40 Recharge 231ch Start
+VOLVO - C40,   24593 kms, 546 kms away, 2022/08: 27999 € (reg=  16 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3027575153        Volvo C40 Recharge 231ch Start
+VOLVO - C40,   24593 kms, 700 kms away, 2022/08: 27999 € (reg=  16 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3027575155        Volvo C40 Recharge 231ch Start
+VOLVO - C40,   31198 kms, 374 kms away, 2023/03: 29990 € (reg=  15 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/2969871063        Volvo C40 Recharge 238 ch 1EDT Start
+VOLVO - C40,   43892 kms, 763 kms away, 2023/04: 29490 € (reg=  12 %,  my=  21 %) https://www.leboncoin.fr/ad/voitures/2956121631        VOLVO C40 Recharge 231 ch 1EDT Start
+VOLVO - C40,   35597 kms, 609 kms away, 2022/08: 28990 € (reg=   8 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/3043358211 **NEW** VOLVO C40 Recharge 231 ch 1EDT Start
+VOLVO - C40,   32120 kms, 330 kms away, 2022/10: 29999 € (reg=   9 %,  my=  20 %) https://www.leboncoin.fr/ad/voitures/3036471866        Volvo C40 Recharge 231ch Ultimate
+Analysis for VOLVO_EX30 based on 200 items
+Linear regression: price = 46692.03 + -188.78 * mileage_kkms + -5719.53 * age_years
+max_mileage = 247339.90, max_age = 8.16
+R^2 = 0.45
+Prediction (300000.0 kms, 15 years): price = 46692.03 - 155.64 * mileage_kkms - 3112.80 * age_years
+Best 20 deals for VOLVO_EX30
+VOLVO - EX30,    8498 kms, 865 kms away, 2024/06: 27900 € (reg=  26 %,  my=  32 %) https://www.leboncoin.fr/ad/voitures/3029066030        VOLVO EX30 Single 272 ch 1EDT Start
+VOLVO - EX30,   21000 kms, 634 kms away, 2024/07: 27490 € (reg=  24 %,  my=  31 %) https://www.leboncoin.fr/ad/voitures/3033381015        Volvo Ex30
+VOLVO - EX30,    8063 kms, 206 kms away, 2024/05: 29900 € (reg=  20 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3039780344        VOLVO EX30 Single 272 ch 1EDT Start
+VOLVO - EX30,   17000 kms, 518 kms away, 2024/03: 28990 € (reg=  17 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3031693277        VOLVO EX30 Single Extended Range 272 ch 1EDT Plus *1ÈRE MAIN
+VOLVO - EX30,   19956 kms, 591 kms away, 2024/03: 28990 € (reg=  15 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3006918572        Volvo EX30 Single Extended Range 272ch Plus
+VOLVO - EX30,   13817 kms, 326 kms away, 2024/03: 29880 € (reg=  16 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3023846932        Volvo EX30 Single Extended Range 272ch Plus
+VOLVO - EX30,   23000 kms, 462 kms away, 2024/03: 29990 € (reg=  11 %,  my=  22 %) https://www.leboncoin.fr/ad/voitures/2915791956        VOLVO EX30 Single Extended Range - 272
+VOLVO - EX30,   49000 kms, 638 kms away, 2024/01: 29990 € (reg=  -6 %,  my=  11 %) https://www.leboncoin.fr/ad/voitures/3006560283        VOLVO EX30 Single Extended Range 272 ch 1EDT Plus / 1ère Main / Entretien Complet Volvo
+Analysis for VOLVO_EX90 based on 36 items
+Linear regression: price = 108357.66 + -615.25 * mileage_kkms + -1956.49 * age_years
+max_mileage = 176119.98, max_age = 55.38
+R^2 = 0.12
+Prediction (300000.0 kms, 15 years): price = 108357.66 - 361.19 * mileage_kkms - 7223.84 * age_years
+Best 20 deals for VOLVO_EX90
+Analysis for VOLVO_XC40 based on 187 items
+Linear regression: price = 52928.36 + -139.34 * mileage_kkms + -5054.89 * age_years
+max_mileage = 379862.78, max_age = 10.47
+R^2 = 0.68
+Prediction (300000.0 kms, 15 years): price = 52928.36 - 176.43 * mileage_kkms - 3528.56 * age_years
+Best 20 deals for VOLVO_XC40
+VOLVO - XC40,   39336 kms, 386 kms away, 2022/12: 22990 € (reg=  31 %,  my=  36 %) https://www.leboncoin.fr/ad/voitures/3028685619        Volvo XC40 Recharge 231ch Start EDT
+VOLVO - XC40,   24243 kms, 465 kms away, 2022/08: 26490 € (reg=  22 %,  my=  30 %) https://www.leboncoin.fr/ad/voitures/3021542358        Volvo XC40 Recharge 231ch Start EDT
+VOLVO - XC40,   45000 kms, 143 kms away, 2023/05: 25800 € (reg=  26 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3034577943        Volvo xc 40
+VOLVO - XC40,   27500 kms, 636 kms away, 2023/05: 28000 € (reg=  25 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/3043455173 **NEW** Volvo XC40 recharge - électrique
+VOLVO - XC40,   18000 kms, 393 kms away, 2022/08: 27490 € (reg=  21 %,  my=  29 %) https://www.leboncoin.fr/ad/voitures/2997186938        VOLVO XC40 PURE ELECTRIQUE 231ch start
+VOLVO - XC40,   30187 kms, 512 kms away, 2022/11: 26790 € (reg=  22 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/2940447704        Volvo XC40 Recharge 231ch Plus EDT
+VOLVO - XC40,   46924 kms, 237 kms away, 2022/10: 24480 € (reg=  22 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3014415057        Volvo XC40 Recharge 231ch Start EDT
+VOLVO - XC40,   30000 kms, 744 kms away, 2024/02: 29990 € (reg=  26 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3039316541        Volvo XC40 Recharge 238ch Essential
+VOLVO - XC40,   45907 kms,  90 kms away, 2022/08: 24490 € (reg=  21 %,  my=  28 %) https://www.leboncoin.fr/ad/voitures/3012831268        Volvo XC40 Recharge 231ch Start EDT
+VOLVO - XC40,   22837 kms, 383 kms away, 2022/09: 27980 € (reg=  19 %,  my=  27 %) https://www.leboncoin.fr/ad/voitures/3034763903        Volvo XC40 Recharge 231ch Start EDT
+VOLVO - XC40,   44639 kms, 204 kms away, 2023/04: 26890 € (reg=  22 %,  my=  26 %) https://www.leboncoin.fr/ad/voitures/3002506942        Volvo XC40 ELECTRIQUE Recharge 231 ch 1EDT Start
+VOLVO - XC40,   25000 kms, 566 kms away, 2022/12: 28990 € (reg=  18 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/2941335253        VOLVO XC40 Recharge 231 ch 1EDT Start
+VOLVO - XC40,   31000 kms, 482 kms away, 2022/11: 28000 € (reg=  18 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3037034398        Volvo xc40 recharge
+VOLVO - XC40,   18000 kms, 566 kms away, 2022/10: 29490 € (reg=  17 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/2928156773        VOLVO XC40 Recharge 231 ch 1EDT Start
+VOLVO - XC40,   41160 kms, 865 kms away, 2022/12: 26900 € (reg=  19 %,  my=  25 %) https://www.leboncoin.fr/ad/voitures/3041741446 **NEW** VOLVO XC40 Recharge 231 ch 1EDT Start
+VOLVO - XC40,   43144 kms, 529 kms away, 2022/01: 24490 € (reg=  14 %,  my=  24 %) https://www.leboncoin.fr/ad/voitures/3023473203        Volvo XC40 Recharge 231ch Start EDT
+VOLVO - XC40,   28585 kms, 691 kms away, 2022/11: 28999 € (reg=  16 %,  my=  23 %) https://www.leboncoin.fr/ad/voitures/3006069312        Volvo Xc40 Recharge 231ch Start EDT
+VOLVO - XC40,   28585 kms, 630 kms away, 2022/11: 28999 € (reg=  16 %,  my=  23 %) https://www.leboncoin.fr/ad/voitures/3034501426 **NEW** Volvo Xc40 Recharge 231ch Start EDT
+VOLVO - XC40,   28585 kms, 700 kms away, 2022/11: 28999 € (reg=  16 %,  my=  23 %) https://www.leboncoin.fr/ad/voitures/3034501425 **NEW** Volvo Xc40 Recharge 231ch Start EDT
+VOLVO - XC40,   28100 kms, 462 kms away, 2022/10: 28999 € (reg=  15 %,  my=  23 %) https://www.leboncoin.fr/ad/voitures/3018270279        Volvo XC40 Recharge 231ch Start EDT
+Analysis for XPENG_Autre based on 1 items
+Error while analyzing XPENG_Autre: Not Regular Matrix
+Best 20 deals for XPENG_Autre
