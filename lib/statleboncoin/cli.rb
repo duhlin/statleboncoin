@@ -58,12 +58,23 @@ module Statleboncoin
     LIST_MODELS_SQL = <<~SQL
       select
         model,
+        brand,
+        category_id,
         count(*),
         count_if(coalesce(vehicle_damage, '') != 'damaged' and coalesce(car_contract, '') != '1')
       from car_items
-      group by model
+      group by all
       order by model
     SQL
+
+    def recherche_url(category_id, brand, model)
+      case(category_id)
+      when 2
+        "category=2&u_car_brand=#{brand}&u_car_model=#{model}&fuel=4"
+      when 5
+        "category=5&u_utility_brand=#{brand}&u_utility_model=#{model}&fuel=4"
+      end
+    end
 
     desc 'list_models',
          'List the models in the database'
@@ -73,8 +84,8 @@ module Statleboncoin
         models = db.query(LIST_MODELS_SQL).to_a
         model_max_size = models.map(&:first).map { |model| model&.size || 0 }.max
         puts "#{'Model'.ljust(model_max_size)} | Items | Excluding damaged and contract cars"
-        models.each do |model, count, effective_count|
-          puts "#{(model || '').ljust(model_max_size)} | #{count.to_s.rjust(5)} | #{effective_count.to_s.rjust(5)}"
+        models.each do |model, brand, category_id, count, effective_count|
+          puts "#{(model || '').ljust(model_max_size)} | #{count.to_s.rjust(5)} | #{effective_count.to_s.rjust(5)} | #{recherche_url(category_id, brand, model)}"
         end
       ensure
         db.close

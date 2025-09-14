@@ -7,13 +7,16 @@ module Statleboncoin
     extend Forwardable
     def_delegator :@conn, :query
 
-    CAR_ITEM_VIEW_SQL = <<~SQL
+    def car_item_view_sql(table)
+      sql = <<~SQL
       with json_parsed as (
         select
           id,
           search_params,
           json_transform(raw,
           '{
+            "category_id": "INTEGER",
+            "category_name": "VARCHAR",
             "url": "VARCHAR",
             "index_date": "TIMESTAMP",
             "first_publication_date": "TIMESTAMP",
@@ -31,6 +34,10 @@ module Statleboncoin
               "lat": "NUMERIC",
               "lng": "NUMERIC"
             },
+            "images": {
+              "thumb_url": "VARCHAR",
+              "small_url": "VARCHAR"
+            },
             "attributes": [
               {
                 "key": "VARCHAR",
@@ -38,22 +45,27 @@ module Statleboncoin
               }
             ]
           }') as r
-        from raw_items),
+        from #{table}),
       json_parsed_attributes_pivoted as (
         select
           id,
           search_params,
+          r.category_id as category_id,
+          r.category_name as category_name,
           r.url as url,
           r.index_date as index_date,
           r.first_publication_date as first_publication_date,
           r.price_cents as price_cents,
           r.location as location,
+          r.images as images,
           r.subject as subject,
           map_from_entries(r.attributes) as attributes
         from json_parsed
       )
       select
         id,
+        category_id,
+        category_name,
         search_params,
         url,
         index_date,
@@ -72,9 +84,12 @@ module Statleboncoin
         attributes['vehicle_damage'] as vehicle_damage,
         attributes['car_contract'] as car_contract,
         attributes['seats'] as seats,
-        location
+        location,
+        images
       from json_parsed_attributes_pivoted;
-    SQL
+      SQL
+      sql
+    end
 
     def initialize(database_file = 'statleboncoin.duckdb')
       raise ArgumentError, 'Database file must end with .duckdb' unless database_file.end_with?('.duckdb')
@@ -86,7 +101,9 @@ module Statleboncoin
       @conn.query('LOAD spatial')
       @conn.query('CREATE TABLE IF NOT EXISTS raw_items (id TEXT PRIMARY KEY, updated_at timestamp not null, search_params TEXT, raw JSON)')
       @conn.query('CREATE TABLE IF NOT EXISTS raw_items_archive (id TEXT PRIMARY KEY, updated_at timestamp not null, search_params TEXT, raw JSON)')
-      @conn.query("CREATE OR REPLACE TABLE car_items AS #{CAR_ITEM_VIEW_SQL}")
+      @conn.query("CREATE OR REPLACE VIEW car_items AS #{car_item_view_sql('raw_items')}")
+      @conn.query("CREATE OR REPLACE TABLE car_items_archive AS #{car_item_view_sql('raw_items_archive')}")
+      @conn.query("CREATE OR REPLACE VIEW all_car_items AS select false as archived, * from car_items union all select true as archived, * from car_items_archive")
       @conn.query('CREATE TABLE IF NOT EXISTS sent_urls (url TEXT PRIMARY KEY, sent_at TIMESTAMP)')
     end
 
