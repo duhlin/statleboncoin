@@ -29,6 +29,33 @@ bin/setup   # or: bundle install
 
 The gem is not configured for RubyGems publication yet (`gemspec` still contains TODO placeholders). To use it from another project, add a **git** source or `path:` dependency in your `Gemfile`.
 
+### DuckDB C library (`duckdb` Ruby gem)
+
+The **`duckdb`** gem ships a native extension that links against **libduckdb** (C API). Recent gem releases expect **DuckDB ≥ 1.4** (for example **1.5.x** gems match **1.5.x** C libraries). If `bundle install` fails while compiling `duckdb`, install headers and `libduckdb.so`, then try again.
+
+**Option A — vendored copy in this repo (no root privileges)**
+
+The `vendor/duckdb/` tree is gitignored. Download the official Linux amd64 bundle for the [release you want](https://github.com/duckdb/duckdb/releases) (below uses **v1.5.2**), unpack headers and the shared library, point Bundler at them, then install:
+
+```bash
+mkdir -p vendor/duckdb/include vendor/duckdb/lib
+curl -fsSL -o /tmp/libduckdb.zip https://github.com/duckdb/duckdb/releases/download/v1.5.2/libduckdb-linux-amd64.zip
+unzip -j /tmp/libduckdb.zip libduckdb.so -d vendor/duckdb/lib
+unzip -j /tmp/libduckdb.zip duckdb.h duckdb.hpp -d vendor/duckdb/include
+bundle config set --local build.duckdb "--with-duckdb-include=$(pwd)/vendor/duckdb/include --with-duckdb-lib=$(pwd)/vendor/duckdb/lib"
+bundle install
+```
+
+**Option B — system install**
+
+Unpack the same zip (or install a matching distribution package), copy `duckdb.h` / `duckdb.hpp` and `libduckdb.so` into e.g. `/usr/local/include` and `/usr/local/lib`, then refresh the dynamic linker cache:
+
+```bash
+sudo ldconfig
+```
+
+After that, `bundle install` should find the library without `build.duckdb`. Remove any local `build.duckdb` entry from `.bundle/config` if you previously used Option A.
+
 ## CLI usage
 
 Run via Bundler:

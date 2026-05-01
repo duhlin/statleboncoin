@@ -10,6 +10,8 @@
 # rspec failure tracking
 .rspec_status
 
+/vendor/duckdb/
+
 # database
 statleboncoin.duckdb
 test_database
