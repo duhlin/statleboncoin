@@ -1,4 +1,5 @@
 require 'thor'
+require 'cgi'
 
 module Statleboncoin
   class CLI < Thor
@@ -40,6 +41,31 @@ module Statleboncoin
       db.close
     end
 
+    desc 'refresh_all_models',
+          'Refresh the car_items view for all models'
+    option :only_newer, type: :boolean, default: true
+    option :ludospace, type: :boolean, default: false
+    def refresh_all_models(database_file = 'statleboncoin.duckdb')
+      db = Database.new(database_file)
+      begin
+        sql = <<~SQL
+          SELECT DISTINCT model, brand, category_id FROM (
+            SELECT model, brand, category_id FROM car_items
+            UNION ALL
+            SELECT model, brand, category_id FROM car_items_archive
+          )
+        SQL
+        sql += "\nSEMI JOIN LUDOSPACE using (model)" if options[:ludospace]
+        sql += "\nWHERE category_id IN (2, 5) and model IS NOT NULL and brand IS NOT NULL\nORDER BY brand, model"
+        db.query(sql).each do |model, brand, category_id|
+          puts "Refreshing model #{model} (#{recherche_url(category_id, brand, model)})"
+          refresh(db, recherche_url(category_id, brand, model), only_newer: options.fetch('only_newer', true))
+        end
+      ensure
+        db.close
+      end
+    end
+
     desc 'refresh_all',
          'Retrieve new items for all existing search in the database'
     option :only_newer, type: :boolean, default: true
@@ -67,15 +93,6 @@ module Statleboncoin
       order by model
     SQL
 
-    def recherche_url(category_id, brand, model)
-      case(category_id)
-      when 2
-        "category=2&u_car_brand=#{brand}&u_car_model=#{model}&fuel=4"
-      when 5
-        "category=5&u_utility_brand=#{brand}&u_utility_model=#{model}&fuel=4"
-      end
-    end
-
     desc 'list_models',
          'List the models in the database'
     def list_models(database_file = 'statleboncoin.duckdb')
@@ -83,7 +100,7 @@ module Statleboncoin
       begin
         models = db.query(LIST_MODELS_SQL).to_a
         model_max_size = models.map(&:first).map { |model| model&.size || 0 }.max
-        puts "#{'Model'.ljust(model_max_size)} | Items | Excluding damaged and contract cars"
+        puts "#{'Model'.ljust(model_max_size)} | All | Eligible | Search query params"
         models.each do |model, brand, category_id, count, effective_count|
           puts "#{(model || '').ljust(model_max_size)} | #{count.to_s.rjust(5)} | #{effective_count.to_s.rjust(5)} | #{recherche_url(category_id, brand, model)}"
         end
@@ -179,7 +196,7 @@ module Statleboncoin
 
         # refresh the python analysis
         db.release do
-          system('./export_notebook.sh', chdir: 'modeling')
+          system('./export_notebook.sh', 'notebooks/car_price_pca_analysis.ipynb', chdir: 'modeling')
         end
 
         # force a message_id so that emails are threaded
@@ -400,5 +417,15 @@ module Statleboncoin
     rescue HTTPCrawler::Error => e
       puts "Error while fetching #{params}: #{e}"
     end
+
+    def recherche_url(category_id, brand, model)
+      case(category_id)
+      when 2
+        "category=2&u_car_brand=#{brand}&u_car_model=#{CGI.escape model}&fuel=4"
+      when 5
+        "category=5&u_utility_brand=#{brand}&u_utility_model=#{CGI.escape model}&fuel=4"
+      end
+    end
+
   end
 end

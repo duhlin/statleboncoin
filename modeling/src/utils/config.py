@@ -15,15 +15,25 @@ MODEL_HYPERPARAMETERS = {
 
 # Car analysis configuration
 LUDOSPACE_MODELS = [
+    'CITROEN_Berlingo',
+    #'CITROEN_SpaceTourer',
+    #'CITROEN_Jumpy',
+    'FIAT_Doblo', 
+    'FORD_Tourneo Courier',
+    #'FORD_Transit',
+    'MERCEDES-BENZ_EQT',
+    #'MERCEDES-BENZ_Vito',
+    'NISSAN_Townstar',
+    'OPEL_Combo Life', 
+    'OPEL_Combo', 
+    #'PEUGEOT_Expert',
+    'PEUGEOT_Rifter',
+    #'PEUGEOT_Traveller',
+    #'PEUGEOT_Partner Tepee',
     'RENAULT_Kangoo', 
     'TOYOTA_PROACE CITY Verso', 
-    'PEUGEOT_Rifter', 
-    'CITROEN_Berlingo', 
-    'OPEL_Combo', 
-    'OPEL_Combo Life', 
-    'FIAT_Doblo', 
-    'MERCEDES-BENZ_EQT',
-    'NISSAN_Townstar'
+    #'TOYOTA_PROACE Verso',
+    #'TOYOTA_PROACE Combi',
 ]
 
 # URLs to ignore in analysis (outliers or problematic listings)
@@ -51,7 +61,7 @@ ANALYSIS_CONFIG = {
     'ignore_seats': [2, 3, 4],       # Focus on family cars
     'max_price': 35000,
     'min_price': 3000,
-    'clustering_k': 8,
+    'clustering_k': 5,
     'train_size': 0.6,
     'random_state': 42
 }

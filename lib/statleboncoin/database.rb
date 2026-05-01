@@ -84,6 +84,7 @@ module Statleboncoin
         attributes['vehicle_damage'] as vehicle_damage,
         attributes['car_contract'] as car_contract,
         attributes['seats'] as seats,
+        attributes['fuel'] as fuel,
         location,
         images
       from json_parsed_attributes_pivoted;
